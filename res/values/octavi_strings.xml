@@ -1042,4 +1042,8 @@
     <string name="weather_summary">Omni jaws <b>weather customisation</b> for both on Lockscreen and Quick Settings</string>
     <string name="gaming_summary">Gaming mode related options which is basically <b>advanced DND</b>, but you gonna cry so added</string>
     <string name="misc_summary">Smart Pixels, <b>Signature spoofing</b>, Animations, Scrolling Cache, Hide apps from recents</string>
+
+    <!-- Brightness control -->
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 </resources>
