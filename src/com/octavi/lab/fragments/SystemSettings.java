@@ -37,12 +37,12 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 
-public class NavbarSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class SystemSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.octavi_lab_navigation);
+        addPreferencesFromResource(R.xml.octavi_lab_system);
 
     }
 
