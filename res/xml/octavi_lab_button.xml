@@ -18,4 +18,9 @@
         android:title="@string/button_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <Preference
+        android:key="volume_key"
+        android:fragment="com.octavi.lab.fragments.VolumeRockerSettings"
+        android:title="@string/volume_title" />
+
 </PreferenceScreen>

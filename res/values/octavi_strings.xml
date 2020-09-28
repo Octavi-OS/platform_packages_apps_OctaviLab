@@ -23,6 +23,7 @@
     <string name="statusbar_title">Status bar</string>
     <string name="notifications_title">Notifications</string>
     <string name="navbar_title">Navigation Bar</string>
+    <string name="volume_title">Volume Rockers</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -45,5 +46,9 @@
 
     <!-- Navbar tuner -->
     <string name="navbar_tuner_title">Navbar buttons</string>
+
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Playback control</string>
+    <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
 
 </resources>
