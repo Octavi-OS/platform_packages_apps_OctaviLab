@@ -64,7 +64,7 @@
         <!-- Navbar -->
         <com.octavi.lab.preferences.CardViewPreference7
             android:key="navbar_category"
-            android:title="Navbar" 
+            android:title="@string/navbar_title" 
             android:fragment="com.octavi.lab.fragments.NavbarSettings"
             android:icon="@drawable/ic_settings_navbar"/>
 </PreferenceScreen>

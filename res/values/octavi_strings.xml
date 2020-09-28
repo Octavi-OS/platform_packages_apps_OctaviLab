@@ -22,6 +22,7 @@
     <string name="system_title">System</string>
     <string name="statusbar_title">Status bar</string>
     <string name="notifications_title">Notifications</string>
+    <string name="navbar_title">Navigation Bar</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -41,5 +42,8 @@
 
     <!-- Statusbar Tuner -->
     <string name="statusbar_items_title">Statusbar items</string>
+
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Navbar buttons</string>
 
 </resources>
