@@ -43,7 +43,8 @@
         <com.octavi.lab.preferences.CardViewPreference4
             android:key="system_category"
             android:title="@string/system_title" 
-            android:fragment="com.octavi.lab.fragments.SystemSettings" />
+            android:fragment="com.octavi.lab.fragments.SystemSettings"
+            android:icon="@drawable/ic_settings_system"/>
 
         <!-- Notification -->
         <com.octavi.lab.preferences.CardViewPreference5
