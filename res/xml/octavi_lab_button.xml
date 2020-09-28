@@ -23,4 +23,9 @@
         android:fragment="com.octavi.lab.fragments.VolumeRockerSettings"
         android:title="@string/volume_title" />
 
+        <Preference
+        android:key="gesture_key"
+        android:fragment="com.octavi.lab.fragments.GestureSettings"
+        android:title="@string/gesture_title" />
+
 </PreferenceScreen>
