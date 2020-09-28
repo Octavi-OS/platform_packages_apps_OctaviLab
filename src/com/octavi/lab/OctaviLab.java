@@ -29,7 +29,7 @@ import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-public class NitrogenSettings extends SettingsPreferenceFragment {
+public class OctaviLab extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
