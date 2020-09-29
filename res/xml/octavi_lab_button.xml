@@ -18,14 +18,28 @@
         android:title="@string/button_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="allow_incall_home"
+        android:title="@string/allow_incall_home_title"
+        android:summary="@string/allow_incall_home_summary"
+        android:defaultValue="true" />
+
+        <PreferenceCategory>
+
         <Preference
         android:key="volume_key"
         android:fragment="com.octavi.lab.fragments.VolumeRockerSettings"
         android:title="@string/volume_title" />
 
+        </PreferenceCategory>
+
+        <PreferenceCategory>
+
         <Preference
         android:key="gesture_key"
         android:fragment="com.octavi.lab.fragments.GestureSettings"
         android:title="@string/gesture_title" />
+
+        </PreferenceCategory>
 
 </PreferenceScreen>
