@@ -15,6 +15,7 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/gesture_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
@@ -32,5 +33,20 @@
         android:entryValues="@array/torch_long_press_power_timeout_values"
         android:dependency="torch_long_press_power_gesture"
         android:persistent="false" />
+
+     <PreferenceCategory
+        android:key="double_tap_gestures_category"
+        android:title="@string/double_tap_gestures_category_title">
+
+	<com.octavi.lab.preferences.SystemSettingSwitchPreference
+	    android:key="double_tap_sleep_gesture"
+            android:title="@string/double_tap_sleep_gesture_title"
+            android:defaultValue="false" />
+
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_lockscreen"
+            android:title="@string/double_tap_sleep_lockscreen_title"
+            android:defaultValue="false" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
