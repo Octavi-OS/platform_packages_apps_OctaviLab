@@ -84,7 +84,7 @@ public class SeekBarPreferenceCham extends Preference implements SeekBar.OnSeekB
         if (mDefaultValue < mMinValue || mDefaultValue > mMaxValue) {
             throw new IllegalArgumentException("Default value is out of range!");
         }
-        mUnitsLeft = getAttributeStringValue(attrs, OCTAVILABSNS, "unitsLeft", "");
+        mUnitsLeft = getAttributeStringValue(attrs, OCTAVILABNS, "unitsLeft", "");
         mUnitsRight = getAttributeStringValue(attrs, OCTAVILABNS, "unitsRight", "");
         Integer idR = a.getResourceId(R.styleable.SeekBarPreference_unitsRight, 0);
         if (idR > 0) {
