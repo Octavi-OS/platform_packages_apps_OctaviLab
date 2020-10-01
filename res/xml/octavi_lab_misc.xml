@@ -24,4 +24,10 @@
             android:summary="@string/wakeup_when_plugged_unplugged_summary"
             android:defaultValue="true" />
 
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference 
+           android:key="three_finger_gesture"
+           android:title="@string/three_finger_gesture"
+           android:summary="@string/three_finger_gesture_summary"
+           android:defaultValue="false" />
+
 </PreferenceScreen>
