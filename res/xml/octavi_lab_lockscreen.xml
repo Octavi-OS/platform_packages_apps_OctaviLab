@@ -30,4 +30,10 @@
         android:summary="@string/fprint_error_vib_summary"
         android:defaultValue="true" />
 
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_battery_info"
+        android:title="@string/lockscreen_battery_info_title"
+        android:summary="@string/lockscreen_battery_info_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
