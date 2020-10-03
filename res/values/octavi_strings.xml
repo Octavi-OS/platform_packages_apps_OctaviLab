@@ -195,4 +195,10 @@
     <string name="roaming_indicator_icon_title">Roaming indicator</string>
     <string name="roaming_indicator_icon_summary">Display the roaming indicator in signal icon when in roaming mode</string>
 
+    <!-- RGG Accent Picker -->
+    <string name="themes_title">Octavi Themes</string>
+    <string name="themes_summary">accent theming</string>
+    <string name="accent_color">Accent picker</string>
+    <string name="accent_summary">System wide accent maker</string>
+
 </resources>
