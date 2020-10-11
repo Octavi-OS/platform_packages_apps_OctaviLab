@@ -41,7 +41,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class PowerMenuSettings extends SettingsPreferenceFragment
+public class PowermenuSettings extends SettingsPreferenceFragment
                 implements Preference.OnPreferenceChangeListener {
 
 

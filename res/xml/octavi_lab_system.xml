@@ -25,4 +25,9 @@
          android:summary="@string/themes_summary"
          android:fragment="com.octavi.lab.fragments.OctaviThemes" />
 
+    <Preference
+         android:key="powermenu"
+         android:title="@string/powermenu_title"
+         android:fragment="com.octavi.lab.fragments.PowerMenuSettings" />
+
 </PreferenceScreen>
