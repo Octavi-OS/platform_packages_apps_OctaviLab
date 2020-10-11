@@ -16,6 +16,11 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
 	android:title="@string/notifications_title"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+        <Preference
+        android:key="charging_light"
+        android:fragment="com.octavi.lab.fragments.BatteryLightSettings"
+        android:title="@string/battery_light_settings" />
 
 </PreferenceScreen>

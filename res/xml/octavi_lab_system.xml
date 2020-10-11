@@ -28,6 +28,6 @@
     <Preference
          android:key="powermenu"
          android:title="@string/powermenu_title"
-         android:fragment="com.octavi.lab.fragments.PowerMenuSettings" />
+         android:fragment="com.octavi.lab.fragments.PowermenuSettings" />
 
 </PreferenceScreen>
