@@ -26,9 +26,14 @@
     </Preference>
 
     <Preference
-            android:key="traffic" 
-            android:fragment="com.octavi.lab.fragments.Traffic"
-	    android:title="@string/traffic_title" />
+         android:key="traffic" 
+         android:fragment="com.octavi.lab.fragments.Traffic"
+	 android:title="@string/traffic_title" />
+
+    <Preference android:key="battery_mode" 
+         android:title="@string/battery_mode_title" 
+         android:summary="@string/battery_mode_summary"
+         android:fragment="com.octavi.lab.fragments.BatteryMode" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="show_fourg"
