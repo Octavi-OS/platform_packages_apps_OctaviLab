@@ -30,6 +30,11 @@
          android:title="@string/powermenu_title"
          android:fragment="com.octavi.lab.fragments.PowermenuSettings" />
 
+    <Preference
+         android:key="quicksettings"
+         android:title="@string/quicksettings_title"
+         android:fragment="com.octavi.lab.fragments.QuickSettings" />
+
     <PreferenceScreen
          android:key="ambient_display_custom"
          android:persistent="false"
