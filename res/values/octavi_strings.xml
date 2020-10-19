@@ -26,6 +26,7 @@
     <string name="volume_title">Volume Rockers</string>
     <string name="gesture_title">Gestures</string>
     <string name="powermenu_title">PowerMenu</string>
+    <string name="quicksettings_title">Quick Settings</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -313,5 +314,9 @@
     <string name="profile_choose_app">Choose app</string>
     <string name="dialog_delete_title">Delete</string>
     <string name="dialog_delete_message">Remove selected item?</string>
+
+    <!-- QS Tint -->
+    <string name="qs_bg_use_new_tint">New tint style</string>
+    <string name="qs_bg_use_new_tint_summary">Enable the new QS tint style (Requires reboot)</string>
 
 </resources>
