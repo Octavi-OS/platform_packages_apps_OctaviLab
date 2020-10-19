@@ -45,6 +45,12 @@
         android:title="@string/lockscreen_media_art_title"
         android:summary="@string/lockscreen_media_art_summary"
         android:defaultValue="true" />
+ 
+    <com.octavi.lab.preferences.SecureSettingSwitchPreference
+        android:key="lockscreen_visualizer_enabled"
+        android:title="@string/lockscreen_visualizer_enable"
+        android:summary="@string/lockscreen_visualizer_enable_summary"
+        android:defaultValue="false" />
 
     <com.octavi.lab.preferences.SystemSettingSeekBarPreference
             android:key="lockscreen_media_blur"
