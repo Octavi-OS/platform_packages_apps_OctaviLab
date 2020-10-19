@@ -341,4 +341,8 @@
     <!-- CustomDoze -->
     <string name="ambient_display_custom_title">Ambient Display</string>
 
+    <!-- Media art -->
+    <string name="lockscreen_media_art_title">Media art</string>
+    <string name="lockscreen_media_art_summary">Toggle visibility of media art</string>
+
 </resources>
