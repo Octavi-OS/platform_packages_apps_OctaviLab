@@ -338,4 +338,7 @@
     <string name="lockscreen_weather_omni_style_title">Omni style</string>
     <string name="lockscreen_weather_pixel_style_title">Pixel style</string>
 
+    <!-- CustomDoze -->
+    <string name="ambient_display_custom_title">Ambient Display</string>
+
 </resources>
