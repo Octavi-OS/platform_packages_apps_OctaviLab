@@ -71,7 +71,7 @@
 
     <PreferenceCategory
         android:key="lockscreen_weather"
-        android:title="@string/lockscreen_weather_category" />
+        android:title="@string/lockscreen_weather_category">
 
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_enabled"
