@@ -33,6 +33,8 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
+import com.octavi.lab.preferences.SystemSettingSwitchPreference;
+import com.octavi.lab.preferences.SystemSettingListPreference;
 
 import android.provider.Settings;
 import com.android.settings.R;
@@ -40,6 +42,9 @@ import com.android.settings.SettingsPreferenceFragment;
 
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String KEY_FOD_RECOGNIZING_ANIMATION = "fod_recognizing_animation";
+    private static final String KEY_FOD_RECOGNIZING_ANIMATION_LIST = "fod_recognizing_animation_list";
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -50,6 +55,13 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         Resources resources = getResources();
 
+        SystemSettingSwitchPreference mFODSwitchPref = (SystemSettingSwitchPreference) findPreference(KEY_FOD_RECOGNIZING_ANIMATION);
+	SystemSettingListPreference mFODListViewPref = (SystemSettingListPreference) findPreference(KEY_FOD_RECOGNIZING_ANIMATION_LIST);
+
+	if (!resources.getBoolean(R.bool.config_showFODAnimationSettings)){
+	    prefScreen.removePreference(mFODSwitchPref);
+            prefScreen.removePreference(mFODListViewPref);
+	}
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
