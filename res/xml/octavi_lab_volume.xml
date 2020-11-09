@@ -36,4 +36,11 @@
         android:key="volume_key_cursor_control"
         android:title="@string/volume_key_cursor_control_title" />
 
+    <com.octavi.lab.preferences.SystemSettingListPreference
+        android:key="systemui_plugin_volume"
+        android:title="@string/volume_panel"
+        android:entries="@array/volume_panel_entries"
+        android:entryValues="@array/volume_panel_values"
+        android:defaultValue="@string/volume_panel_stock_val" />
+
 </PreferenceScreen>
