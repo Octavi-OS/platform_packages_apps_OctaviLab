@@ -37,7 +37,7 @@
         android:defaultValue="true" />
 
     <com.octavi.lab.preferences.SecureSettingSwitchPreference
-        android:key="lockscreen_translucent_notifications_bg_enabled"
+        android:key="lock_screen_transparent_notifications_enabled"
         android:title="@string/translucent_lockscreen_notifications_bg_title"
         android:defaultValue="false" />
 
