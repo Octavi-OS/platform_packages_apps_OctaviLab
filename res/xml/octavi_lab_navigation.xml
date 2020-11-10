@@ -25,6 +25,12 @@
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
 
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="pixel_nav_animation"
+        android:title="@string/pixel_navbar_anim_title"
+        android:summary="@string/pixel_navbar_anim_summary"
+        android:defaultValue="true" />
+
         <com.octavi.lab.preferences.SecureSettingSwitchPreference
         android:key="sysui_nav_bar_inverse"
         android:title="@string/navigation_bar_invert_layout_title"
