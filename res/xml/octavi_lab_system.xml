@@ -30,6 +30,12 @@
          android:title="@string/powermenu_title"
          android:fragment="com.octavi.lab.fragments.PowermenuSettings" />
 
+     <Preference
+         android:key="navbar"
+         android:title="Navigation Bar"
+         android:summary="Navigation Bar Customizations"
+         android:fragment="com.octavi.lab.fragments.NavbarSettings" />
+
     <Preference
          android:key="quicksettings"
          android:title="@string/quicksettings_title"
