@@ -25,4 +25,9 @@
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
 
+        <com.octavi.lab.preferences.SecureSettingSwitchPreference
+        android:key="sysui_nav_bar_inverse"
+        android:title="@string/navbar_invert_layout_title"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
