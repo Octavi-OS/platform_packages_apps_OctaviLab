@@ -33,6 +33,7 @@
     <string name="reset">Reset</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="unsupported_gestures">Enable two button or three button navigation to use this feature</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>

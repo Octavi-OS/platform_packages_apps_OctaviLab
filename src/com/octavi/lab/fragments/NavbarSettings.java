@@ -35,15 +35,39 @@ import android.provider.Settings;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.octavi.OctaviUtils;
 import com.android.settings.R;
 
+import com.octavi.lab.preferences.SystemSettingSwitchPreference;
+import com.octavi.lab.preferences.SecureSettingSwitchPreference;
+
 public class NavbarSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+
+    private static final String PIXEL_ANIMATION_NAVIGATION = "pixel_nav_animation";
+    private static final String INVERT_NAVIGATION = "sysui_nav_bar_inverse";
+
+    private SystemSettingSwitchPreference mPixelAnimationNavigation;
+    private SecureSettingSwitchPreference mInvertNavigation;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.octavi_lab_navigation);
 
+        mPixelAnimationNavigation = findPreference(PIXEL_ANIMATION_NAVIGATION);
+        mInvertNavigation = findPreference(INVERT_NAVIGATION);
+        if (OctaviUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+            mPixelAnimationNavigation.setSummary(getString(R.string.pixel_navbar_anim_summary));
+            mInvertNavigation.setSummary(getString(R.string.navigation_bar_invert_layout_summary));
+        } else if (OctaviUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
+            mPixelAnimationNavigation.setSummary(getString(R.string.pixel_navbar_anim_summary));
+            mInvertNavigation.setSummary(getString(R.string.navigation_bar_invert_layout_summary));
+        } else {
+            mPixelAnimationNavigation.setSummary(getString(R.string.unsupported_gestures));
+            mInvertNavigation.setSummary(getString(R.string.unsupported_gestures));
+            mPixelAnimationNavigation.setEnabled(false);
+            mInvertNavigation.setEnabled(false);
+        }
     }
 
     @Override
