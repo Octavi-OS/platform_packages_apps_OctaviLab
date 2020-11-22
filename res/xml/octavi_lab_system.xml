@@ -51,6 +51,11 @@
                 android:targetClass="com.custom.ambient.display.DozeSettings" />
     </PreferenceScreen>
 
+    <Preference
+         android:key="ambient_stuff"
+         android:title="Ambient Stuffs"
+         android:fragment="com.octavi.lab.fragments.AmbientStuffSettings" />
+
     <com.octavi.lab.preferences.SystemSettingListPreference
          android:key="screenshot_type"
          android:entries="@array/screenshot_type_entries"
