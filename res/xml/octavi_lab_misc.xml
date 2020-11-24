@@ -30,11 +30,29 @@
            android:summary="@string/three_finger_gesture_summary"
            android:defaultValue="false" />
 
-
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
            android:key="charging_animation"
            android:title="@string/charging_animation_title"
            android:summary="@string/charging_animation_summary"
            android:defaultValue="true" />
+
+        <PreferenceCategory
+        android:title="@string/doze_brightness_category" >
+        <com.octavi.lab.preferences.CustomSeekBarPreference
+            android:key="ambient_doze_brightness"
+            android:title="@string/ambient_doze_brightness_title"
+            android:summary="@string/ambient_doze_brightness_summary"
+            android:max="255"
+            settings:min="1"
+            android:persistent="false" />
+
+        <com.octavi.lab.preferences.CustomSeekBarPreference
+            android:key="ambient_pulse_brightness"
+            android:title="@string/ambient_pulse_brightness_title"
+            android:summary="@string/ambient_pulse_brightness_summary"
+            android:max="255"
+            settings:min="1"
+            android:persistent="false" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
