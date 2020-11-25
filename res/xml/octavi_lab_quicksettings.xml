@@ -36,4 +36,11 @@
         android:summary="@string/lockscreen_qs_disabled_summary"
         android:defaultValue="false" />
 
+    <com.octavi.lab.preferences.SystemSettingListPreference
+        android:key="qs_datausage" 
+        android:title="@string/qs_datausage_title"
+        android:entries="@array/qs_datausage_entries"
+        android:entryValues="@array/qs_datausage_values"
+        android:defaultValue="0" />
+
 </PreferenceScreen>
