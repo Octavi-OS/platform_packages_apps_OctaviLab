@@ -529,4 +529,8 @@
     <string name="ambient_doze_brightness_title">Ambient display brightness</string>
     <string name="ambient_doze_brightness_summary">Set brightness to use during ambient display on</string>
 
+    <!-- Center R Notification headers -->
+    <string name="center_notification_headers_title">Center notification headers</string>
+    <string name="center_notification_headers_summary">Whether to Center R style notification headers (Requires a SystemUI restart)</string>
+
 </resources>
