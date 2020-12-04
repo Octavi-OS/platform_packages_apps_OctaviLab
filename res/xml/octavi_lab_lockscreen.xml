@@ -140,4 +140,12 @@
         android:summary="@string/fod_gesture_summary"
         android:defaultValue="false" />
 
+    <!-- FOD Nightlight -->
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
+        android:key="fod_night_light"
+        android:title="@string/fod_night_light_title"
+        android:summary="@string/fod_night_light_summary"
+        android:defaultValue="@*android:bool/disable_fod_night_light"  />
+
 </PreferenceScreen>
