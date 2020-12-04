@@ -128,4 +128,11 @@
         android:summary="@string/fod_icon_picker_summary"
         android:fragment="com.octavi.lab.fragments.FODIconPickerFragment" />
 
+    <!-- Screen Off FOD recognizing animation -->
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="fod_gesture"
+        android:title="@string/fod_gesture_title"
+        android:summary="@string/fod_gesture_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

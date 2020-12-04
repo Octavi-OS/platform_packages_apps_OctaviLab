@@ -45,6 +45,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_FOD_RECOGNIZING_ANIMATION = "fod_recognizing_animation";
     private static final String KEY_FOD_RECOGNIZING_ANIMATION_LIST = "fod_recognizing_animation_list";
+    private static final String FOD_GESTURE = "fod_gesture";
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -57,10 +58,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
         SystemSettingSwitchPreference mFODSwitchPref = (SystemSettingSwitchPreference) findPreference(KEY_FOD_RECOGNIZING_ANIMATION);
 	SystemSettingListPreference mFODListViewPref = (SystemSettingListPreference) findPreference(KEY_FOD_RECOGNIZING_ANIMATION_LIST);
+        SystemSettingSwitchPreference mScreenOffFODSwitchPref = SystemSettingSwitchPreference) findPreference(FOD_GESTURE);
 
-	if (!resources.getBoolean(R.bool.config_showFODAnimationSettings)){
+	if (!resources.getBoolean(R.bool.config_showFODAnimationSettings) && !resources.getBoolean(R.bool.config_showScreenoffFOD)){
 	    prefScreen.removePreference(mFODSwitchPref);
             prefScreen.removePreference(mFODListViewPref);
+            prefScreen.removePreference(mScreenOffFODSwitchPref);
 	}
     }
 
