@@ -16,4 +16,7 @@
 <resources>
 <color name="white">#fff</color>
 <color name="circle_bg">#fff</color>
+
+<color name="fod_item_background_stroke_color">#d6d6d6</color>
+
 </resources>
