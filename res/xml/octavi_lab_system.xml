@@ -26,8 +26,15 @@
          android:fragment="com.octavi.lab.fragments.OctaviThemes" />
 
     <Preference
+         android:key="animations_category"
+         android:title="@string/animation_settings_title"
+         android:summary="@string/animation_settings_summary"
+         android:fragment="com.octavi.lab.fragments.AnimationSettings" />
+
+    <Preference
          android:key="powermenu"
          android:title="@string/powermenu_title"
+	 android:summary="Customise power menu"
          android:fragment="com.octavi.lab.fragments.PowermenuSettings" />
 
      <Preference
