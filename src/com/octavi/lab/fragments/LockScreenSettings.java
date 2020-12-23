@@ -49,6 +49,9 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String KEY_FOD_RECOGNIZING_ANIMATION_LIST = "fod_recognizing_animation_list";
     private static final String FOD_GESTURE = "fod_gesture";
     private static final String FOD_ANIMATION_CATEGORY = "fod_animations";
+    private static final String LOCKSCREEN_MAX_NOTIF_CONFIG = "lockscreen_max_notif_cofig";
+
+    private CustomSeekBarPreference mMaxKeyguardNotifConfig;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -69,6 +72,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 	SystemSettingListPreference mFODListViewPref = (SystemSettingListPreference) findPreference(KEY_FOD_RECOGNIZING_ANIMATION_LIST);
         SystemSettingSwitchPreference mScreenOffFODSwitchPref = (SystemSettingSwitchPreference) findPreference(FOD_GESTURE);
 
+        mMaxKeyguardNotifConfig = (CustomSeekBarPreference) findPreference(LOCKSCREEN_MAX_NOTIF_CONFIG);
+        int kgconf = Settings.System.getInt(getContentResolver(),
+                Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, 3);
+        mMaxKeyguardNotifConfig.setValue(kgconf);
+        mMaxKeyguardNotifConfig.setOnPreferenceChangeListener(this);
+
 	if (!resources.getBoolean(R.bool.config_showFODAnimationSettings) && !resources.getBoolean(R.bool.config_showScreenoffFOD)){
 	    prefScreen.removePreference(mFODSwitchPref);
             prefScreen.removePreference(mFODListViewPref);
@@ -82,6 +91,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
 
+        if (preference == mMaxKeyguardNotifConfig) {
+            int kgconf = (Integer) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, kgconf);
+            return true;
+        }
         return false;
     }
 
