@@ -41,6 +41,17 @@
          android:summary="@string/battery_mode_summary"
          android:fragment="com.octavi.lab.fragments.BatteryMode" />
 
+    <Preference 
+         android:key="notifications_type" 
+         android:title="@string/notifications_title" 
+         android:fragment="com.octavi.lab.fragments.NotificationSettings" />
+
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="status_bar_notif_count"
+        android:title="@string/status_bar_notif_count_title"
+        android:summary="@string/status_bar_notif_count_summary"
+        android:defaultValue="false" />
+
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="show_fourg"
         android:title="@string/show_fourg_title"
