@@ -43,4 +43,10 @@
         android:dependency="notification_headers"
         android:defaultValue="false" />
 
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference 
+        android:key="notification_sound_vib_screen_on" 
+        android:title="@string/notification_sound_vib_screen_on_title" 
+        android:summary="@string/notification_sound_vib_screen_on_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
