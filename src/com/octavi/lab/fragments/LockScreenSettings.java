@@ -35,6 +35,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import com.octavi.lab.preferences.SystemSettingSwitchPreference;
 import com.octavi.lab.preferences.SystemSettingListPreference;
+import com.octavi.lab.preferences.CustomSeekBarPreference;
 
 import android.provider.Settings;
 import com.android.settings.R;

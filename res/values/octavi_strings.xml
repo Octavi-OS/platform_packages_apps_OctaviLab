@@ -663,5 +663,8 @@
     <string name="gaming_mode_notifications_all_title">Show toasts and notification</string>
     <string name="gaming_mode_dynamic_title">Dynamic mode</string>
     <string name="gaming_mode_dynamic_summary">Try detecting and adding gaming apps automatically</string>
-    
+    <string name="lock_item_left">Left Aligned</string>
+    <string name="lock_item_center">Center Aligned</string>
+    <string name="lock_item_right">Right Aligned</string>    
+
 </resources>
