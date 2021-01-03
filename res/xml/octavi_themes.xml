@@ -22,4 +22,11 @@
         android:defaultValue="0xffffff"
         android:persistent="false" />
 
+    <ListPreference
+        android:key="switch_style"
+        android:title="@string/switch_style_title"
+        android:persistent="false"
+        android:entries="@array/switch_style_entries"
+        android:entryValues="@array/switch_style_values" />
+
 </PreferenceScreen>

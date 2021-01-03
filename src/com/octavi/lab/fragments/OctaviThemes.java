@@ -28,6 +28,8 @@ import com.android.settings.R;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Objects;
+import java.util.List;
 
 import com.android.settings.SettingsPreferenceFragment;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
@@ -37,9 +39,12 @@ public class OctaviThemes extends SettingsPreferenceFragment implements
 
     private static final String ACCENT_COLOR = "accent_color";
     private static final String ACCENT_COLOR_PROP = "persist.sys.theme.accentcolor";
+    private static final String SWITCH_STYLE = "switch_style";
 
     private IOverlayManager mOverlayService;
     private ColorPickerPreference mThemeColor;
+
+    private ListPreference mSwitchStyle;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -49,6 +54,14 @@ public class OctaviThemes extends SettingsPreferenceFragment implements
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
         setupAccentPref();
+
+        mSwitchStyle = (ListPreference) findPreference(SWITCH_STYLE);
+        int switchStyle = Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.SWITCH_STYLE, 1);
+        int valueIndex = mSwitchStyle.findIndexOfValue(String.valueOf(switchStyle));
+        mSwitchStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
+        mSwitchStyle.setSummary(mSwitchStyle.getEntry());
+        mSwitchStyle.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -63,7 +76,12 @@ public class OctaviThemes extends SettingsPreferenceFragment implements
                  mOverlayService.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
              } catch (RemoteException ignored) {
              }
-        }
+        } else if (preference == mSwitchStyle) {
+                String value = (String) objValue;
+                Settings.System.putInt(mContext.getContentResolver(), Settings.System.SWITCH_STYLE, Integer.valueOf(value));
+                int valueIndex = mSwitchStyle.findIndexOfValue(value);
+                mSwitchStyle.setSummary(mSwitchStyle.getEntries()[valueIndex]);
+	}
         return true;
     }
 
