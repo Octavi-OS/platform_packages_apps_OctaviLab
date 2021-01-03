@@ -21,8 +21,7 @@
 
     <Preference
          android:key="themes"
-         android:title="@string/themes_title"
-         android:summary="@string/themes_summary"
+         android:title="Octavi Theming Stuffs"
          android:fragment="com.octavi.lab.fragments.OctaviThemes" />
 
     <Preference

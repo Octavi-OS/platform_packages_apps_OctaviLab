@@ -12,7 +12,7 @@
 -->
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:title="@string/themes_title"
+	android:title="@string/themes_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
@@ -21,6 +21,31 @@
         android:summary="@string/accent_summary"
         android:defaultValue="0xffffff"
         android:persistent="false" />
+
+    <com.android.settings.display.darkmode.DarkModePreference
+        android:key="dark_ui_mode"
+        android:title="@string/dark_ui_mode"
+        android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
+        android:widgetLayout="@null"
+        settings:widgetLayout="@null"
+        settings:controller="com.android.settings.display.DarkUIPreferenceController"
+        settings:keywords="@string/keywords_dark_ui_mode"/>
+
+    <ListPreference
+        android:key="android.theme.customization.custom_overlays"
+        android:title="@string/theme_customization_systemui_title"/>
+
+    <ListPreference
+        android:key="android.theme.customization.font"
+        android:title="@string/theme_customization_font_title"/>
+
+    <ListPreference
+        android:key="android.theme.customization.adaptive_icon_shape"
+        android:title="@string/theme_customization_icon_shape_title"/>
+
+    <ListPreference
+        android:key="android.theme.customization.icon_pack.android"
+        android:title="@string/theme_customization_icon_pack_android_title"/>
 
     <ListPreference
         android:key="switch_style"
