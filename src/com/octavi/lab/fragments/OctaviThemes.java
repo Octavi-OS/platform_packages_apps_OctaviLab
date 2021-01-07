@@ -29,6 +29,7 @@ import android.provider.Settings;
 import com.android.settings.R;
 
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.display.CustomOverlayPreferenceController;
 import com.android.settings.display.OverlayCategoryPreferenceController;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
@@ -133,6 +134,8 @@ public class OctaviThemes extends DashboardFragment implements
                 "android.theme.customization.adaptive_icon_shape"));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.icon_pack.android"));
+        controllers.add(new CustomOverlayPreferenceController(context,
+		"android.theme.customization.custom_overlays"));
         return controllers;
     }
 }
