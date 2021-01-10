@@ -783,4 +783,8 @@
     <string name="navbar_oneui">One UI</string>
     <string name="navbar_stock">Stock</string>
     <string name="navbar_tecno">Tecno Camon</string>
+
+    <!-- Show Statusbar on Lockscreen -->
+    <string name="lockscreen_status_bar_title">Status bar</string>
+    <string name="lockscreen_status_bar_summary">Display status bar on the lockscreen</string>
 </resources>
