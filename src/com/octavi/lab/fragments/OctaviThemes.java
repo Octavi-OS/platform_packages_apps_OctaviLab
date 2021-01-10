@@ -75,7 +75,7 @@ public class OctaviThemes extends DashboardFragment implements
         setupAccentPref();
 
         mSwitchStyle = (ListPreference) findPreference(SWITCH_STYLE);
-        int switchStyle = Settings.System.getInt(mContext.getContentResolver(),
+        int switchStyle = Settings.System.getInt(getContext().getContentResolver(),
                 Settings.System.SWITCH_STYLE, 1);
         int valueIndex = mSwitchStyle.findIndexOfValue(String.valueOf(switchStyle));
         mSwitchStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
@@ -97,7 +97,7 @@ public class OctaviThemes extends DashboardFragment implements
              }
         } else if (preference == mSwitchStyle) {
                 String value = (String) objValue;
-                Settings.System.putInt(mContext.getContentResolver(), Settings.System.SWITCH_STYLE, Integer.valueOf(value));
+                Settings.System.putInt(getContext().getContentResolver(), Settings.System.SWITCH_STYLE, Integer.valueOf(value));
                 int valueIndex = mSwitchStyle.findIndexOfValue(value);
                 mSwitchStyle.setSummary(mSwitchStyle.getEntries()[valueIndex]);
 	}
