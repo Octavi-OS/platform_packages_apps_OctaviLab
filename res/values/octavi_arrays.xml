@@ -712,7 +712,7 @@
         <item>26</item>
         <item>27</item>
     </string-array>
-
+<<<<<<< HEAD
     <!-- FOD pressed color -->
     <string-array name="fod_pressed_color_entries" translatable="false">
         <item>@string/fod_pressed_color_white</item>
@@ -853,4 +853,16 @@
         <item>4</item>
         <item>5</item>
     </string-array>
+
+    <string-array name="b_slider_style_entries" translatable="false">
+        <item>Default</item>
+        <item>Meme Rounded</item>
+        <item>OxygenOS</item>
+    </string-array>
+    <string-array name="b_slider_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>
