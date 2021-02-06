@@ -63,8 +63,8 @@
             android:title="@string/ambient_notification_light_color_title"
             settings:defaultColorValue="0xFF3980FF" />
 
-        <com.octavi.lab.preferences.SystemSettingSeekBarPreference
-            android:key="ambient_light_duration"
+        <com.octavi.lab.preferences.CustomSeekBarPreference
+            android:key="notification_pulse_duration"
             android:title="@string/pulse_ambient_light_duration_title"
             android:summary="@string/pulse_ambient_light_duration_summary"
             android:persistent="false"
@@ -75,8 +75,8 @@
             settings:interval="1"
             android:dependency="pulse_ambient_light" />
 
-        <com.octavi.lab.preferences.SystemSettingSeekBarPreference
-            android:key="ambient_light_repeat_count"
+        <com.octavi.lab.preferences.CustomSeekBarPreference
+            android:key="notification_pulse_repeats"
             android:title="@string/pulse_ambient_light_repeat_count_title"
             android:summary="@string/pulse_ambient_light_repeat_count_summary"
             android:persistent="false"
