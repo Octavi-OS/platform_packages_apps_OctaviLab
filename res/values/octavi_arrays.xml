@@ -835,4 +835,17 @@
         <item>5</item>
         <item>6</item>
     </string-array>
+
+    <!-- QS Clock Style -->
+    <string-array name="qs_clock_post_entries" translatable="false">
+        <item>Left</item>
+        <item>Center</item>
+        <item>Pill Clock (New)</item>
+    </string-array>
+
+    <string-array name="qs_clock_pos_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
