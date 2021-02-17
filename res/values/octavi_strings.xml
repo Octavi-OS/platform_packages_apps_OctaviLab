@@ -743,6 +743,8 @@
     <string name="navbar_default">Default</string>
     <string name="navbar_orchid">Orchid</string>
     <string name="navbar_red">Red</string>
+    <string name="navbar_blue">Blue</string>
+    <string name="navbar_rose">Rose</string>
     <string name="navbar_purp">Purple</string>
 
     <!-- reTicker -->
@@ -761,6 +763,6 @@
 
     <!-- Lock icon -->
     <string name="fp_icon_disable_title">Hide FP icon</string>
-    <string name="fp_icon_disablen_summary">Hide the FP icon on lockscreen</string>
+    <string name="fp_icon_disabled_summary">Hide the FP icon on lockscreen</string>
 
 </resources>
