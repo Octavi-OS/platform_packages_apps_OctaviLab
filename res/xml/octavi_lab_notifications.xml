@@ -34,7 +34,7 @@
         android:key="less_boring_heads_up"
         android:title="@string/less_boring_heads_up_title"
         android:summary="@string/less_boring_heads_up_summary"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="notification_headers"
