@@ -28,6 +28,7 @@ import android.content.res.Resources;
 import android.hardware.fingerprint.FingerprintManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -48,15 +49,28 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
     private CustomSeekBarPreference mMaxKeyguardNotifConfig;
 
+    private ContentResolver mResolver;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.octavi_lab_lockscreen);
-
-        ContentResolver resolver = getActivity().getContentResolver();
-        final PreferenceScreen prefScreen = getPreferenceScreen();
-
+        PreferenceScreen prefScreen = getPreferenceScreen();
+        PreferenceCategory overallPreferences = (PreferenceCategory) findPreference("fod_category");
+        mResolver = getActivity().getContentResolver();
         Resources resources = getResources();
+
+        boolean enableScreenOffFOD = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_supportScreenOffFod);
+        Preference ScreenOffFODPref = (Preference) findPreference("fod_gesture");
+
+        if (!enableScreenOffFOD){
+            overallPreferences.removePreference(ScreenOffFODPref);
+        }
+
+        if (!getResources().getBoolean(com.android.internal.R.bool.config_supportsInDisplayFingerprint)) {
+            prefScreen.removePreference(findPreference("fod_category"));
+        }
 
         mMaxKeyguardNotifConfig = (CustomSeekBarPreference) findPreference(LOCKSCREEN_MAX_NOTIF_CONFIG);
         int kgconf = Settings.System.getInt(getContentResolver(),

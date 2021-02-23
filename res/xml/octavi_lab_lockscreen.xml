@@ -150,4 +150,16 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="fod_category"
+        android:title="@string/lockscreen_fod_category">
+
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            android:key="fod_gesture"
+            android:title="@string/fod_gesture_title"
+            android:summary="@string/fod_gesture_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

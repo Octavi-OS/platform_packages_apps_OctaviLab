@@ -27,6 +27,7 @@
     <string name="gesture_title">Gestures</string>
     <string name="powermenu_title">PowerMenu</string>
     <string name="quicksettings_title">Quick Settings</string>
+    <string name="lockscreen_fod_category">Fingerprint On Display</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -705,5 +706,9 @@
 
     <!-- Lockscreen icons -->
     <string name="lockscreen_tuner_title">Lockscreen Shortcuts</string>
+
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Screen off FOD</string>
+    <string name="fod_gesture_summary">Allows unlocking the device without having to wake up the screen first</string>
 
 </resources>
