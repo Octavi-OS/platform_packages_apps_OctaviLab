@@ -1,5 +1,4 @@
 files:
-  - source: /res/xml/
-    translation: /res/xml/translate/%file_name%_%language%
-    translate_content: 0
+  - source: res/values-el/
+    translation: res/values-%language%/
     translate_attributes: 0
