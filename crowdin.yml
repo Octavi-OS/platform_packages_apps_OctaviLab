@@ -1,4 +1,3 @@
 files:
-  - source: res/values-el/
-    translation: res/values-%language%/
-    translate_attributes: 0
+  - source: /res/values
+    translation: /res/value-%language%
