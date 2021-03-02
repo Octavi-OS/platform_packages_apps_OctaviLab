@@ -24,6 +24,12 @@
             android:fragment="com.octavi.lab.fragments.GamingMode" 
             android:title="@string/gaming_mode_title" />
 
+        <Preference
+            android:key="smart_pixels" 
+            android:title="@string/smart_pixels_title" 
+            android:summary="@string/smart_pixels_summary"
+            android:fragment="com.octavi.lab.fragments.SmartPixels" />
+
         <com.octavi.lab.preferences.SecureSettingSwitchPreference
             android:key="allow_signature_fake"
             android:title="@string/allow_signature_fake"
