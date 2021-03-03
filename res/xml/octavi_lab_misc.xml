@@ -30,6 +30,13 @@
             android:summary="@string/smart_pixels_summary"
             android:fragment="com.octavi.lab.fragments.SmartPixels" />
 
+        <!-- Sensor Block -->
+        <Preference
+            android:key="sensor_block_settings"
+            android:title="@string/sensor_block_title"
+            android:summary="@string/sensor_block_summary"
+            android:fragment="com.octavi.lab.fragments.SensorBlockSettings"/>
+
         <com.octavi.lab.preferences.SecureSettingSwitchPreference
             android:key="allow_signature_fake"
             android:title="@string/allow_signature_fake"
