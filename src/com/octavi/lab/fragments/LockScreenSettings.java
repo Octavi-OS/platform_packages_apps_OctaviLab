@@ -39,6 +39,7 @@ import com.octavi.lab.preferences.SystemSettingSwitchPreference;
 import com.octavi.lab.preferences.SystemSettingListPreference;
 import com.octavi.lab.preferences.CustomSeekBarPreference;
 import com.android.internal.util.custom.FodUtils;
+import com.android.settings.widget.CardPreference;
 
 import android.provider.Settings;
 import com.android.settings.R;
@@ -48,8 +49,10 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String LOCKSCREEN_MAX_NOTIF_CONFIG = "lockscreen_max_notif_cofig";
+    private static final String LOCKSCREEN_FOD_CATEGORY = "lockscreen_fod_category";
 
     private CustomSeekBarPreference mMaxKeyguardNotifConfig;
+    private CardPreference mLockscreenFod;
 
     private ContentResolver mResolver;
 
@@ -58,30 +61,16 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.octavi_lab_lockscreen);
         PreferenceScreen prefScreen = getPreferenceScreen();
-        PreferenceCategory overallPreferences = (PreferenceCategory) findPreference("fod_category");
         mResolver = getActivity().getContentResolver();
         Resources resources = getResources();
         Context mContext = getContext();
         final PackageManager mPm = getActivity().getPackageManager();
 
-        boolean enableScreenOffFOD = getContext().getResources().
-                getBoolean(R.bool.config_supportScreenOffFod);
-        Preference ScreenOffFODPref = (Preference) findPreference("fod_gesture");
-
-        if (!enableScreenOffFOD){
-            overallPreferences.removePreference(ScreenOffFODPref);
-        }
-
-        Preference AnimaTogglePref = (Preference) findPreference("fod_recognizing_animation");
-        Preference AnimaListPref = (Preference) findPreference("fod_recognizing_animation_list");
-
-        if (!com.android.internal.util.octavi.OctaviUtils.isPackageInstalled(mContext,"com.octavi.fod.animations")) {
-            overallPreferences.removePreference(AnimaTogglePref);
-            overallPreferences.removePreference(AnimaListPref);
-        }
-
+        CardPreference mLockscreenFod = findPreference("lockscreen_fod_category");
         if (!getResources().getBoolean(com.android.internal.R.bool.config_supportsInDisplayFingerprint)) {
-            prefScreen.removePreference(findPreference("fod_category"));
+                    getPreferenceScreen().removePreference(mLockscreenFod);
+        } else {
+            mLockscreenFod = (CardPreference) findPreference(LOCKSCREEN_FOD_CATEGORY);
         }
 
         mMaxKeyguardNotifConfig = (CustomSeekBarPreference) findPreference(LOCKSCREEN_MAX_NOTIF_CONFIG);
