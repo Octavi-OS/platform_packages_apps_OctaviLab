@@ -365,7 +365,7 @@
 
     <!-- Notification headers -->
     <string name="notification_headers_title">Notification Headers</string>
-    <string name="notification_headers_summary">Show headers in the notification shade\nRequires a SystemUI restart</string>
+    <string name="notification_headers_summary">Show headers in the notification shade</string>
 
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Translucent notifications background</string>
