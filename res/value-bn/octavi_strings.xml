@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Nitrogen OS
+     Copyright (C) 2020 OctaviOS
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App Title -->
+    <string name="octavi_lab_title">Octavi ল্যাব</string>
+    <!-- Categories -->
+    <string name="button_title">বাটন</string>
+    <string name="lockscreen_title">Lock screen</string>
+    <string name="misc_title">Miscellaneous</string>
+    <string name="system_title">System</string>
+    <string name="statusbar_title">Status bar</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="navbar_title">ন্যাভিগেশন বার</string>
+    <string name="volume_title">ভলিউম রকার</string>
+    <string name="gesture_title">ইশারা সমূহ</string>
+    <string name="powermenu_title">PowerMenu</string>
+    <string name="quicksettings_title">দ্রুত সেটিংস</string>
+    <!-- General strings -->
+    <string name="ok">ঠিক আছে</string>
+    <string name="reset">পুনরায় সেট করুন</string>
+    <string name="cancel">বাতিল করুন</string>
+    <string name="save">সংরক্ষণ করুন</string>
+    <string name="unsupported_gestures">Enable two button or three button navigation to use this feature</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">রং বাছাইকারী</string>
+    <string name="press_color_to_apply">পছন্দের রংটি প্রয়োগ করতে রঙটি চাপুন</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">হেক্স:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">নির্ধারন করুন</string>
+    <string name="color_default">পূর্ব-নির্ধারিত</string>
+    <!-- Statusbar Tuner -->
+    <string name="statusbar_items_title">স্ট্যাটাসবার আইটেম</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">প্লে-ব্যাক নিয়ন্ত্রণ</string>
+    <string name="volume_rocker_music_controls_summary">স্ক্রিনটি বন্ধ হলে, ভলিউম কীগুলি দীর্ঘক্ষণ ধরে চাপলে সঙ্গীত ট্র্যাকগুলি অনুসন্ধান করবে</string>
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">ভলিউম বোতাম দিয়ে স্ক্রিন চালু</string>
+    <string name="volume_rocker_wake_summary">ভলিউম বাটন টিপ দিলে আপনার স্ক্রিন চালু হবে</string>
+    <!-- Language options - Volume rocker cursor control -->
+    <string name="cursor_section_header">কার্সর</string>
+    <string name="volume_key_cursor_control_title">ভলিউম কী কার্সর কন্ট্রোল</string>
+    <string name="volume_key_cursor_control_off">নিষ্ক্রিয়</string>
+    <string name="volume_key_cursor_control_on">ভলিউম উপর/নিচ করিয়ে কার্সর যথাক্রমে বামে/ডানে সরানো</string>
+    <string name="volume_key_cursor_control_on_reverse">ভলিউম উপর/নিচ করিয়ে কার্সর যথাক্রমে ডানে/বামে সরানো</string>
+    <!-- Wakeup options -->
+    <string name="wakeup_when_plugged_unplugged_title">চার্জের সময় জেগে উঠবে</string>
+    <string name="wakeup_when_plugged_unplugged_summary">চার্জার প্লাগ ইন/আনপ্লাগ করলে ডিভাইস জেগে উঠবে</string>
+    <!-- Incall Home button behavior-->
+    <string name="allow_incall_home_title">রিং হবার সময়ে হোম বাটন</string>
+    <string name="allow_incall_home_summary">রিং হবার সময়ে হোম বাটন ব্যবহার করার অনুমতি দিন</string>
+    <!-- Buttons backlight timeout -->
+    <string name="backlight_timeout_title">বোতামের ব্যাকলাইটের সময়</string>
+    <string name="backlight_timeout_on">সর্বদা সচল</string>
+    <string name="backlight_timeout_3s">৩ সেকেন্ড</string>
+    <string name="backlight_timeout_default">৫ সেকেন্ড (ডিফল্ট)</string>
+    <string name="backlight_timeout_10s">১০ সেকেন্ড</string>
+    <string name="backlight_timeout_15s">১৫ সেকেন্ড</string>
+    <string name="backlight_timeout_20s">২০ সেকেন্ড</string>
+    <string name="backlight_timeout_30s">৩০ সেকেন্ড</string>
+    <!-- Enable keys backlight-->
+    <string name="button_brightness_title">ব্যাকলাইট</string>
+    <!-- Enable keys backlight-->
+    <string name="button_brightness_sw_title">ব্যাকলাইট সক্রিয় করুন</string>
+    <string name="button_backlight_on_touch_only_title">বাটন টাচ</string>
+    <string name="button_backlight_on_touch_only_summary">Enable backlight with timeout only on button touch</string>
+    <!-- HW Keys customization -->
+    <string name="picker_activities">Activities</string>
+    <string name="select_custom_app_title">Select custom app</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
+    <string name="profile_applist_title">Applications</string>
+    <string name="choose_action_title">Choose action</string>
+    <string name="action_entry_default_action">Default settings</string>
+    <string name="action_entry_select_app">Select application</string>
+    <string name="action_entry_custom_action">Select custom action</string>
+    <string name="hardware_keys_home_key_title">Home button</string>
+    <string name="hardware_keys_menu_key_title">Menu button</string>
+    <string name="hardware_keys_assist_key_title">Search button</string>
+    <string name="hardware_keys_appswitch_key_title">Overview button</string>
+    <string name="hardware_keys_back_key_title">Back button</string>
+    <string name="hardware_keys_double_tap_summary">Set double tap action</string>
+    <string name="hardware_keys_single_tap_summary">Set single tap action</string>
+    <string name="hardware_keys_long_press_summary">Set long press action</string>
+    <string name="hardware_keys_single_tap_title">Single tap action</string>
+    <string name="hardware_keys_long_press_title">Long press action</string>
+    <string name="hardware_keys_double_tap_title">Double tap action</string>
+    <string name="hardware_keys_category">Hardware keys</string>
+    <string name="hardware_keys_disable_title">Disable keys</string>
+    <!-- ANBI -->
+    <string name="anbi_title">Accidental touch</string>
+    <string name="anbi_summary">Prevent interaction with navigation buttons while the screen is being touched</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+    <!--Double Tap to Sleep -->
+    <string name="double_tap_gestures_category_title">Double tap gestures</string>
+    <string name="double_tap_sleep_gesture_title">Double tap to sleep on status bar</string>
+    <string name="double_tap_sleep_lockscreen_title">Double tap to sleep on lockscreen</string>
+    <!-- 4G LTE switch -->
+    <string name="show_fourg_title">Show 4G instead of LTE</string>
+    <string name="show_fourg_summary">Replaces LTE statusbar indicators with 4G</string>
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_switch_title">VoLTE icon</string>
+    <string name="volte_switch_summary">Display VoLTE icon</string>
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon</string>
+    <string name="volte_icon_style_title">Select VoLTE Icon</string>
+    <string name="volte_icon_asus">VoLTE Asus Icon</string>
+    <string name="volte_icon_vo">VO শুধুমাত্র আইকন</string>
+    <string name="volte_icon_volte">VoLTE আইকন</string>
+    <string name="volte_icon_oos">Volte Oos আইকন</string>
+    <string name="volte_icon_hd">এইচডি আইকন</string>
+    <string name="volte_icon_hd2">এইচডি ক্যাফ আইকন</string>
+    <string name="volte_icon_miui">Miui 11 আইকন</string>
+    <string name="volte_icon_emui">Miui  আইকন</string>
+    <!-- VoWiFi icon -->
+    <string name="vowifi_icon_title">VoWiFi আইকন</string>
+    <string name="vowifi_icon_enabled">VoWiFi আইকন সক্রিয়</string>
+    <string name="vowifi_icon_disabled">VoWiFi আইকন নিষ্ক্রিয়</string>
+    <string name="vowifi_icon_enabled_volte_disabled">Vowifi পরিবর্তে VoLTE আইকন</string>
+    <string name="vowifi_icon_style_title">VoLTE আইকন স্টাইল</string>
+    <string name="vowifi_icon_default">ডিফল্ট আইকন</string>
+    <string name="vowifi_icon_emui">EMUI আইকন</string>
+    <string name="vowifi_icon_asus">Asus আইকন</string>
+    <string name="vowifi_icon_oneplus">OOS আইকন</string>
+    <string name="vowifi_icon_moto">Motorola আইকন</string>
+    <string name="vowifi_icon_simple1">Simple1 আইকন</string>
+    <string name="vowifi_icon_simple2">Simple2 আইকন</string>
+    <string name="vowifi_icon_simple3">Simple3 আইকন</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">লকস্ক্রিন চারজিং ইনফো</string>
+    <string name="lockscreen_battery_info_summary">চার্জ করার সময় চার্জারের সর্বাধিক কারেন্ট, ভোল্টেজ এবং ব্যাটারির তাপমাত্রা প্রদর্শন করুন</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">সোয়াইপ টু স্ক্রিনশট</string>
+    <string name="three_finger_gesture_summary">স্ক্রিনশট নিতে তিনটি ফিংগার দিয়ে নিচে সোয়াইপ করুন</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">তথ্য নিষ্ক্রিয় আইকন</string>
+    <string name="data_disabled_icon_summary">যখন ডেটা নিষ্ক্রিয় করা হয় তখন সংকেত বারের পাশে ক্রস চিহ্ন প্রদর্শন করুন</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">রোমিং সূচক</string>
+    <string name="roaming_indicator_icon_summary">রোমিং মোডে থাকাকালীন সাইন আইকনে রোমিং সূচক প্রদর্শন করুন</string>
+    <!-- RGG Accent Picker -->
+    <string name="themes_title">Octavi থিমস</string>
+    <string name="themes_summary">অ্যাসেন্টে থিম</string>
+    <string name="accent_color">অ্যাসেন্টে পিকার</string>
+    <string name="accent_summary">সিস্টেমের প্রশস্ত অ্যাসেন্ট প্রস্তুতকারক</string>
+    <!-- Global Actions -->
+    <string name="global_actions_title">পাওয়ার মেনু</string>
+    <string name="global_actions_summary">আপনি পাওয়ার বোতাম টিপুন যখন আপনি কী দেখবেন তা নির্বাচন করুন</string>
+    <string name="global_actions_power">পাওয়ার</string>
+    <string name="global_actions_restart">পুনরায় চালু করা</string>
+    <string name="global_actions_airplane">বিমান</string>
+    <string name="global_actions_settings">সেটিংস</string>
+    <string name="global_actions_lockdown">লকডাউন</string>
+    <string name="global_actions_soundpanel">শব্দ প্যানেল</string>
+    <string name="global_actions_users">ব্যবহারকারীরা</string>
+    <string name="global_actions_screenshot">স্ক্রীনশট</string>
+    <string name="global_actions_screenrecord">স্ক্রিনরেকর্ড</string>
+    <string name="global_actions_flashlight">টর্চলাইট</string>
+    <string name="global_actions_emergency">জরুরী</string>
+    <string name="global_actions_advanced_reboot_title">উন্নত পুনঃসূচনা সক্রিয় করুন</string>
+    <string name="global_actions_advanced_reboot_summary">পুনরুদ্ধার পুনরুদ্ধার এবং বুটলোডার জন্য বিকল্প প্রদর্শন করার সময়</string>
+    <string name="global_actions_max_columns_title">সর্বাধিক ক্রিয়াগুলি প্রদর্শন করা</string>
+    <string name="global_actions_max_columns_summary">বোতামগুলি ওভারফ্লো মেনুতে চলে যাওয়ার আগে কতগুলি ক্রিয়া প্রদর্শন করতে হবে তা সেট করুন</string>
+    <!-- Battery light -->
+    <string name="battery_light_settings">ব্যাটারি চার্জিং লাইট</string>
+    <string name="battery_light_enable">Enable</string>
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
+    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
+    <string name="battery_light_cat">Battery light color when charging</string>
+    <string name="battery_light_low_color">Low battery</string>
+    <string name="battery_light_medium_color">Medium battery</string>
+    <string name="battery_light_full_color">Almost full battery</string>
+    <string name="battery_light_reallyfull_color">Full (100) battery</string>
+    <!-- Statusbar net monitor -->
+    <string name="traffic_title">Traffic indicators</string>
+    <string name="network_traffic_state_title">Network traffic</string>
+    <string name="network_traffic">Network traffic</string>
+    <string name="network_traffic_location">Traffic indicator placement</string>
+    <string name="traffic_disabled">Disabled</string>
+    <string name="traffic_statusbar">Statusbar</string>
+    <string name="traffic_expanded_statusbar">Expanded header</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+    <string name="network_traffic_arrow">Show arrows</string>
+    <string name="network_traffic_arrow_summary">Show the network traffic indicator arrows</string>
+    <string name="network_traffic_type">Select net activity type</string>
+    <string name="show_network_traffic_combined">Combined (Upload + Download)</string>
+    <string name="show_network_traffic_dynamic">Dynamic</string>
+    <string name="show_network_traffic_up">Upload</string>
+    <string name="show_network_traffic_down">Download</string>
+    <string name="show_network_traffic_all">Both</string>
+    <string name="nettraf_font_size">Single net font size</string>
+    <string name="network_traffic_layout">Activity layout</string>
+    <string name="network_traffic_layout_h">Horizontal</string>
+    <string name="network_traffic_layout_v">Verticle</string>
+    <!-- Status bar - Battery -->
+    <string name="battery_mode_title">Battery Styles</string>
+    <string name="battery_mode_summary">Configure SB n QS battery mode</string>
+    <string name="status_bar_battery_style_title">Battery style</string>
+    <string name="status_bar_battery_style_q">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+    <string name="status_bar_battery_style_circle">Filled circle</string>
+    <string name="status_bar_battery_style_text">Icon hidden</string>
+    <string name="status_bar_battery_style_hidden">Icon hidden(Text only)</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Enabled (Inside icon)</string>
+    <string name="status_bar_battery_percentage_text_next">Enabled</string>
+    <string name="status_bar_battery_text_charging_title">Battery percentage when charging</string>
+    <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
+    <!-- Battery mode -->
+    <string name="battery_percentage_title">Battery percentage</string>
+    <string name="qs_battery_percentage_title">QS battery percentage</string>
+    <string name="battery_percentage_off">Disabled</string>
+    <string name="battery_percentage_next">Enabled</string>
+    <string name="battery_percentage_inside">Enabled (inside icon)</string>
+    <string name="battery_percentage_estimate">Enabled (estimate)</string>
+    <!-- Status bar - Battery custom charging symbol -->
+    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
+    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
+    <string name="text_charging_symbol_default">Disabled</string>
+    <string name="text_charging_symbol_flash">আলোর ঝলক</string>
+    <string name="text_charging_symbol_tilde">টিলডে</string>
+    <string name="text_charging_symbol_plus">যোগ</string>
+    <string name="text_charging_symbol_star">তারা</string>
+    <string name="text_charging_symbol_rupee">রুপি</string>
+    <string name="text_charging_symbol_dollar">ডলার</string>
+    <string name="text_charging_symbol_euro">ইউরো</string>
+    <string name="text_charging_symbol_cent">সেন্ট</string>
+    <!-- Screenshot -->
+    <string name="screenshot_type_title">স্ক্রিনশট টাইপ</string>
+    <string name="screenshot_type_fullscreen">পূর্ণস্ক্রিনের স্ক্রিনশট নিন</string>
+    <string name="screenshot_type_partial">আপনি যে অংশুটুকু স্ক্রিনশট হিসাবে নিতে চান সেটি ড্র্যাগ করে নির্বাচন করুন</string>
+    <string name="screenshot_options_category">স্ক্রিনশট অপশন</string>
+    <string name="screenshot_options_summary">সময়, বিলম্ব, টাইপ ইত্যাদি মত স্ক্রিনশট বৈশিষ্ট্যাবলী কাস্টমাইজ করুন</string>
+    <!-- Heads up -->
+    <string name="heads_up_notifications">হেডস আপ</string>
+    <string name="heads_up_summary">হেডস আপ কাস্টমাইজ করুন</string>
+    <string name="summary_heads_up_enabled">পপ-আপ নোটিফিকেশন সক্রিয়</string>
+    <string name="summary_heads_up_disabled">পপ-আপ নোটিফিকেশন নিস্ক্রিয়</string>
+    <string name="add_heads_up_package">অ্যাপ যুক্ত করুন</string>
+    <string name="add_heads_up_stoplist_summary">এই অ্যাপ্লিকেশন সমূহ থেকে হেডস আপ বন্ধ করুন</string>
+    <string name="add_heads_up_blacklist_summary">এই অ্যাপ্লিকেশন সমূহ থেকে হেডস আপ বন্ধ করুন</string>
+    <string name="heads_up_stoplist_title">স্টপ লিস্ট</string>
+    <string name="heads_up_blacklist_title">ব্ল্যাকলিস্ট</string>
+    <string name="profile_choose_app">অ্যাপ নির্বাচন করুন</string>
+    <string name="dialog_delete_title">মুছে ফেলুন</string>
+    <string name="dialog_delete_message">নির্বাচন করাগুলি ডিলিট করতে চান?</string>
+    <!-- QS Tint -->
+    <string name="qs_bg_use_new_tint">নতুন টিন্ট স্টাইল</string>
+    <string name="qs_bg_use_new_tint_summary">নতুন QS টিন্ট স্টাইল সক্ষম করুন (রিবুট প্রয়োজন)</string>
+    <!-- Lockscreen weather -->
+    <string name="lockscreen_weather_category">আবহাওয়া</string>
+    <string name="lockscreen_weather_enabled_title">Lockscreen উপর দেখান</string>
+    <string name="lockscreen_weather_enabled_summary">লক স্ক্রিন এর উপর আবহাওয়া তথ্য প্রদর্শন করুন এবং ডুবে সময় তথ্য প্রদর্শন করুন</string>
+    <string name="lockscreen_weather_settings_title">সেটআপ আবহাওয়া বিকল্প</string>
+    <string name="lockscreen_weather_settings_summary">সেটআপ আইকন প্যাক এবং আবহাওয়া সেবা</string>
+    <string name="weather_config_title">Weather service</string>
+    <string name="weather_config_summary">সিস্টেম সেবা সেটিংস</string>
+    <string name="header_weather_title">হেডার আবহাওয়া দেখুন</string>
+    <string name="header_weather_summary">নোটিফিকেশান প্যানেল হেডার আবহাওয়া প্রদর্শন সক্ষম করুন</string>
+    <string name="weather_icon_pack_title">শর্ত আইকন প্যাক</string>
+    <string name="weather_icon_pack_note">দ্রষ্টব্য \u003a আপনি \"ক্রনিকাস আইকনস\" অনুসন্ধানের মাধ্যমে প্লে স্টোর থেকে নতুন আইকন প্যাকগুলি ইনস্টল করতে পারেন</string>
+    <string name="weather_icon_pack_info_title">কন্ডিশন আইকন প্যাকটি দ্রুত সেটিংস এবং লক স্ক্রিনে ব্যবহৃত হয়</string>
+    <!-- Lockscreen weather style -->
+    <string name="lockscreen_weather_style_title">আবহাওয়ার স্টাইল</string>
+    <string name="lockscreen_weather_omni_style_title">ওমনি স্টাইল</string>
+    <string name="lockscreen_weather_pixel_style_title">পিক্সেল স্টাইল</string>
+    <!-- CustomDoze -->
+    <string name="ambient_display_custom_title">অ্যামবিয়েন্ট ডিসপ্লে</string>
+    <!-- Media art -->
+    <string name="lockscreen_media_art_title">মিডিয়া আর্ট</string>
+    <string name="lockscreen_media_art_summary">মিডিয়া আর্টের দৃশ্যমানতা টগল করুন</string>
+    <!-- Lockscreen media artwork -->
+    <string name="lockscreen_media_blur_title">মিডিয়া আর্ট ব্লার লেভেল</string>
+    <string name="lockscreen_media_art_options_title">লক স্ক্রীনের মিডিয়া আর্ট</string>
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">সংগীত ভিজ্যুয়ালাইজার প্রদর্শন করুন</string>
+    <string name="lockscreen_visualizer_summary">লকস্ক্রিন ভিজ্যুয়ালাইজার টগল করুন</string>
+    <string name="lockscreen_visualizer_enable">মিউজিক ভিজ্যুয়ালাইজার</string>
+    <string name="lockscreen_visualizer_enable_summary">Show visualizer bars while playing music</string>
+    <string name="lockscreen_autocolor_title">Automatic color</string>
+    <string name="lockscreen_autocolor_summary">Sync color with lockscreen background</string>
+    <string name="lockscreen_autocolor_lavalamp">Requires lava lamp disabled</string>
+    <string name="lockscreen_lavalamp_title">Lava lamp</string>
+    <string name="lockscreen_lavalamp_summary">Use a smooth lava lamp style color blend animation</string>
+    <string name="lockscreen_lavalamp_speed_title">Color blend interval</string>
+    <string name="lockscreen_solid_lines_category">Solid Lines</string>
+    <string name="lockscreen_solid_units_count_title">Lines count</string>
+    <string name="lockscreen_solid_fudge_factor_title">Sanity level</string>
+    <string name="lockscreen_solid_units_opacity_title">Lines opacity</string>
+    <!-- Quick settings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
+    <!-- Quick Settings -->
+    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
+    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+    <!-- Notification headers -->
+    <string name="notification_headers_title">Notification Headers</string>
+    <string name="notification_headers_summary">Show headers in the notification shade\nRequires a SystemUI restart</string>
+    <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Translucent notifications background</string>
+    <!-- FOD animations -->
+    <string name="fod_recog_animation">FOD recognizing animation</string>
+    <string name="fod_recog_animation_summary">Shows an animation while reading your finger</string>
+    <string name="fod_recog_animation_effect_title">Recognizing animation effect</string>
+    <string name="fod_recog_animation_miui_normal">MIUI default</string>
+    <string name="fod_recog_animation_miui_aod">MIUI AOD</string>
+    <string name="fod_recog_animation_miui_aurora">Aurora (K30 Pro)</string>
+    <string name="fod_recog_animation_miui_aurora_cas">Aurora (Mi 10 Ultra)</string>
+    <string name="fod_recog_animation_miui_light">Light</string>
+    <string name="fod_recog_animation_miui_pop">Pop</string>
+    <string name="fod_recog_animation_miui_pulse">Pulse</string>
+    <string name="fod_recog_animation_miui_pulse_white">Pulse (White)</string>
+    <string name="fod_recog_animation_miui_rhythm">Rhythm</string>
+    <string name="fod_recog_animation_miui_star_cas">Starlight</string>
+    <string name="fod_recog_animation_op_cosmos">Cosmos</string>
+    <string name="fod_recog_animation_op_energy">Energy</string>
+    <string name="fod_recog_animation_op_mclaren">McLaren</string>
+    <string name="fod_recog_animation_op_ripple">Ripple</string>
+    <string name="fod_recog_animation_op_scanning">Scanning (Cyberpunk 2077)</string>
+    <string name="fod_recog_animation_op_stripe">Stripe</string>
+    <string name="fod_recog_animation_op_wave">Wave</string>
+    <string name="fod_recog_animation_pureview_dna">DNA</string>
+    <string name="fod_recog_animation_pureview_future">Future</string>
+    <string name="fod_recog_animation_pureview_halo_ring">Halo ring</string>
+    <string name="fod_recog_animation_pureview_molecular">Molecular</string>
+    <string name="fod_recog_animation_rog_fusion">Fusion</string>
+    <string name="fod_recog_animation_rog_pulsar">Pulsar</string>
+    <string name="fod_recog_animation_rog_supernova">Supernova</string>
+    <!-- QS Header data uasge -->
+    <string name="qs_datausage_title">Data usage in QS Header</string>
+    <string name="qs_datausage_disabled">Disabled</string>
+    <string name="qs_datausage_daily">Daily usage</string>
+    <string name="qs_datausage_monthly">Monthly usage</string>
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">Volume Panel Style</string>
+    <string name="volume_panel_stock">স্টক</string>
+    <string name="volume_panel_aosp">AOSP</string>
+    <string name="volume_panel_compact">কমপ্যাক্ট</string>
+    <string name="volume_panel_oreo">ওরিও</string>
+    <string name="volume_panel_tiled">টালিকৃত</string>
+    <!--  Volume Panel Plugin Values   -->
+    <string name="volume_panel_stock_val">com.android.systemui.volume</string>
+    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
+    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
+    <string name="volume_panel_oreo_val">co.potatoproject.plugin.volume.oreo</string>
+    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
+    <!-- Navbar Entries -->
+    <string name="navbar_gestures_title">ন্যাভিগেশন অঙ্গভঙ্গি অপশন</string>
+    <string name="navbar_gestures_summary">আপনার ডিভাইস নেভিগেট করতে বাটন বা অঙ্গভঙ্গি নির্বাচন করুন</string>
+    <!-- Navbar options -->
+    <string name="navigation_bar_invert_layout_title">ইনভার্ট লেআউট</string>
+    <string name="navigation_bar_invert_layout_summary">নেভিগেশন বার এবং অন্যান্য আইটেম যেমন IME সুইচারের লেআউট উল্টান</string>
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">পিক্সেল অ্যানিমেশন</string>
+    <string name="pixel_navbar_anim_summary">হোম বাটন অ্যানিমেশন টগল করুন</string>
+    <!-- Charging animation -->
+    <string name="lockscreen_charging_animation_title">অ্যানিমেশন চার্জিং</string>
+    <string name="lockscreen_charging_animation_flash">আলোর ঝলক</string>
+    <string name="lockscreen_charging_animation_battery">ব্যাটারি</string>
+    <string name="lockscreen_charging_animation_drop">ড্রপ</string>
+    <string name="lockscreen_charging_animation_explosion">এক্সপ্লোশন</string>
+    <string name="lockscreen_charging_animation_water">পানি</string>
+    <string name="lockscreen_charging_animation_batterycharge">ব্যাটারি চার্জ</string>
+    <!-- Statusbar Clock -->
+    <string name="status_bar_clock_date_title">ঘড়ি এবং তারিখ</string>
+    <string name="status_bar_clock_date_summary">আপনার স্ট্যাটাসবারের ঘড়িটি এবং তারিখটি কাস্টমাইজ করুন</string>
+    <string name="status_bar_clock_title">ঘড়ির সেটিংস</string>
+    <string name="status_bar_clock_show">ঘড়ি এবং তারিখ দেখান</string>
+    <string name="status_bar_clock_style_title">ঘড়ির স্টাইল</string>
+    <string name="status_bar_clock_style_right">ডানে</string>
+    <string name="status_bar_clock_style_center">মাঝে</string>
+    <string name="status_bar_clock_style_left">বামদিকে</string>
+    <string name="status_bar_date_title">তারিখ সেটিংস</string>
+    <string name="status_bar_am_pm_title">AM/PM স্টাইল</string>
+    <string name="status_bar_am_pm_info">24-ঘন্টা ঘড়ি সক্রিয় করা হয়</string>
+    <string name="status_bar_am_pm_normal">সাধারণ</string>
+    <string name="status_bar_am_pm_small">ছোট</string>
+    <string name="status_bar_am_pm_hidden">হিডেন (ডিফল্ট)</string>
+    <string name="clock_seconds_display">সেকেন্ড প্রদর্শন করুন</string>
+    <string name="clock_date_display">তারিখ</string>
+    <string name="clock_date_display_summary">ঘড়ির আগে কাস্টম তারিখ দেখান</string>
+    <string name="clock_date_display_none">দেখাবেন না</string>
+    <string name="clock_date_display_small">ছোট ফন্টের আকার</string>
+    <string name="clock_date_display_normal">সাধারণ ফন্টের আকার</string>
+    <string name="clock_date_style">তারিখের স্টাইল</string>
+    <string name="clock_date_style_normal">সাধারণ</string>
+    <string name="clock_date_style_lowercase">ছোট হাতের</string>
+    <string name="clock_date_style_uppercase">বড় হাতের</string>
+    <string name="clock_date_format_custom">কাস্টম জাভা ফর্ম্যাট</string>
+    <string name="clock_date_format">তারিখের বিন্যাস</string>
+    <string name="clock_date_string_edittext_title">অবশ্যই ডেটফরম্যাটে থাকতে হবে। যেমন: MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+    <string name="clock_date_position">Date position</string>
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Charging animation</string>
+    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
+    <!-- Ambient edge lighting -->
+    <string name="pulse_ambient_light_category">Screen edge lighting</string>
+    <string name="pulse_ambient_light_title">Show on new notifcation</string>
+    <string name="pulse_ambient_light_summary">Show light pulse on new notification</string>
+    <string name="ambient_notification_light_enabled_title">Show on always on</string>
+    <string name="ambient_notification_light_enabled_summary">Show light pulse on new notification using always on</string>
+    <string name="aod_disabled">AOD is disabled</string>
+    <string name="ambient_notification_light_color_title">Custom color</string>
+    <string name="ambient_notification_light_color_summary">Default color for light pulse</string>
+    <string name="ambient_notification_light_hide_aod_title">Only show light pulse</string>
+    <string name="ambient_notification_light_hide_aod_summary">Hide all other display elements from always on</string>
+    <string name="ambient_notification_light_timeout_title">Timeout for light pulse</string>
+    <string name="entry_infinite">Infinite</string>
+    <string name="entry_five_minute">5 minutes</string>
+    <string name="entry_ten_minute">10 minutes</string>
+    <string name="entry_thirty_minute">30 minutes</string>
+    <string name="entry_sixty_minute">60 minutes</string>
+    <string name="entry_fifteen_minute">15 minutes</string>
+    <string name="ambient_notification_light_color_mode_title">Light pulse color</string>
+    <string name="ambient_notification_light_color_mode_automatic">Notification color</string>
+    <string name="ambient_notification_light_color_mode_accent">System accent color</string>
+    <string name="ambient_notification_light_color_mode_custom">Custom color</string>
+    <string name="pulse_ambient_light_duration_title">Duration</string>
+    <string name="pulse_ambient_light_duration_summary">Sets the ambient light animation duration</string>
+    <string name="pulse_ambient_light_repeat_count_title">Edge Light Repeat count</string>
+    <string name="pulse_ambient_light_repeat_count_summary">Set max repeat count. 0 for infinite</string>
+    <!-- Option to enable/disable scrolling cache -->
+    <string name="pref_scrollingcache_title">Scrolling cache</string>
+    <string name="pref_scrollingcache_summary">Scrolling cache may improve scrolling performance at the cost of memory</string>
+    <string name="pref_scrollingcache_force_enable">Force enable</string>
+    <string name="pref_scrollingcache_default_enable">Default enable</string>
+    <string name="pref_scrollingcache_default_disable">Default disable</string>
+    <string name="pref_scrollingcache_force_disable">Force disable</string>
+    <string name="navbar_visibility">Nav Bar</string>
+    <string name="navbar_vis_summary">Enable-disable navigation bar</string>
+    <!-- Doze Brightness Config -->
+    <string name="doze_brightness_category">Doze Brightness Config</string>
+    <string name="ambient_pulse_brightness_title">Ambient notification brightness</string>
+    <string name="ambient_pulse_brightness_summary">Set brightness to use when notifcations are shown</string>
+    <string name="ambient_doze_brightness_title">Ambient display brightness</string>
+    <string name="ambient_doze_brightness_summary">Set brightness to use during ambient display on</string>
+    <!-- Center R Notification headers -->
+    <string name="center_notification_headers_title">Center notification headers</string>
+    <string name="center_notification_headers_summary">Whether to Center R style notification headers (Requires a SystemUI restart)</string>
+    <!-- FOD icon picker -->
+    <string name="fod_icon_picker_title">FOD icon picker</string>
+    <string name="fod_icon_picker_summary">Choose your favorite fingerprint icon</string>
+    <string name="fod_icon_picker_footer">In order to add your own icon, select the top left icon and use the Customizer app to select the icon you want.</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Screen off fingerprint</string>
+    <string name="fod_gesture_summary">প্রথমে স্ক্রিনটি জাগ্রত না করে ডিভাইসটি আনলক করার অনুমতি দেয়</string>
+    <!-- Nightlight Fod -->
+    <string name="fod_night_light_title">FOD দেখানোর সময় রাতের আলো অক্ষম করুন</string>
+    <string name="fod_night_light_summary">FOD সক্রিয় থাকলে লক স্ক্রিনে নাইট লাইট অক্ষম করুন।  এই বিকল্পটি অক্ষম করা আপনার রাতের আলোতে আপনার ফিঙ্গারপ্রিন্ট যথার্থতাকে প্রভাবিত করতে পারে।</string>
+    <!-- QS rows and columns -->
+    <string name="qs_columns_rows_category_title">QS কলাম এবং সারি</string>
+    <string name="qs_rows_columns_title">QS সারি এবং কলাম</string>
+    <string name="qs_rows_portrait_title">প্রতিকৃতিতে টাইলস সারি</string>
+    <string name="qs_rows_landscape_title">ল্যান্ডস্কেপে টালির সারি</string>
+    <string name="qs_columns_portrait_title">পোট্রেট মোডে টালির সারি</string>
+    <string name="qs_columns_landscape_title">ল্যান্ডস্কেপে টালির সারি</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">স্ক্রিন বন্ধ থাকাকালীন টর্চ টগল করুন</string>
+    <string name="torch_power_button_gesture_none">নিষ্ক্রিয়</string>
+    <string name="torch_power_button_gesture_dt">ডাবল ট্যাপ পাওয়ার বোতাম (ধীরে একক ট্যাপ প্রতিক্রিয়া)</string>
+    <string name="torch_power_button_gesture_dt_toast">ক্যামেরার অঙ্গভঙ্গিতে লাফিয়ে এখন অক্ষম করা হয়েছে</string>
+    <string name="torch_power_button_gesture_lp">পাওয়ার বোতাম অনেকক্ষণ ধরে চেপে থাকুন</string>
+    <!-- Double Tap on Doze to wake -->
+    <string name="double_tap_on_doze_to_wake_title">দুবার ট্যাপ করুন করে ডিভাইস জাগ্রত করুন</string>
+    <string name="double_tap_on_doze_to_wake_summary">যখন ডিভাইস স্বপ্ন দেখছে তখন জাগতে ডাবল আলতো চাপুন</string>
+    <!-- AOKP custom system animations -->
+    <string name="animation_settings_title">অ্যানিমেশন</string>
+    <string name="animation_settings_summary">সিস্টেম ওয়াইড অ্যানিমেশন অপশন</string>
+    <string name="animation_title">অ্যানিমেশন</string>
+    <string name="system_animation_title">সিস্টেম অ্যানিমেশন</string>
+    <string name="activity_open_title">অ্যাক্টিভিটি ওপেন অ্যানিমেশন</string>
+    <string name="activity_close_title">অ্যাক্টিভিটি ক্লোজ অ্যানিমেশন</string>
+    <string name="task_open_title">টাস্ক ওপেন অ্যানিমেশন</string>
+    <string name="task_open_behind_title">টাস্ক ওপেন বিহাইন্ড অ্যানিমেশন</string>
+    <string name="task_close_title">টাস্ক ক্লোজ অ্যানিমেশন</string>
+    <string name="task_move_to_front_title">সামনের অ্যানিমেশনে যান</string>
+    <string name="task_move_to_back_title">পেছনের অ্যানিমেশনে যান</string>
+    <string name="wallpaper_open_title">ওয়ালপেপার ওপেন অ্যানিমেশন</string>
+    <string name="wallpaper_close_title">ওয়ালপেপার ক্লোজ অ্যানিমেশন</string>
+    <string name="wallpaper_intra_open_title">ওয়ালপেপার ইন্ট্রা ওপেন অ্যানিমেশন</string>
+    <string name="wallpaper_intra_close_title">ওয়ালপেপার ইন্ট্রা ক্লোজ অ্যানিমেশন</string>
+    <string name="animation_duration_title">অ্যানিমেশনের সময়কাল</string>
+    <string name="title_animation_no_override">অ্যাপ্লিকেশন ওভাররাইডগুলি প্রতিরোধ করুন</string>
+    <string name="summary_animation_no_override">অ্যাপ্লিকেশনগুলিকে ট্রানজিশন ওভাররাইড থেকে বিরত রাখুন</string>
+    <string name="animation_duration_default">পূর্ব-নির্ধারিত</string>
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">টোস্ট অ্যানিমেশন</string>
+    <string name="toast_none_animation">কোনটি নয়</string>
+    <string name="toast_default_animation">পূর্ব-নির্ধারিত</string>
+    <string name="toast_fade_animation">ফেইড</string>
+    <string name="toast_SlideRight_animation">ডানদিকে স্লাইড</string>
+    <string name="toast_SlideLeft_animation">বামদিকে স্লাইড</string>
+    <string name="toast_Xylon_animation">এক্স্যলন</string>
+    <string name="toast_Toko_animation">তক</string>
+    <string name="toast_Tn_animation">ত্ন</string>
+    <string name="toast_Honami_animation">হনামি</string>
+    <string name="toast_FastFade_animation">দ্রুত বিবর্ণ</string>
+    <string name="toast_GrowFade_animation">বিবর্ণ বৃদ্ধি</string>
+    <string name="toast_GrowFadeCenter_animation">বিবর্ণ কেন্দ্র বৃদ্ধি</string>
+    <string name="toast_GrowFadeBottom_animation">বিবর্ণ নীচে বৃদ্ধি</string>
+    <string name="toast_Translucent_animation">স্বচ্ছ</string>
+    <string name="toast_SlideLeftRight_animation">Slide left to right</string>
+    <string name="toast_SlideRightLeft_animation">Slide right to left</string>
+    <!-- Force disable transition animation -->
+    <string name="disable_transition_animations_title">Disable transition animations</string>
+    <string name="disable_transition_animations_summary">Force disable all transition animations</string>
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_fade">Simple fade</string>
+    <string name="screen_off_animation_color">Color fade</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <!-- Notification sound -->
+    <string name="notification_sound_vib_screen_on_title">Notification sound if active</string>
+    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+    <!-- LockWeather Switches -->
+    <string name="lockscreen_weather_show_city_title">Show city name</string>
+    <string name="lockscreen_weather_show_city_summary">Show name of current city on left of image</string>
+    <string name="lockscreen_weather_show_temp_title">Show temperature</string>
+    <string name="lockscreen_weather_show_temp_summary">Show current city temperature on right of image</string>
+    <string name="lockscreen_weather_show_image_title">Show Condition Image</string>
+    <string name="lockscreen_weather_show_image_summary">Show weather conditions image</string>
+    <string name="lockscreen_weather_alignment_title">Lockscreen Weather Alignment</string>
+    <!-- Lockscreen notif count -->
+    <string name="lockscreen_maxnotif_title">Lockscreen notification count</string>
+    <string name="lockscreen_maxnotif_sumary">Enable adjustment of max lockscreen notifications</string>
+    <string name="lockscreen_maxnotif_config">Max lockscreen notifications</string>
+    <!-- Notification count -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Dialer HeadsUp</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer n clock app and disable all others</string>
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Gaming Mode</string>
+    <string name="gaming_mode_summary">Customize gaming mode preferences</string>
+    <string name="gaming_mode_app_picker_title">Automatically turn on for these apps</string>
+    <string name="add_gaming_mode_package_title">Add apps for Gaming mode</string>
+    <string name="add_gaming_mode_package_summary">Gaming mode will turn on automatically when these apps are opened and turn off when they are closed</string>
+    <string name="gaming_mode_headsup_title">Heads-up Notifications</string>
+    <string name="gaming_mode_headsup_allow">Allow all headsup notifications</string>
+    <string name="gaming_mode_headsup_dnc">Block all headsup notifications except calls &amp; alarms</string>
+    <string name="gaming_mode_headsup_clock">Block all headsup notifications except alarms</string>
+    <string name="gaming_mode_headsup_dialer">Block all headsup notifications except calls</string>
+    <string name="gaming_mode_headsup_stop">Block all headsup notifications</string>
+    <string name="gaming_mode_hardware_keys_title">Lock buttons</string>
+    <string name="gaming_mode_hardware_keys_summary">Disable hardware buttons when Gaming mode is turned on</string>
+    <string name="gaming_mode_brightness_title">Disable automatic brightness</string>
+    <string name="gaming_mode_brightness_summary">Lock screen brightness when Gaming mode is turned on</string>
+    <string name="gaming_mode_ringer_title">Ringer in gaming mode</string>
+    <string name="gaming_mode_ringer_off_title">Do not change</string>
+    <string name="gaming_mode_ringer_vibrate_title">Vibrate</string>
+    <string name="gaming_mode_ringer_dnd_title">Do Not Disturb</string>
+    <string name="gaming_mode_ringer_silent_title">Silent</string>
+    <string name="gaming_mode_notifications_title">Gaming mode indication</string>
+    <string name="gaming_mode_notifications_off_title">Disabled</string>
+    <string name="gaming_mode_notifications_notif_title">Show notification</string>
+    <string name="gaming_mode_notifications_toast_title">Show toasts</string>
+    <string name="gaming_mode_notifications_all_title">Show toasts and notification</string>
+    <string name="gaming_mode_dynamic_title">ডাইনামিক মোড</string>
+    <string name="gaming_mode_dynamic_summary">স্বয়ংক্রিয়ভাবে গেমিং অ্যাপসটি সনাক্ত এবং যুক্ত করার চেষ্টা করুন</string>
+    <string name="lock_item_left">বাম সংলগ্ন</string>
+    <string name="lock_item_center">কেন্দ্র সংলগ্ন</string>
+    <string name="lock_item_right">ডান সংলগ্ন</string>
+    <!-- Switch styles -->
+    <string name="switch_style_title">আপেয়ারাঞ্চে স্যুইচ করুন</string>
+    <string name="switch_default">পূর্ব-নির্ধারিত</string>
+    <string name="switch_oneplus">ওয়ানপ্লাস</string>
+    <string name="switch_narrow">সংকীর্ণ</string>
+    <string name="switch_contained">অন্তর্ভুক্ত</string>
+    <string name="switch_md2">মড২</string>
+    <string name="switch_retro">রেট্রো</string>
+    <string name="switch_telegram">টেলিগ্রাম</string>
+    <!-- Octavi Themeing Stuffs -->
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">হেডলাইন / বডি ফন্ট</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">আইকনের আকৃতি</string>
+    <!-- Title of the setting which enables overlays to customize the icon shape pack. -->
+    <string name="theme_customization_icon_pack_android_title">আইকন প্যাক</string>
+    <!-- Themes customisation -->
+    <string name="theme_customization_systemui_title">রঙ বালতি</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">ছোট মোবাইল টাইপ আইকন</string>
+    <string name="use_old_mobiletype_summary">সিগন্যাল সূচক শীর্ষে মোবাইল টাইপ আইকন দেখান</string>
+    <!-- Allow fake signature -->
+    <string name="allow_signature_fake">স্বাক্ষর spoofing অনুমতি দিন</string>
+    <string name="allow_signature_fake_summary">অ্যাপ্লিকেশনগুলিকে ভিন্ন একটি আলাদা অ্যাপ্লিকেশন হওয়ার ভান করে সুরক্ষা ব্যবস্থা বাইপাস করার অনুমতি দিন।</string>
+    <!-- Ambient Music Ticker -->
+    <string name="ambient_music_location">পরিবেষ্টিত সঙ্গীত টিকার দেখান</string>
+    <string name="ambient_music_disabled">নিষ্ক্রিয়</string>
+    <string name="ambient_music_bottom">নীচে (ডিফল্ট)</string>
+    <string name="ambient_music_center">কেন্দ্রিক (ঘড়ি অধীনে)</string>
+    <!-- Notification Vibration -->
+    <string name="vibrate_on_notifications_title">নোটিফিকেশনের জন্য কম্পন</string>
+    <string name="vibrate_on_notifications_summary">স্পন্দিত নোটিফিকেশান নিষ্ক্রিয় করার জন্য</string>
+    <!-- Lock icon -->
+    <string name="hide_lockicon_title">লক আইকনটি লুকান</string>
+    <string name="hide_lockicon_summary">লকস্ক্রিনে লক আইকনটি লুকান</string>
+    <!-- Headset ringtone audio focus -->
+    <string name="ringtone_focus_mode_title">যখন হেডসেট সংযুক্ত থাকে, আগত কল চালু থাকে</string>
+    <string name="ringtone_focus_mode_dynamic">সঙ্গীত সক্রিয় থাকলে কেবলমাত্র হেডসেট</string>
+    <string name="ringtone_focus_mode_stock">স্পিকার এবং হেডসেট উভয়ই</string>
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_tuner_title">লকস্ক্রিন শর্টকাটস</string>
+</resources>
