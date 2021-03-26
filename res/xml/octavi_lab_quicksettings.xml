@@ -55,12 +55,6 @@
             settings:units="" />
         </PreferenceCategory>
 
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        android:key="qs_panel_bg_use_new_tint"
-        android:title="@string/qs_bg_use_new_tint"
-        android:summary="@string/qs_bg_use_new_tint_summary"
-        android:defaultValue="false" />
-
     <com.octavi.lab.preferences.SecureSettingSwitchPreference
         android:key="quick_settings_vibrate"
         android:title="@string/quick_settings_vibrate_title"
