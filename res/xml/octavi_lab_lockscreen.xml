@@ -54,6 +54,13 @@
         android:summary="@string/hide_lockicon_summary"
         android:defaultValue="false" />
 
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="fp_icon_disabled"
+        settings:iconSpaceReserved="false"
+        android:title="@string/fp_icon_disable_title"
+        android:summary="@string/fp_icon_disable_summary"
+        android:defaultValue="false" />
+
     <com.octavi.lab.preferences.SystemSettingListPreference
         android:key="ambient_music_ticker"
         android:title="@string/ambient_music_location"
