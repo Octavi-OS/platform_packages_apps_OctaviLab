@@ -833,19 +833,24 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
-        <item>6</item>
     </string-array>
 
-    <!-- QS Clock Style -->
-    <string-array name="qs_clock_post_entries" translatable="false">
-        <item>Left</item>
-        <item>Center</item>
-        <item>Pill Clock (New)</item>
+    <!-- Navbar styles -->
+    <string-array name="navbar_style_entries" translatable="false">
+        <item>@string/navbar_default</item>
+        <item>@string/navbar_asus</item>
+        <item>@string/navbar_oneplus</item>
+        <item>@string/navbar_oneui</item>
+        <item>@string/navbar_stock</item>
+        <item>@string/navbar_tecno</item>
     </string-array>
 
-    <string-array name="qs_clock_pos_values" translatable="false">
+    <string-array name="navbar_style_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
     </string-array>
 </resources>
