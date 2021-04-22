@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Nitrogen OS
+     Copyright (C) 2020 OctaviOS
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App Title -->
+    <string name="octavi_lab_title">Octavi Lab</string>
+    <!-- Categories -->
+    <string name="button_title">Boutons</string>
+    <string name="lockscreen_title">Écran de verrouillage</string>
+    <string name="misc_title">Autres</string>
+    <string name="system_title">Système</string>
+    <string name="statusbar_title">Barre d’état</string>
+    <string name="notifications_title">Paramètres de notifications</string>
+    <string name="navbar_title">Barre de navigation</string>
+    <string name="volume_title">Boutons de volume</string>
+    <string name="gesture_title">Gestes</string>
+    <string name="powermenu_title">Menu d\'alimentation</string>
+    <string name="quicksettings_title">Paramètres rapides</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Réinitialiser</string>
+    <string name="cancel">Annuler</string>
+    <string name="save">Sauvegarder</string>
+    <string name="unsupported_gestures">Activer la navigation à deux boutons ou à trois boutons pour utiliser cette fonctionnalité</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Sélecteur de couleur</string>
+    <string name="press_color_to_apply">Sélectionner la couleur ci-dessous pour appliquer</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Appliqué</string>
+    <string name="color_default">Défaut</string>
+    <!-- Statusbar Tuner -->
+    <string name="statusbar_items_title">Éléments de la barre d\'État</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Contrôle de lecture</string>
+    <string name="volume_rocker_music_controls_summary">Lorsque l\'écran est éteint, un appui long sur les touches de volume permet de changer de titre</string>
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Réactiver par les boutons de volume</string>
+    <string name="volume_rocker_wake_summary">Réveiller l\'appareil en utilisant les boutons volume</string>
+    <!-- Language options - Volume rocker cursor control -->
+    <string name="cursor_section_header">Curseur</string>
+    <string name="volume_key_cursor_control_title">Contrôle du curseur avec les touches de volume</string>
+    <string name="volume_key_cursor_control_off">Désactiver</string>
+    <string name="volume_key_cursor_control_on">Volume haut/bas déplace le curseur gauche/droite</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume haut/bas déplace le curseur droite/gauche</string>
+    <!-- Wakeup options -->
+    <string name="wakeup_when_plugged_unplugged_title">Réveiller au branchement</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Allumer l\'écran lorsque le chargeur est connecté ou déconnecté.</string>
+    <!-- Incall Home button behavior-->
+    <string name="allow_incall_home_title">Bouton \"Accueil\" durant l\'appel</string>
+    <string name="allow_incall_home_summary">Permettre d’utiliser le bouton d’accueil lors de la sonnerie</string>
+    <!-- Buttons backlight timeout -->
+    <string name="backlight_timeout_title">Délai de rétroéclairage des boutons</string>
+    <string name="backlight_timeout_on">Toujours activer</string>
+    <string name="backlight_timeout_3s">3 sec</string>
+    <string name="backlight_timeout_default">5 sec (défaut)</string>
+    <string name="backlight_timeout_10s">10 sec</string>
+    <string name="backlight_timeout_15s">15 sec</string>
+    <string name="backlight_timeout_20s">20 sec</string>
+    <string name="backlight_timeout_30s">30 sec</string>
+    <!-- Enable keys backlight-->
+    <string name="button_brightness_title">Rétroéclairage</string>
+    <!-- Enable keys backlight-->
+    <string name="button_brightness_sw_title">Activer le rétroéclairage</string>
+    <string name="button_backlight_on_touch_only_title">Bouton tactile</string>
+    <string name="button_backlight_on_touch_only_summary">Activer le rétro-éclairage avec delai uniquement après appui</string>
+    <!-- HW Keys customization -->
+    <string name="picker_activities">Activités</string>
+    <string name="select_custom_app_title">Sélectionner l\'application</string>
+    <string name="select_custom_activity_title">Sélectionner une activité personnalisée</string>
+    <string name="profile_applist_title">Applications</string>
+    <string name="choose_action_title">Choisir une action</string>
+    <string name="action_entry_default_action">Paramètres par défaut</string>
+    <string name="action_entry_select_app">Sélectionnez une application</string>
+    <string name="action_entry_custom_action">Sélectionner une action personnalisée</string>
+    <string name="hardware_keys_home_key_title">Bouton \"Accueil\"</string>
+    <string name="hardware_keys_menu_key_title">Bouton \"Menu\"</string>
+    <string name="hardware_keys_assist_key_title">Bouton \"Recherche\"</string>
+    <string name="hardware_keys_appswitch_key_title">Bouton \"Récents\"</string>
+    <string name="hardware_keys_back_key_title">Bouton \"Retour\"</string>
+    <string name="hardware_keys_double_tap_summary">Définir une action pour un \"appui double \"</string>
+    <string name="hardware_keys_single_tap_summary">Définir une action pour \"un appui simple\"</string>
+    <string name="hardware_keys_long_press_summary">Définir une action pour un \"appui long\"</string>
+    <string name="hardware_keys_single_tap_title">Action lors d\'un simple appui</string>
+    <string name="hardware_keys_long_press_title">Action sur \"appui long\"\'</string>
+    <string name="hardware_keys_double_tap_title">Action \"appui double\"</string>
+    <string name="hardware_keys_category">Boutons physiques</string>
+    <string name="hardware_keys_disable_title">Désactiver les touches</string>
+    <!-- ANBI -->
+    <string name="anbi_title">Appui accidentel</string>
+    <string name="anbi_summary">Empêcher l\'interaction avec les boutons de navigation lorsque l\'écran est utilisé</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Vibration lors de l\'authentification par empreintes digitales</string>
+    <string name="fprint_sucess_vib_summary">Vibrer lors de l\'authentification réussie de l\'empreinte digitale</string>
+    <string name="fprint_error_vib_title">Vibrer en cas d\'échec de l\'authentification par empreintes digitales</string>
+    <string name="fprint_error_vib_summary">Vibrer en cas de succès de l\'authentification par empreintes digitales</string>
+    <!--Double Tap to Sleep -->
+    <string name="double_tap_gestures_category_title">Gestes par double appui</string>
+    <string name="double_tap_sleep_gesture_title">Double appui pour mettre en veille sur la barre d\'état</string>
+    <string name="double_tap_sleep_lockscreen_title">Double appui pour mettre en veille sur l\'écran de verrouillage</string>
+    <!-- 4G LTE switch -->
+    <string name="show_fourg_title">Afficher 4G au lieu de LTE</string>
+    <string name="show_fourg_summary">Remplace l\'indicateur LTE de la barre d\'état par 4G</string>
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_switch_title">Icône VoLTE</string>
+    <string name="volte_switch_summary">Afficher l\'icône VoLTE</string>
+    <string name="volte_icon_title">Icône VoLTE</string>
+    <string name="volte_icon_summary">Afficher l\'icône VoLTE</string>
+    <string name="volte_icon_style_title">Selectionner icône VoLTE</string>
+    <string name="volte_icon_asus">Icône VoLTE Asus</string>
+    <string name="volte_icon_vo">Icône Vo uniquement</string>
+    <string name="volte_icon_volte">Icône VoLTE</string>
+    <string name="volte_icon_oos">Icône VoLTE OOS</string>
+    <string name="volte_icon_hd">Icône HD</string>
+    <string name="volte_icon_hd2">Icône HD CAF</string>
+    <string name="volte_icon_miui">Icône MIUI 11</string>
+    <string name="volte_icon_emui">Icône EMUI</string>
+    <!-- VoWiFi icon -->
+    <string name="vowifi_icon_title">Icône VoWiFi</string>
+    <string name="vowifi_icon_enabled">Icône VoWiFi activée</string>
+    <string name="vowifi_icon_disabled">Icône VoWiFi désactivée</string>
+    <string name="vowifi_icon_enabled_volte_disabled">Icône VoWiFi au lieu de l\'icône VoLTE</string>
+    <string name="vowifi_icon_style_title">Style d\'icône VoWiFi</string>
+    <string name="vowifi_icon_default">Icône par défaut</string>
+    <string name="vowifi_icon_emui">Icône EMUI</string>
+    <string name="vowifi_icon_asus">Icône Asus</string>
+    <string name="vowifi_icon_oneplus">Icône OOS</string>
+    <string name="vowifi_icon_moto">Icône Motorola</string>
+    <string name="vowifi_icon_simple1">Icône Simple1</string>
+    <string name="vowifi_icon_simple2">Icône Simple2</string>
+    <string name="vowifi_icon_simple3">Icône Simple3</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Informations de charge sur l\'écran de verrouillage</string>
+    <string name="lockscreen_battery_info_summary">Afficher la tension de charge actuelle et la température de la batterie sur l\'écran de verrouillage pendant le chargement</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Glisser pour prendre une capture d\'écran</string>
+    <string name="three_finger_gesture_summary">Balayer l\'écran avec trois doigts pour faire une capture d\'écran</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Icône de données désactivée</string>
+    <string name="data_disabled_icon_summary">Afficher une croix à côté du signal lorsque les données sont désactivées</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Indicateur d\'itinérance</string>
+    <string name="roaming_indicator_icon_summary">Afficher l\'indicateur d\'itinérance dans l\'icône de signal en mode itinérance</string>
+    <!-- RGG Accent Picker -->
+    <string name="themes_title">Thèmes Octavi</string>
+    <string name="themes_summary">Theming Accent</string>
+    <string name="accent_color">Sélection Accent</string>
+    <!-- Global Actions -->
+    <!-- Battery light -->
+    <!-- Statusbar net monitor -->
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_q">Icône portrait (défaut)</string>
+    <string name="status_bar_battery_style_dotted_circle">Cercle pointillé</string>
+    <string name="status_bar_battery_style_circle">Cercle plein</string>
+    <string name="status_bar_battery_style_text">Icône cachée</string>
+    <string name="status_bar_battery_style_hidden">Icône cachée (Texte seulement)</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Pourcentage de la batterie</string>
+    <string name="status_bar_battery_percentage_default">Masqué (Par défaut)</string>
+    <string name="status_bar_battery_percentage_text_inside">Activé (intérieure de l\'icône)</string>
+    <string name="status_bar_battery_percentage_text_next">Activé</string>
+    <string name="status_bar_battery_text_charging_title">Pourcentage de la batterie lors de la charge</string>
+    <string name="status_bar_battery_text_charging_summary">Toujours afficher le pourcentage de la batterie lors de la charge</string>
+    <!-- Battery mode -->
+    <string name="battery_percentage_title">Pourcentage de la batterie</string>
+    <string name="qs_battery_percentage_title">Afficher le pourcentage de batterie</string>
+    <string name="battery_percentage_off">Désactivé</string>
+    <string name="battery_percentage_next">Activé</string>
+    <string name="battery_percentage_inside">Activé (intérieure de l\'icône)</string>
+    <string name="battery_percentage_estimate">Activé (estimation)</string>
+    <!-- Status bar - Battery custom charging symbol -->
+    <!-- Screenshot -->
+    <!-- Heads up -->
+    <!-- Lockscreen weather -->
+    <!-- Lockscreen weather style -->
+    <!-- CustomDoze -->
+    <!-- Media art -->
+    <!-- Lockscreen media artwork -->
+    <!-- Lock screen visualizer -->
+    <!-- Quick settings haptic feedback -->
+    <!-- Quick Settings -->
+    <!-- Notification headers -->
+    <!-- Translucent lockscreen notifications background -->
+    <!-- QS Header data uasge -->
+    <!--  Volume Panel Plugin   -->
+    <!--  Volume Panel Plugin Values   -->
+    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
+    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
+    <string name="volume_panel_oreo_val">co.potatoproject.plugin.volume.oreo</string>
+    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
+    <!-- Navbar Entries -->
+    <!-- Navbar options -->
+    <!-- Navbar Animation -->
+    <!-- Charging animation -->
+    <!-- Statusbar Clock -->
+    <!-- Charging animation -->
+    <!-- Ambient edge lighting -->
+    <!-- Option to enable/disable scrolling cache -->
+    <!-- Doze Brightness Config -->
+    <!-- Center R Notification headers -->
+    <!-- QS rows and columns -->
+    <!-- Torch Power button gestures -->
+    <!-- Double Tap on Doze to wake -->
+    <!-- Toast Animation -->
+    <!-- Force disable transition animation -->
+    <!-- Screen off animation -->
+    <!-- Notification sound -->
+    <!-- LockWeather Switches -->
+    <!-- Lockscreen notif count -->
+    <!-- Notification count -->
+    <!-- Heads up options -->
+    <!-- Gaming mode -->
+    <!-- Switch styles -->
+    <!-- Octavi Themeing Stuffs -->
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <!-- Title of the setting which enables overlays to customize the icon shape pack. -->
+    <!-- Themes customisation -->
+    <!-- Old mobile type icons -->
+    <!-- Allow fake signature -->
+    <!-- Ambient Music Ticker -->
+    <!-- Notification Vibration -->
+    <!-- Lock icon -->
+    <!-- Headset ringtone audio focus -->
+    <!-- Lockscreen icons -->
+    <!-- Screen off fod -->
+    <!-- FOD animations -->
+    <!-- FOD pressed color -->
+    <!-- FOD icon picker -->
+    <!-- Smart Pixels -->
+    <!-- Sensor block per-package -->
+    <!-- gvisual mod -->
+    <!-- reTicker -->
+</resources>
