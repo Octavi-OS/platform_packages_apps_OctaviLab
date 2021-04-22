@@ -77,6 +77,15 @@
         android:entries="@array/b_slider_style_entries"
         android:entryValues="@array/b_slider_style_values" />
 
+    <com.octavi.lab.preferences.SystemSettingListPreference
+        android:key="settings_theme_style"
+        android:title="Settings Style"
+        android:summary="%s"
+        android:defaultValue="0"
+        settings:iconSpaceReserved="false"
+        android:entries="@array/s_settings_style_entries"
+        android:entryValues="@array/s_settings_style_values" />
+
     <!-- Gvisual mod -->
     <PreferenceCategory 
          android:key="gvisual_category"

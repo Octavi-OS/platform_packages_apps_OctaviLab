@@ -67,6 +67,7 @@
         android:defaultValue="false"/>
 
     <com.octavi.lab.preferences.SystemSettingListPreference
+        settings:iconSpaceReserved="false"
         android:key="qs_panel_bg_use_new_tint"
         android:title="@string/qs_bg_use_new_tint"
 	android:dialogTitle="@string/qs_bg_use_new_tint"

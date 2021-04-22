@@ -865,4 +865,15 @@
         <item>2</item>
     </string-array>
 
+    <string-array name="s_settings_style_entries" translatable="false">
+        <item>Default</item>
+        <item>Cartoony</item>
+        <item>MIUI</item>
+    </string-array>
+
+    <string-array name="s_settings_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
