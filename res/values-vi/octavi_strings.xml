@@ -642,9 +642,30 @@
     <string name="sb_height_medium">Trung bình</string>
     <string name="sb_height_large">Lớn</string>
     <string name="sb_height_extralarge">Rất lớn</string>
+    <string name="navbar_color_title">Màu của thanh điều hướng</string>
+    <string name="navbar_color_dialog_title">Chọn Màu</string>
+    <string name="navbar_default">Mặc định</string>
+    <string name="navbar_orchid">Tím phong lan</string>
+    <string name="navbar_red">Đỏ</string>
+    <string name="navbar_blue">Xanh da trời</string>
+    <string name="navbar_rose">Hoa Hồng</string>
+    <string name="navbar_purp">Màu tím</string>
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Thay thế các thông báo của bạn bằng một phiên bản biểu ngữ được thiết kế lại \nNhẹ nhàng và ít xâm lấn hơn thông báo tiêu chuẩn</string>
     <string name="reticker_colored_title">Sử dụng nền màu ứng dụng</string>
     <string name="reticker_colored_summary">Thay thế màu nền reTicker bằng màu chính của ứng dụng thông báo</string>
+    <!-- Accent QS tint -->
+    <string name="qs_bg_use_new_tint">Màu ô cài đặt nhanh</string>
+    <string name="qs_bg_use_new_tint_summary">Sử dụng màu nhấn cho biểu tượng và hình nền của qs</string>
+    <string name="qs_tint_off">Mặc định</string>
+    <string name="qs_tint_accent">Màu nhấn</string>
+    <string name="qs_tint_oos">OxygenOS 11</string>
+    <string name="qs_tint_twelve">Android 12</string>
+    <!-- Lock icon -->
+    <string name="fp_icon_disable_title">Ẩn biểu tượng FP</string>
+    <string name="fp_icon_disabled_summary">Ẩn biểu tượng FP trên màn hình khoá</string>
+    <!-- Show Statusbar on Lockscreen -->
+    <string name="lockscreen_status_bar_title">Thanh trạng thái</string>
+    <string name="lockscreen_status_bar_summary">Hiển thị thanh trạng thái trên màn hình khóa</string>
 </resources>
