@@ -641,4 +641,7 @@
     <string name="sb_height_large">Grande</string>
     <string name="sb_height_extralarge">Extra grande</string>
     <!-- reTicker -->
+    <!-- Accent QS tint -->
+    <!-- Lock icon -->
+    <!-- Show Statusbar on Lockscreen -->
 </resources>
