@@ -643,4 +643,7 @@
     <string name="sb_height_large">Большая</string>
     <string name="sb_height_extralarge">Очень большая</string>
     <!-- reTicker -->
+    <!-- Accent QS tint -->
+    <!-- Lock icon -->
+    <!-- Show Statusbar on Lockscreen -->
 </resources>
