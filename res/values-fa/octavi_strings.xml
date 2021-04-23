@@ -573,7 +573,6 @@
     <string name="fod_recog_animation_summary">انیمیشنی هنگامی که سیستم اثر انگشت شما را شناسایی میکند بر روی صفحه قفل نشان میدهد</string>
     <string name="fod_recog_animation_effect_title">انمیشن اثر انگشت را انتخاب کنید</string>
     <string name="fod_recog_animation_miui_normal">Xiaomi default</string>
-    <string name="fod_recog_animation_miui_aod">Xiaomi AOD</string>
     <string name="fod_recog_animation_miui_aurora">Xiaomi Aurora (K30 Pro)</string>
     <string name="fod_recog_animation_miui_aurora_cas">Xiaomi Aurora (Mi 10 Ultra)</string>
     <string name="fod_recog_animation_miui_light">Xiaomi Light</string>
@@ -643,4 +642,7 @@
     <string name="sb_height_large">بزرگ</string>
     <string name="sb_height_extralarge">خیلی بزرگ</string>
     <!-- reTicker -->
+    <!-- Accent QS tint -->
+    <!-- Lock icon -->
+    <!-- Show Statusbar on Lockscreen -->
 </resources>
