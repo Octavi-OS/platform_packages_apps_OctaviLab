@@ -642,9 +642,30 @@
     <string name="sb_height_medium">Střední</string>
     <string name="sb_height_large">Velké</string>
     <string name="sb_height_extralarge">Extra velké</string>
+    <string name="navbar_color_title">Barvy navigačního panelu</string>
+    <string name="navbar_color_dialog_title">Výběr barvy</string>
+    <string name="navbar_default">Výchozí</string>
+    <string name="navbar_orchid">Orchideová</string>
+    <string name="navbar_red">Červená</string>
+    <string name="navbar_blue">Modrá</string>
+    <string name="navbar_rose">Růže</string>
+    <string name="navbar_purp">Fialová</string>
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Nahraďte svá oznámení přepracovanou verzí tickerů! \Úzké a méně invazivní než standardní oznámení</string>
     <string name="reticker_colored_title">Použít barvu pozadí aplikace</string>
     <string name="reticker_colored_summary">Vyměňte barvu pozadí reTicker pomocí hlavní barvy aplikace oznámení</string>
+    <!-- Accent QS tint -->
+    <string name="qs_bg_use_new_tint">Zvolit odstín QS dlaždic podle barvy zvýraznění</string>
+    <string name="qs_bg_use_new_tint_summary">Vyberte styl odstínu QS</string>
+    <string name="qs_tint_off">Výchozí</string>
+    <string name="qs_tint_accent">Barva zvýraznění</string>
+    <string name="qs_tint_oos">OxygenOS 11</string>
+    <string name="qs_tint_twelve">Android 12</string>
+    <!-- Lock icon -->
+    <string name="fp_icon_disable_title">Skrýt ikonu otisku prstu</string>
+    <string name="fp_icon_disabled_summary">Skrýt ikonu otisku prstu na zamykací obrazovce</string>
+    <!-- Show Statusbar on Lockscreen -->
+    <string name="lockscreen_status_bar_title">Stavová lišta</string>
+    <string name="lockscreen_status_bar_summary">Zobrazit stavovou lištu na zamykací obrazovce</string>
 </resources>
