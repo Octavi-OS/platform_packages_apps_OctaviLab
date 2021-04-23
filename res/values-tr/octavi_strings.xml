@@ -647,4 +647,7 @@
     <string name="reticker_summary">Bildirimlerinizi, bildirim çubuğu yazılarının yeniden tasarlanmış haliyle değiştirin!\nStandart bildirimlerden daha zarif ve daha az dikkat dağıtıcıdır</string>
     <string name="reticker_colored_title">Uygulama rengine göre arkaplan</string>
     <string name="reticker_colored_summary">reTicker arkaplan rengini uygulamanın ana rengine göre değiştir</string>
+    <!-- Accent QS tint -->
+    <!-- Lock icon -->
+    <!-- Show Statusbar on Lockscreen -->
 </resources>
