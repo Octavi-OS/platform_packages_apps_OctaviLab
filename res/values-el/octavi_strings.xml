@@ -642,9 +642,30 @@
     <string name="sb_height_medium">Μεσαίο</string>
     <string name="sb_height_large">Μεγάλο</string>
     <string name="sb_height_extralarge">Πολύ Μεγάλο</string>
+    <string name="navbar_color_title">Χρώματα γραμμής πλοήγησης</string>
+    <string name="navbar_color_dialog_title">Επιλέξτε χρώμα</string>
+    <string name="navbar_default">Προεπιλογή</string>
+    <string name="navbar_orchid">Ορχιδέα</string>
+    <string name="navbar_red">Κόκκινο</string>
+    <string name="navbar_blue">Μπλέ</string>
+    <string name="navbar_rose">Τριανταφυλλί</string>
+    <string name="navbar_purp">Μωβ</string>
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Αντικαταστήστε τις ειδοποιήσεις σας με μια επανασχεδιασμένη έκδοση των tickers! \nSlim και λιγότερο επεμβατική από μια τυπική ειδοποίηση</string>
     <string name="reticker_colored_title">Χρήση έγχρωμου φόντου εφαρμογών</string>
     <string name="reticker_colored_summary">Αντικατάσταση χρώματος φόντου reTicker χρησιμοποιώντας το κύριο χρώμα της εφαρμογής ειδοποίησης</string>
+    <!-- Accent QS tint -->
+    <string name="qs_bg_use_new_tint">Απόχρωση πλακιδίων Γρήγορων Ρυθμίσεων</string>
+    <string name="qs_bg_use_new_tint_summary">Επιλέξτε το στυλ απόχρωσης των πλακιδίων</string>
+    <string name="qs_tint_off">Προεπιλογή</string>
+    <string name="qs_tint_accent">Χρώμα έμφασης</string>
+    <string name="qs_tint_oos">Οξυγόνο 11</string>
+    <string name="qs_tint_twelve">Android 12</string>
+    <!-- Lock icon -->
+    <string name="fp_icon_disable_title">Απόκρυψη εικονιδίου αποτυπώματος</string>
+    <string name="fp_icon_disabled_summary">Απόκρυψη του εικονιδίου αποτυπώματος στην οθόνη κλειδώματος</string>
+    <!-- Show Statusbar on Lockscreen -->
+    <string name="lockscreen_status_bar_title">Στατική μπάρα</string>
+    <string name="lockscreen_status_bar_summary">Εμφάνιση γραμμής κατάστασης στην οθόνη κλειδώματος</string>
 </resources>
