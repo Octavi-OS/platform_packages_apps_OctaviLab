@@ -646,4 +646,7 @@
     <string name="reticker_summary">以重新設計後的提示方式取代原有通知。\n相較起來更苗條，更不具侵入性。</string>
     <string name="reticker_colored_title">背景採用應用程式色調</string>
     <string name="reticker_colored_summary">以該應用程式主色調取代原有背景色</string>
+    <!-- Accent QS tint -->
+    <!-- Lock icon -->
+    <!-- Show Statusbar on Lockscreen -->
 </resources>
