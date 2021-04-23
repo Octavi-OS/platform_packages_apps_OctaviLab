@@ -647,4 +647,7 @@
     <string name="reticker_summary">Gantilah notifikasi Anda dengan versi ticker yang didesain ulang! \nRamping dan tidak terlalu invasif dibandingkan notifikasi standar</string>
     <string name="reticker_colored_title">Gunakan latar belakang berwarna aplikasi</string>
     <string name="reticker_colored_summary">Ganti warna latar belakang reTicker menggunakan warna utama notifikasi aplikasi</string>
+    <!-- Accent QS tint -->
+    <!-- Lock icon -->
+    <!-- Show Statusbar on Lockscreen -->
 </resources>
