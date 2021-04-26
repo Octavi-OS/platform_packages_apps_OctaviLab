@@ -49,7 +49,6 @@
     <string name="status_bar_item_summary">AOSP status bar tuner</string>
     <string name="clock_summary">Customise the clock and date on status bar</string>
     <string name="battery_settings_summary">Options related to battery style Battery bar</string>
-    <string name="traffic_summary">Enable/Disable and style the network indicator</string>
     <string name="carrier_summary">Set a custom carrier label</string>
     <string name="navigation_summary">Options related to onscreen navbar</string>
     <string name="lockscreen_shortcut_summary">AOSP Lockscreen tuner</string>

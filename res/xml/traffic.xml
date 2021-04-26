@@ -25,7 +25,7 @@
         android:defaultValue="0"
         android:persistent="false" />
 
-    <com.octavi.lab.preference.CustomSeekBarPreference
+    <com.octavi.support.preference.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold_title"
         android:max="10"
@@ -33,14 +33,14 @@
         settings:units="KB/s"
         android:defaultValue="0" />
 
-    <com.octavi.lab.preference.SystemSettingListPreference
+    <com.octavi.support.preference.SystemSettingListPreference
         android:key="network_traffic_mode"
         android:title="@string/network_traffic_mode_title"
         android:entries="@array/network_traffic_mode_entries"
         android:entryValues="@array/network_traffic_mode_values"
         android:defaultValue="0" />
 
-    <com.octavi.lab.preference.SystemSettingSeekBarPreference
+    <com.octavi.support.preference.SystemSettingSeekBarPreference
         android:key="network_traffic_refresh_interval"
         android:title="@string/network_traffic_refresh_interval_title"
         android:max="10"
