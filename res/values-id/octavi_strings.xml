@@ -642,12 +642,30 @@
     <string name="sb_height_medium">Sedang</string>
     <string name="sb_height_large">Besar</string>
     <string name="sb_height_extralarge">Ekstra Besar</string>
+    <string name="navbar_color_title">Warna bilah navigasi</string>
+    <string name="navbar_color_dialog_title">Pilih warna</string>
+    <string name="navbar_default">Bawaan</string>
+    <string name="navbar_orchid">Anggrek</string>
+    <string name="navbar_red">Merah</string>
+    <string name="navbar_blue">Biru</string>
+    <string name="navbar_rose">Mawar</string>
+    <string name="navbar_purp">Ungu</string>
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Gantilah notifikasi Anda dengan versi ticker yang didesain ulang! \nRamping dan tidak terlalu invasif dibandingkan notifikasi standar</string>
     <string name="reticker_colored_title">Gunakan latar belakang berwarna aplikasi</string>
     <string name="reticker_colored_summary">Ganti warna latar belakang reTicker menggunakan warna utama notifikasi aplikasi</string>
     <!-- Accent QS tint -->
+    <string name="qs_bg_use_new_tint">Warna ubin QS</string>
+    <string name="qs_bg_use_new_tint_summary">Pilih Gaya Warna QS</string>
+    <string name="qs_tint_off">Bawaan</string>
+    <string name="qs_tint_accent">Warna Aksen</string>
+    <string name="qs_tint_oos">OxygenOS 11</string>
+    <string name="qs_tint_twelve">Android 12</string>
     <!-- Lock icon -->
+    <string name="fp_icon_disable_title">Sembunyikan ikon sidik jari</string>
+    <string name="fp_icon_disable_summary">Sembunyikan ikon sidik jari pada layar kunci</string>
     <!-- Show Statusbar on Lockscreen -->
+    <string name="lockscreen_status_bar_title">Bilah status</string>
+    <string name="lockscreen_status_bar_summary">Tampilkan bilah status di layar kunci</string>
 </resources>
