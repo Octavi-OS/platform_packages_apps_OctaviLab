@@ -642,12 +642,30 @@
     <string name="sb_height_medium">Orta</string>
     <string name="sb_height_large">Geniş</string>
     <string name="sb_height_extralarge">Çok Geniş</string>
+    <string name="navbar_color_title">Gezinme çubuğu renkleri</string>
+    <string name="navbar_color_dialog_title">Renk seçiniz</string>
+    <string name="navbar_default">Varsayılan</string>
+    <string name="navbar_orchid">Orkide</string>
+    <string name="navbar_red">Kırmızı</string>
+    <string name="navbar_blue">Mavi</string>
+    <string name="navbar_rose">Gül Pembesi</string>
+    <string name="navbar_purp">Mor</string>
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Bildirimlerinizi, bildirim çubuğu yazılarının yeniden tasarlanmış haliyle değiştirin!\nStandart bildirimlerden daha zarif ve daha az dikkat dağıtıcıdır</string>
     <string name="reticker_colored_title">Uygulama rengine göre arkaplan</string>
     <string name="reticker_colored_summary">reTicker arkaplan rengini uygulamanın ana rengine göre değiştir</string>
     <!-- Accent QS tint -->
+    <string name="qs_bg_use_new_tint">Hızlı ayarlar kare renkleri</string>
+    <string name="qs_bg_use_new_tint_summary">Hızlı ayarlar renk tonu stilini seçin</string>
+    <string name="qs_tint_off">Varsayılan</string>
+    <string name="qs_tint_accent">Vurgu Rengi</string>
+    <string name="qs_tint_oos">OxygenOS 11</string>
+    <string name="qs_tint_twelve">Android 12</string>
     <!-- Lock icon -->
+    <string name="fp_icon_disable_title">Parmak izi simgesini gizle</string>
+    <string name="fp_icon_disable_summary">Kilit ekranında Parmak izi simgesini gizle</string>
     <!-- Show Statusbar on Lockscreen -->
+    <string name="lockscreen_status_bar_title">Durum Çubuğu</string>
+    <string name="lockscreen_status_bar_summary">Kilit ekranında durum çubuğunu göster</string>
 </resources>
