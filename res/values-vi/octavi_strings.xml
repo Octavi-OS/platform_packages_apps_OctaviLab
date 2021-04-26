@@ -664,7 +664,7 @@
     <string name="qs_tint_twelve">Android 12</string>
     <!-- Lock icon -->
     <string name="fp_icon_disable_title">Ẩn biểu tượng FP</string>
-    <string name="fp_icon_disabled_summary">Ẩn biểu tượng FP trên màn hình khoá</string>
+    <string name="fp_icon_disable_summary">Ẩn biểu tượng FP trên màn hình khoá</string>
     <!-- Show Statusbar on Lockscreen -->
     <string name="lockscreen_status_bar_title">Thanh trạng thái</string>
     <string name="lockscreen_status_bar_summary">Hiển thị thanh trạng thái trên màn hình khóa</string>
