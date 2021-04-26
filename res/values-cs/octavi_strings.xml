@@ -664,7 +664,7 @@
     <string name="qs_tint_twelve">Android 12</string>
     <!-- Lock icon -->
     <string name="fp_icon_disable_title">Skrýt ikonu otisku prstu</string>
-    <string name="fp_icon_disabled_summary">Skrýt ikonu otisku prstu na zamykací obrazovce</string>
+    <string name="fp_icon_disable_summary">Skrýt ikonu otisku prstu na zamykací obrazovce</string>
     <!-- Show Statusbar on Lockscreen -->
     <string name="lockscreen_status_bar_title">Stavová lišta</string>
     <string name="lockscreen_status_bar_summary">Zobrazit stavovou lištu na zamykací obrazovce</string>
