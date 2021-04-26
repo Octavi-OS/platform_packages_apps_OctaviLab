@@ -664,7 +664,7 @@
     <string name="qs_tint_twelve">Android 12</string>
     <!-- Lock icon -->
     <string name="fp_icon_disable_title">Απόκρυψη εικονιδίου αποτυπώματος</string>
-    <string name="fp_icon_disabled_summary">Απόκρυψη του εικονιδίου αποτυπώματος στην οθόνη κλειδώματος</string>
+    <string name="fp_icon_disable_summary">Απόκρυψη του εικονιδίου αποτυπώματος στην οθόνη κλειδώματος</string>
     <!-- Show Statusbar on Lockscreen -->
     <string name="lockscreen_status_bar_title">Στατική μπάρα</string>
     <string name="lockscreen_status_bar_summary">Εμφάνιση γραμμής κατάστασης στην οθόνη κλειδώματος</string>
