@@ -83,4 +83,11 @@
         android:entryValues="@array/qs_datausage_values"
         android:defaultValue="0" />
 
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
+        android:key="headers_icons_style"
+        android:title="@string/header_icons_style"
+        android:summary="@string/header_icons_style_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
