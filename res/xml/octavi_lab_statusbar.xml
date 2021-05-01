@@ -41,7 +41,9 @@
          android:fragment="com.octavi.lab.fragments.Traffic"
 	 android:title="@string/traffic_title" />
 
-    <Preference android:key="battery_mode" 
+    <Preference 
+         settings:iconSpaceReserved="false"
+         android:key="battery_mode" 
          android:title="@string/battery_mode_title" 
          android:summary="@string/battery_mode_summary"
          android:fragment="com.octavi.lab.fragments.BatteryMode" />
@@ -58,6 +60,14 @@
         android:defaultValue="false" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
+        android:key="statusbar_icons_style"
+        android:title="@string/statusbar_icons_style"
+        android:summary="@string/statusbar_icons_style_summary"
+        android:defaultValue="true" />
+
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="show_fourg"
         android:title="@string/show_fourg_title"
         android:summary="@string/show_fourg_summary"
