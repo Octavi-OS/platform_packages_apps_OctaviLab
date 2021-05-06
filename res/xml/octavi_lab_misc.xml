@@ -19,12 +19,6 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
         <Preference
-            android:key="gaming_mode"
-            android:summary="@string/gaming_mode_summary"
-            android:fragment="com.octavi.lab.fragments.GamingMode" 
-            android:title="@string/gaming_mode_title" />
-
-        <Preference
             android:key="smart_pixels" 
             android:title="@string/smart_pixels_title" 
             android:summary="@string/smart_pixels_summary"
@@ -56,12 +50,6 @@
             android:summary="@string/wakeup_when_plugged_unplugged_summary"
             android:defaultValue="true" />
 
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference 
-           android:key="three_finger_gesture"
-           android:title="@string/three_finger_gesture"
-           android:summary="@string/three_finger_gesture_summary"
-           android:defaultValue="false" />
-
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
            android:key="charging_animation"
            android:title="@string/charging_animation_title"
@@ -86,5 +74,26 @@
             settings:min="1"
             android:persistent="false" />
     </PreferenceCategory>
+
+    <Preference
+         android:key="animations_category"
+         android:title="@string/animation_settings_title"
+         android:summary="@string/animation_settings_summary"
+         android:fragment="com.octavi.lab.fragments.AnimationSettings" />
+
+    <com.octavi.lab.preferences.SystemSettingListPreference
+         android:key="screenshot_type"
+         android:entries="@array/screenshot_type_entries"
+         android:entryValues="@array/screenshot_type_values"
+         android:title="@string/screenshot_type_title"
+         android:defaultValue="0" />
+
+    <ListPreference
+        android:key="pref_scrollingcache"
+        android:dialogTitle="@string/pref_scrollingcache_title"
+        android:title="@string/pref_scrollingcache_title"
+        android:summary="@string/pref_scrollingcache_summary"
+        android:entries="@array/entries_scrollingcache"
+        android:entryValues="@array/values_scrollingcache" />
 
 </PreferenceScreen>

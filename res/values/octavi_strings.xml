@@ -17,16 +17,8 @@
 
     <!-- Categories -->
     <string name="button_title">Buttons</string>
-    <string name="lockscreen_title">Lock screen</string>
-    <string name="misc_title">Miscellaneous</string>
     <string name="system_title">System</string>
-    <string name="statusbar_title">Status bar</string>
     <string name="notifications_title">Notifications</string>
-    <string name="navbar_title">Navigation Bar</string>
-    <string name="volume_title">Volume Rockers</string>
-    <string name="gesture_title">Gestures</string>
-    <string name="powermenu_title">PowerMenu</string>
-    <string name="quicksettings_title">Quick Settings</string>
     <string name="lockscreen_fod_category">Fingerprint On Display</string>
 
     <!-- General strings -->
@@ -188,7 +180,6 @@
     <string name="roaming_indicator_icon_summary">Display the roaming indicator in signal icon when in roaming mode</string>
 
     <!-- RGG Accent Picker -->
-    <string name="themes_title">Octavi Themes</string>
     <string name="themes_summary">accent theming</string>
     <string name="accent_color">Accent picker</string>
     <string name="accent_summary">System wide accent maker</string>
