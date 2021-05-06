@@ -756,10 +756,6 @@
     <string name="fp_icon_disable_title">Hide FP icon</string>
     <string name="fp_icon_disable_summary">Hide the FP icon on lockscreen</string>
 
-    <!-- Show Statusbar on Lockscreen -->
-    <string name="lockscreen_status_bar_title">Status bar</string>
-    <string name="lockscreen_status_bar_summary">Display status bar on the lockscreen</string>
-
     <!-- Header titles -->
     <string name="quicksettings_title">Quick Setings</string>
     <string name="statusbar_title">StatusBar</string>
@@ -777,7 +773,6 @@
 
     <!-- Navbar styles -->
     <string name="navbar_style_title">Navbar style</string>
-    <string name="navbar_default">Default</string>
     <string name="navbar_asus">Asus</string>
     <string name="navbar_oneplus">OnePlus</string>
     <string name="navbar_oneui">One UI</string>

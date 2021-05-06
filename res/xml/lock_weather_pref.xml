@@ -22,16 +22,19 @@
         android:selectable="false"/>
 
     <PreferenceCategory
+        settings:iconSpaceReserved="false"
         android:key="lockscreen_weather"
         android:title="@string/lockscreen_weather_category">
 
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            settings:iconSpaceReserved="false"
             android:key="lockscreen_weather_enabled"
             android:title="@string/lockscreen_weather_enabled_title"
             android:summary="@string/lockscreen_weather_enabled_summary"
             android:defaultValue="false" />
 
         <com.octavi.lab.preferences.SecureSettingListPreference
+        settings:iconSpaceReserved="false"
         android:key="lockscreen_weather_alignment"
         android:title="@string/lockscreen_weather_alignment_title"
         android:dialogTitle="@string/lockscreen_weather_alignment_title"
@@ -41,12 +44,14 @@
         android:defaultValue="1" />
 
         <Preference
+            settings:iconSpaceReserved="false"
             android:key="omnijaws_settings"
             android:title="@string/lockscreen_weather_settings_title"
             android:summary="@string/lockscreen_weather_settings_summary"
             android:fragment="com.octavi.lab.OmniJawsSettings" />
 
         <com.octavi.lab.preferences.SystemSettingListPreference
+            settings:iconSpaceReserved="false"
             android:key="lockscreen_weather_style"
             android:title="@string/lockscreen_weather_style_title"
             android:dialogTitle="@string/lockscreen_weather_style_title"

@@ -22,6 +22,7 @@
         android:selectable="false"/>
 
         <Preference
+            settings:iconSpaceReserved="false"
             android:key="gaming_mode"
             android:summary="@string/gaming_mode_summary"
             android:fragment="com.octavi.lab.fragments.GamingMode" 

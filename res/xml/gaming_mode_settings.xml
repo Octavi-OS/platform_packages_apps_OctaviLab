@@ -28,18 +28,21 @@
         android:defaultValue="1" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="gaming_mode_hw_keys_toggle"
         android:title="@string/gaming_mode_hardware_keys_title"
         android:summary="@string/gaming_mode_hardware_keys_summary"
         android:defaultValue="false" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="gaming_mode_manual_brightness_toggle"
         android:title="@string/gaming_mode_brightness_title"
         android:summary="@string/gaming_mode_brightness_summary"
         android:defaultValue="true" />
 
     <com.octavi.lab.preferences.SystemSettingListPreference
+        settings:iconSpaceReserved="false"
         android:key="gaming_mode_ringer_mode"
         android:title="@string/gaming_mode_ringer_title"
         android:entries="@array/gaming_mode_ringer_entries"
@@ -48,6 +51,7 @@
         android:summary="%s" />
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="gaming_mode_notifications"
         android:title="@string/gaming_mode_notifications_title"
         android:entries="@array/gaming_mode_notifications_entries"
@@ -55,6 +59,7 @@
         android:defaultValue="3" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="gaming_mode_dynamic_state"
         android:title="@string/gaming_mode_dynamic_title"
         android:summary="@string/gaming_mode_dynamic_summary"
@@ -62,6 +67,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        settings:iconSpaceReserved="false"
         android:title="@string/gaming_mode_app_picker_title"
         android:key="gamingmode_applications">
         <Preference
@@ -71,6 +77,7 @@
     </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference
+        settings:iconSpaceReserved="false"
         android:key="gaming_mode_footer"
         android:title="@string/add_gaming_mode_package_summary"
         android:selectable="false"

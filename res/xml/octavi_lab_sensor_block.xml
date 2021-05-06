@@ -19,6 +19,7 @@
 
     <!-- Master switch -->
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="sensor_block"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
@@ -26,17 +27,20 @@
 
     <!-- App picker activity for sensor block -->
     <PreferenceCategory
+        settings:iconSpaceReserved="false"
         android:title="@string/sensor_block_app_picker_title"
         android:dependency="sensor_block"
         android:key="sensor_block_applications">
 
         <Preference
+            settings:iconSpaceReserved="false"
             android:key="add_sensor_block_packages"
             android:icon="@drawable/ic_menu_add_white"
             android:title="@string/add_sensor_block_package_title" />
     </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference
+        settings:iconSpaceReserved="false"
         android:key="sensor_block_footer"
         android:selectable="false"
         settings:searchable="false"

@@ -712,7 +712,7 @@
         <item>26</item>
         <item>27</item>
     </string-array>
-<<<<<<< HEAD
+
     <!-- FOD pressed color -->
     <string-array name="fod_pressed_color_entries" translatable="false">
         <item>@string/fod_pressed_color_white</item>
@@ -804,6 +804,19 @@
         <item>4</item>
     </string-array>
 
+    <!-- QS Clock Style -->
+    <string-array name="qs_clock_post_entries" translatable="false">
+        <item>Left</item>
+        <item>Center</item>
+        <item>Pill Clock (New)</item>
+    </string-array>
+
+    <string-array name="qs_clock_pos_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <string-array name="qs_tint_entries" translatable="false">
         <item>@string/qs_tint_off</item>
         <item>@string/qs_tint_accent</item>
@@ -833,6 +846,7 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
+        <item>6</item>
     </string-array>
 
     <!-- Navbar styles -->

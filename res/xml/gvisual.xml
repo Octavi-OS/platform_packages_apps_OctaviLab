@@ -22,6 +22,7 @@
         android:title="@string/gvisual_title" >
 
         <ListPreference
+            settings:iconSpaceReserved="false"
             android:key="statusbar_height"
             android:title="@string/statusbar_height_title"
             android:dialogTitle="@string/statusbar_height_dialog_title"
@@ -29,6 +30,7 @@
             android:entryValues="@array/statusbar_height_values" />
 
         <ListPreference
+            settings:iconSpaceReserved="false"
             android:key="rounded_ui"
             android:title="@string/rounded_ui_title"
             android:dialogTitle="@string/rounded_ui_dialog_title"
@@ -36,6 +38,7 @@
             android:entryValues="@array/rounded_ui_values" />
 
         <ListPreference
+            settings:iconSpaceReserved="false"
             android:key="navbar_color"
             android:title="@string/navbar_color_title"
             android:summary="%s"

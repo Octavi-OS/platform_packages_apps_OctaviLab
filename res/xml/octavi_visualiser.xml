@@ -22,6 +22,7 @@
         android:selectable="false"/>
 
     <Preference
+        settings:iconSpaceReserved="false"
         android:key="lockscreen_visualizer"
         android:fragment="com.octavi.lab.fragments.Visualizer"
         android:title="@string/lockscreen_visualizer_enable" 

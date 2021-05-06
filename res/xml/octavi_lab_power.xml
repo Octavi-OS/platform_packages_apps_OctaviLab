@@ -24,41 +24,49 @@
         android:selectable="false"/>
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="global_actions_screenshot"
         android:title="@string/global_actions_screenshot"
         android:defaultValue="false" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="global_actions_screenrecord"
         android:title="@string/global_actions_screenrecord"
         android:defaultValue="false" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="global_actions_airplane"
         android:title="@string/global_actions_airplane"
         android:defaultValue="false" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="global_actions_settings"
         android:title="@string/global_actions_settings"
         android:defaultValue="false" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="global_actions_lockdown"
         android:title="@string/global_actions_lockdown"
         android:defaultValue="false" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="global_actions_flashlight"
         android:title="@string/global_actions_flashlight"
         android:defaultValue="false" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="global_actions_users"
         android:title="@string/global_actions_users"
         android:defaultValue="false" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="global_actions_emergency"
         android:title="@string/global_actions_emergency"
         android:defaultValue="false" />
@@ -69,6 +77,7 @@
         android:defaultValue="false" /-->
 
     <com.octavi.lab.preferences.CustomSeekBarPreference
+        settings:iconSpaceReserved="false"
         android:key="global_actions_max_columns"
         android:title="@string/global_actions_max_columns_title"
         android:summary="@string/global_actions_max_columns_summary"

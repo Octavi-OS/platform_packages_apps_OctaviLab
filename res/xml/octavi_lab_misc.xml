@@ -24,6 +24,7 @@
         android:selectable="false"/>
 
         <Preference
+            settings:iconSpaceReserved="false"
             android:key="smart_pixels" 
             android:title="@string/smart_pixels_title" 
             android:summary="@string/smart_pixels_summary"
@@ -31,18 +32,21 @@
 
         <!-- Sensor Block -->
         <Preference
+            settings:iconSpaceReserved="false"
             android:key="sensor_block_settings"
             android:title="@string/sensor_block_title"
             android:summary="@string/sensor_block_summary"
             android:fragment="com.octavi.lab.fragments.SensorBlockSettings"/>
 
         <com.octavi.lab.preferences.SecureSettingSwitchPreference
+            settings:iconSpaceReserved="false"
             android:key="allow_signature_fake"
             android:title="@string/allow_signature_fake"
             android:summary="@string/allow_signature_fake_summary"
             android:defaultValue="false" />
 
         <com.octavi.lab.preferences.SystemSettingListPreference
+            settings:iconSpaceReserved="false"
             android:key="ringtone_focus_mode"
             android:title="@string/ringtone_focus_mode_title"
             android:entries="@array/ringtone_focus_mode_entries"
@@ -50,20 +54,24 @@
             android:defaultValue="1" />
 
         <com.octavi.lab.preferences.GlobalSettingSwitchPreference
+            settings:iconSpaceReserved="false"
             android:key="wake_when_plugged_or_unplugged"
             android:title="@string/wakeup_when_plugged_unplugged_title"
             android:summary="@string/wakeup_when_plugged_unplugged_summary"
             android:defaultValue="true" />
 
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            settings:iconSpaceReserved="false"
            android:key="charging_animation"
            android:title="@string/charging_animation_title"
            android:summary="@string/charging_animation_summary"
            android:defaultValue="true" />
 
         <PreferenceCategory
+            settings:iconSpaceReserved="false"
         android:title="@string/doze_brightness_category" >
         <com.octavi.lab.preferences.CustomSeekBarPreference
+            settings:iconSpaceReserved="false"
             android:key="ambient_doze_brightness"
             android:title="@string/ambient_doze_brightness_title"
             android:summary="@string/ambient_doze_brightness_summary"
@@ -72,6 +80,7 @@
             android:persistent="false" />
 
         <com.octavi.lab.preferences.CustomSeekBarPreference
+            settings:iconSpaceReserved="false"
             android:key="ambient_pulse_brightness"
             android:title="@string/ambient_pulse_brightness_title"
             android:summary="@string/ambient_pulse_brightness_summary"
@@ -81,12 +90,14 @@
     </PreferenceCategory>
 
     <Preference
+         settings:iconSpaceReserved="false"
          android:key="animations_category"
          android:title="@string/animation_settings_title"
          android:summary="@string/animation_settings_summary"
          android:fragment="com.octavi.lab.fragments.AnimationSettings" />
 
     <com.octavi.lab.preferences.SystemSettingListPreference
+         settings:iconSpaceReserved="false"
          android:key="screenshot_type"
          android:entries="@array/screenshot_type_entries"
          android:entryValues="@array/screenshot_type_values"
@@ -94,6 +105,7 @@
          android:defaultValue="0" />
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="pref_scrollingcache"
         android:dialogTitle="@string/pref_scrollingcache_title"
         android:title="@string/pref_scrollingcache_title"

@@ -21,6 +21,7 @@
         android:selectable="false"/>
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
+        settings:iconSpaceReserved="false"
         android:key="accent_color"
         android:title="@string/accent_color"
         android:summary="@string/accent_summary"
@@ -28,6 +29,7 @@
         android:persistent="false" />
 
     <com.android.settings.display.darkmode.DarkModePreference
+        settings:iconSpaceReserved="false"
         android:key="dark_ui_mode"
         android:title="@string/dark_ui_mode"
         android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
@@ -37,22 +39,27 @@
         settings:keywords="@string/keywords_dark_ui_mode"/>
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="android.theme.customization.custom_overlays"
         android:title="@string/theme_customization_systemui_title"/>
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="android.theme.customization.font"
         android:title="@string/theme_customization_font_title"/>
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="android.theme.customization.adaptive_icon_shape"
         android:title="@string/theme_customization_icon_shape_title"/>
 
     <ListPreference
         android:key="android.theme.customization.icon_pack.android"
+        settings:iconSpaceReserved="false"
         android:title="@string/theme_customization_icon_pack_android_title"/>
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="switch_style"
         android:title="@string/switch_style_title"
         android:persistent="false"
@@ -88,10 +95,12 @@
 
     <!-- Gvisual mod -->
     <PreferenceCategory 
+        settings:iconSpaceReserved="false"
          android:key="gvisual_category"
          android:title="@string/gvisual_title">
 
         <PreferenceScreen
+            settings:iconSpaceReserved="false"
             android:key="gvisual"
             android:title="@string/gvisual_title"
             android:summary="@string/gvisual_summary"

@@ -17,18 +17,21 @@
 
           <!-- FOD icon picker -->
         <Preference
+            settings:iconSpaceReserved="false"
             android:key="fod_icon_picker_category"
             android:title="@string/fod_icon_picker_title"
             android:summary="@string/fod_icon_picker_summary"
             android:fragment="com.octavi.lab.fragments.lockscreen.FODIconPickerFragment" />
 
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            settings:iconSpaceReserved="false"
             android:key="fod_recognizing_animation"
             android:title="@string/fod_recog_animation"
             android:summary="@string/fod_recog_animation_summary"
             android:defaultValue="false" />
 
         <com.octavi.lab.preferences.SystemSettingListPreference
+            settings:iconSpaceReserved="false"
             android:key="fod_anim"
             android:title="@string/fod_recog_animation_effect_title"
             android:summary="%s"
@@ -38,6 +41,7 @@
             android:dependency="fod_recognizing_animation" />
 
         <com.octavi.lab.preferences.SystemSettingListPreference
+            settings:iconSpaceReserved="false"
             android:key="fod_color"
             android:title="@string/fod_pressed_color_title"
             android:summary="%s"
@@ -46,6 +50,7 @@
             android:defaultValue="0" />
 
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            settings:iconSpaceReserved="false"
             android:key="fod_gesture"
             android:title="@string/fod_gesture_title"
             android:summary="@string/fod_gesture_summary"

@@ -17,6 +17,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="network_traffic_location"
         android:title="@string/network_traffic_location"
         android:summary="%s"
@@ -25,6 +26,7 @@
         android:persistent="false" />
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="network_traffic_type"
         android:title="@string/network_traffic_type"
         android:entries="@array/show_network_traffic_type_entries"
@@ -33,6 +35,7 @@
         android:persistent="false" />
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="network_traffic_layout"
         android:title="@string/network_traffic_layout"
         android:entries="@array/network_traffic_layout_entries"
@@ -47,6 +50,7 @@
         settings:units="" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="network_traffic_arrow"
         android:title="@string/network_traffic_arrow"
         android:summary="@string/network_traffic_arrow_summary"
