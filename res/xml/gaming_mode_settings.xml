@@ -20,6 +20,7 @@
         android:key="gamingmode_category">
 
     <com.octavi.lab.preferences.SystemSettingListPreference
+        settings:iconSpaceReserved="false"
         android:key="gaming_mode_headsup_toggle"
         android:title="@string/gaming_mode_headsup_title"
         android:entries="@array/gaming_mode_headsup_toggle_entries"
@@ -67,6 +68,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        settings:allowDividerAbove="false"
+        settings:allowDividerBelow="false"
         settings:iconSpaceReserved="false"
         android:title="@string/gaming_mode_app_picker_title"
         android:key="gamingmode_applications">

@@ -21,6 +21,7 @@
     <Preference
         android:layout="@layout/octavi_header"
         android:title="@string/quicksettings_title"
+        settings:allowDividerBelow="false"
         android:selectable="false"/>
 
     <PreferenceCategory

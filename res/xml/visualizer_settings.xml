@@ -42,6 +42,7 @@
 
     <PreferenceCategory
         settings:iconSpaceReserved="false"
+        settings:allowDividerAbove="false"
         android:key="lockscreen_solid_lines_category"
         android:title="@string/lockscreen_solid_lines_category" >
 

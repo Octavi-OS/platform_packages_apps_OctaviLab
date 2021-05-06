@@ -95,7 +95,8 @@
 
     <!-- Gvisual mod -->
     <PreferenceCategory 
-        settings:iconSpaceReserved="false"
+         settings:iconSpaceReserved="false"
+         settings:allowDividerAbove="false"
          android:key="gvisual_category"
          android:title="@string/gvisual_title">
 

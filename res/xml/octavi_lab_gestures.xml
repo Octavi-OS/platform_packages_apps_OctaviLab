@@ -40,6 +40,7 @@
      <PreferenceCategory
         settings:iconSpaceReserved="false"
         android:key="double_tap_gestures_category"
+        settings:allowDividerAbove="false"
         android:title="@string/double_tap_gestures_category_title">
 
 	<com.octavi.lab.preferences.SystemSettingSwitchPreference
