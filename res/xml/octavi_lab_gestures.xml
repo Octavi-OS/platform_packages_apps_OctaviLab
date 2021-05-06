@@ -18,11 +18,22 @@
     android:title="@string/gesture_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <Preference
+        android:layout="@layout/octavi_header"
+        android:title="@string/gesture_title"
+        android:selectable="false"/>
+
      <ListPreference
           android:key="torch_power_button_gesture"
           android:title="@string/torch_power_button_gesture_title"
           android:entries="@array/torch_power_button_gesture_entries"
           android:entryValues="@array/torch_power_button_gesture_values" />
+
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference 
+           android:key="three_finger_gesture"
+           android:title="@string/three_finger_gesture"
+           android:summary="@string/three_finger_gesture_summary"
+           android:defaultValue="false" />
 
      <PreferenceCategory
         android:key="double_tap_gestures_category"

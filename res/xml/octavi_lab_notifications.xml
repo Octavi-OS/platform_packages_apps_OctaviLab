@@ -18,6 +18,11 @@
 	android:title="@string/notifications_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <Preference
+        android:layout="@layout/octavi_header"
+        android:title="@string/notif_title"
+        android:selectable="false"/>
+
         <!-- Heads up -->
         <Preference
         android:key="heads_up_notifications"
@@ -78,4 +83,10 @@
         android:summary="@string/reticker_colored_summary"
         android:order="10"
         android:defaultValue="false" />
+
+    <Preference
+         android:key="ambient_stuff"
+         android:title="Ambient Stuffs"
+         android:fragment="com.octavi.lab.fragments.AmbientStuffSettings" />
+
 </PreferenceScreen>

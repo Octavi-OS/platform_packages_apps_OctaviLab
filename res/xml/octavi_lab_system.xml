@@ -19,33 +19,7 @@
     android:title="@string/system_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
-    <Preference
-         android:key="themes"
-         android:title="Octavi Theming Stuffs"
-         android:fragment="com.octavi.lab.fragments.OctaviThemes" />
 
-    <Preference
-         android:key="animations_category"
-         android:title="@string/animation_settings_title"
-         android:summary="@string/animation_settings_summary"
-         android:fragment="com.octavi.lab.fragments.AnimationSettings" />
-
-    <Preference
-         android:key="powermenu"
-         android:title="@string/powermenu_title"
-	 android:summary="Customise power menu"
-         android:fragment="com.octavi.lab.fragments.PowermenuSettings" />
-
-     <Preference
-         android:key="navbar"
-         android:title="Navigation Bar"
-         android:summary="Navigation Bar Customizations"
-         android:fragment="com.octavi.lab.fragments.NavbarSettings" />
-
-    <Preference
-         android:key="quicksettings"
-         android:title="@string/quicksettings_title"
-         android:fragment="com.octavi.lab.fragments.QuickSettings" />
 
     <PreferenceScreen
          android:key="ambient_display_custom"
@@ -57,10 +31,12 @@
                 android:targetClass="com.custom.ambient.display.DozeSettings" />
     </PreferenceScreen>
 
+
     <Preference
-         android:key="ambient_stuff"
-         android:title="Ambient Stuffs"
-         android:fragment="com.octavi.lab.fragments.AmbientStuffSettings" />
+         android:key="animations_category"
+         android:title="@string/animation_settings_title"
+         android:summary="@string/animation_settings_summary"
+         android:fragment="com.octavi.lab.fragments.AnimationSettings" />
 
     <com.octavi.lab.preferences.SystemSettingListPreference
          android:key="screenshot_type"

@@ -19,6 +19,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <Preference
+        android:layout="@layout/octavi_header"
+        android:title="@string/lockscreen_title"
+        android:selectable="false"/>
+
+    <Preference
             android:title="@string/lockscreen_tuner_title">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
@@ -117,49 +122,6 @@
             android:min="0"
             android:defaultValue="25"
             settings:units="dp"/>
-
-    </PreferenceCategory>
-
-    <Preference
-        android:key="lockscreen_visualizer"
-        android:fragment="com.octavi.lab.fragments.Visualizer"
-        android:title="@string/lockscreen_visualizer_enable"
-        android:summary="@string/lockscreen_visualizer_enable_summary" />
-
-    <PreferenceCategory
-        android:key="lockscreen_weather"
-        android:title="@string/lockscreen_weather_category">
-
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-            android:key="lockscreen_weather_enabled"
-            android:title="@string/lockscreen_weather_enabled_title"
-            android:summary="@string/lockscreen_weather_enabled_summary"
-            android:defaultValue="false" />
-
-        <com.octavi.lab.preferences.SecureSettingListPreference
-        android:key="lockscreen_weather_alignment"
-        android:title="@string/lockscreen_weather_alignment_title"
-        android:dialogTitle="@string/lockscreen_weather_alignment_title"
-        android:entries="@array/lockscreen_item_alignment_entries"
-        android:entryValues="@array/lockscreen_item_alignment_values"
-        android:summary="%s"
-        android:defaultValue="1" />
-
-        <Preference
-            android:key="omnijaws_settings"
-            android:title="@string/lockscreen_weather_settings_title"
-            android:summary="@string/lockscreen_weather_settings_summary"
-            android:fragment="com.octavi.lab.OmniJawsSettings" />
-
-        <com.octavi.lab.preferences.SystemSettingListPreference
-            android:key="lockscreen_weather_style"
-            android:title="@string/lockscreen_weather_style_title"
-            android:dialogTitle="@string/lockscreen_weather_style_title"
-            android:entries="@array/lockscreen_weather_style_entries"
-            android:entryValues="@array/lockscreen_weather_style_values"
-            android:defaultValue="0"
-            android:dependency="lockscreen_weather_enabled"
-            android:summary="%s" />
 
     </PreferenceCategory>
 
