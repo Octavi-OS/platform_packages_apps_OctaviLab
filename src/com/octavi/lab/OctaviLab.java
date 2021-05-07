@@ -53,7 +53,7 @@ import com.octavi.lab.fragments.GestureSettings;
 import com.octavi.lab.fragments.NotificationSettings;
 import com.octavi.lab.fragments.ButtonSettings;
 import com.octavi.lab.fragments.MiscSettings;
-import com.octavi.lab.fragments.NavbarSettings;
+import com.octavi.lab.fragments.ButtonSettings;
 import com.octavi.lab.fragments.QuickSettings;
 import com.octavi.lab.fragments.VolumeRockerSettings;
 import com.octavi.lab.fragments.LockscreenWeather;
@@ -206,7 +206,7 @@ public class OctaviLab extends SettingsPreferenceFragment implements View.OnClic
                }
            if (id == R.id.navigationsettings_card)
              {
-               NavbarSettings navigationsettingsfragment = new NavbarSettings();
+               ButtonSettings navigationsettingsfragment = new ButtonSettings();
                FragmentTransaction transaction9 = getFragmentManager().beginTransaction();
                transaction9.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                transaction9.replace(this.getId(), navigationsettingsfragment);

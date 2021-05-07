@@ -19,6 +19,7 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
         <PreferenceCategory
+        settings:iconSpaceReserved="false"
         android:key="hardware_keys"
         android:title="@string/hardware_keys_category" >
 
@@ -193,20 +194,18 @@
 
     </PreferenceCategory>
 
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+       <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="allow_incall_home"
         android:title="@string/allow_incall_home_title"
         android:summary="@string/allow_incall_home_summary"
         android:defaultValue="true" />
 
         <Preference
-        android:key="volume_key"
-        android:fragment="com.octavi.lab.fragments.VolumeRockerSettings"
-        android:title="@string/volume_title" />
-
-        <Preference
-        android:key="gesture_key"
-        android:fragment="com.octavi.lab.fragments.GestureSettings"
-        android:title="@string/gesture_title" />
+         settings:iconSpaceReserved="false"
+         android:key="navbar"
+         android:title="Navigation Bar"
+         android:summary="Navigation Bar Customizations"
+         android:fragment="com.octavi.lab.fragments.NavbarSettings" />
 
 </PreferenceScreen>
