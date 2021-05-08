@@ -769,4 +769,4 @@
     <!-- Show Statusbar on Lockscreen -->
     <string name="lockscreen_status_bar_title">Строка состояния на заблокированном экране</string>
     <string name="lockscreen_status_bar_summary">Отображать строку состояния на экране блокировки</string>
-</resources
+</resources>
