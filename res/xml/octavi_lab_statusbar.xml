@@ -51,12 +51,6 @@
          android:summary="@string/battery_mode_summary"
          android:fragment="com.octavi.lab.fragments.BatteryMode" />
 
-    <Preference 
-         settings:iconSpaceReserved="false"
-         android:key="notifications_type" 
-         android:title="@string/notifications_title" 
-         android:fragment="com.octavi.lab.fragments.NotificationSettings" />
-
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
          settings:iconSpaceReserved="false"
         android:key="status_bar_notif_count"
