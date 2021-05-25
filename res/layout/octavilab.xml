@@ -23,7 +23,7 @@
             android:textColor="?android:attr/textColorPrimary"
             android:textStyle="bold"
             android:textSize="30dp"
-            android:text="StatusBar" />
+            android:text="@string/statusbar_octavilab" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="26dp"
             android:layout_marginBottom="24dp"
-            android:text="System"
+            android:text="@string/system_octavilab"
             android:textColor="?android:attr/textColorPrimary"
             android:textStyle="bold"
             android:textSize="30dp"/>
@@ -233,7 +233,7 @@
             android:layout_marginLeft="26dp"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="24dp"
-            android:text="Lockscreen"
+            android:text="@string/lockscreen_octavilab"
             android:textColor="?android:attr/textColorPrimary"
             android:textStyle="bold"
             android:textSize="30dp"/>
@@ -311,7 +311,7 @@
             android:layout_marginLeft="26dp"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="24dp"
-            android:text="Misc"
+            android:text="@string/misc_octavilab"
             android:textColor="?android:attr/textColorPrimary"
             android:textStyle="bold"
             android:textSize="30dp"/>

@@ -991,4 +991,9 @@
     <string name="show_app_volume_title">Per-app volume control</string>
     <string name="show_app_volume_summary">Control app volume from volume panel</string>
 
+    <!-- OctaviLab tiles -->
+    <string name="statusbar_octavilab">StatusBar</string>
+    <string name="system_octavilab">System</string>
+    <string name="lockscreen_octavilab">LockScreen</string>
+    <string name="misc_octavilab">Misc</string>
 </resources>

@@ -647,4 +647,9 @@
     <string name="reticker_summary">Αντικαταστήστε τις ειδοποιήσεις σας με μια επανασχεδιασμένη έκδοση των tickers! \nSlim και λιγότερο επεμβατική από μια τυπική ειδοποίηση</string>
     <string name="reticker_colored_title">Χρήση έγχρωμου φόντου εφαρμογών</string>
     <string name="reticker_colored_summary">Αντικατάσταση χρώματος φόντου reTicker χρησιμοποιώντας το κύριο χρώμα της εφαρμογής ειδοποίησης</string>
+	<!-- OctaviLab tiles -->
+    <string name="statusbar_octavilab">Στατική μπάρα</string>
+    <string name="system_octavilab">Σύστημα</string>
+    <string name="lockscreen_octavilab">Οθόνη κλειδώματος</string>
+    <string name="misc_octavilab">Άλλες ρυθμίσεις</string>
 </resources>
