@@ -19,11 +19,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <Preference
-        android:layout="@layout/octavi_header"
-        android:title="@string/statusbar_title"
-        android:selectable="false"/>
-
-    <Preference
             settings:iconSpaceReserved="false"
             android:title="@string/statusbar_items_title" >
             <intent android:action="android.intent.action.MAIN"

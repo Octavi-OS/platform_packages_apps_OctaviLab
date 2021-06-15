@@ -73,6 +73,8 @@ public class OctaviThemes extends DashboardFragment implements
 
         //addPreferencesFromResource(R.xml.octavi_themes);
 
+	mContext =  getActivity();
+
         mSwitchStyle = (ListPreference) findPreference(SWITCH_STYLE);
         int switchStyle = Settings.System.getInt(getContext().getContentResolver(),
                 Settings.System.SWITCH_STYLE, 1);

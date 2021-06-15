@@ -17,11 +17,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <Preference
-        android:layout="@layout/octavi_header"
-        android:title="@string/volume_title"
-        android:selectable="false"/>
-
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
         settings:iconSpaceReserved="false"
         android:key="volume_button_music_control"
@@ -30,6 +25,7 @@
         android:defaultValue="false" />
 
     <com.octavi.support.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="volume_panel_on_left"
         android:title="@string/volume_panel_on_left_title"
         android:summary="@string/volume_panel_on_left_summary"
@@ -37,6 +33,7 @@
         settings:controller="com.octavi.lab.fragments.VolumePanelOnLeftPreferenceController" />
 
     <com.octavi.support.preferences.SystemSettingSwitchPreference
+        settings:iconSpaceReserved="false"
         android:key="swap_volume_keys_on_rotation"
         android:title="@string/swap_volume_keys_on_rotation_title"
         android:summary="@string/swap_volume_keys_on_rotation_summary"

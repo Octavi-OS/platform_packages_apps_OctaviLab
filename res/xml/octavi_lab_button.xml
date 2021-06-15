@@ -18,11 +18,6 @@
         android:title="@string/button_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <Preference
-        android:layout="@layout/octavi_header"
-        android:title="@string/navbar_title"
-        android:selectable="false"/>
-
         <PreferenceCategory
         settings:iconSpaceReserved="false"
         android:key="hardware_keys"
