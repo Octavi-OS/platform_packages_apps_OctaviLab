@@ -20,14 +20,6 @@
         android:title="@string/themes_title"
         android:selectable="false"/>
 
-    <net.margaritov.preference.colorpicker.ColorPickerPreference
-        settings:iconSpaceReserved="false"
-        android:key="accent_color"
-        android:title="@string/accent_color"
-        android:summary="@string/accent_summary"
-        android:defaultValue="0xffffff"
-        android:persistent="false" />
-
     <com.android.settings.display.darkmode.DarkModePreference
         settings:iconSpaceReserved="false"
         android:key="dark_ui_mode"
