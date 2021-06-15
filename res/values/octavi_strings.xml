@@ -793,4 +793,7 @@
     <string name="global_actions_screenrecord_title">Screenrecord</string>
     <string name="global_actions_none_title">None</string>
 
+    <!-- Power menu background opacity -->
+    <string name="power_menu_alpha_title">Power menu opacity</string>
+
 </resources>
