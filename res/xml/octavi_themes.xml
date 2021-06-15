@@ -15,13 +15,6 @@
 	android:title="@string/themes_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <net.margaritov.preference.colorpicker.ColorPickerPreference
-        android:key="accent_color"
-        android:title="@string/accent_color"
-        android:summary="@string/accent_summary"
-        android:defaultValue="0xffffff"
-        android:persistent="false" />
-
     <com.android.settings.display.darkmode.DarkModePreference
         android:key="dark_ui_mode"
         android:title="@string/dark_ui_mode"
