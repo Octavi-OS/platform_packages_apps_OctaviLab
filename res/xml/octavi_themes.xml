@@ -19,6 +19,11 @@
         android:layout="@layout/octavi_header"
         android:title="@string/themes_title"
         android:selectable="false"/>
+    <com.octavi.support.colorpicker.ColorPickerPreference
+        android:key="rgb_accent_picker"
+        android:title="@string/rgb_accent_picker_title"
+        android:summary="@string/rgb_accent_picker_summary"
+        android:persistent="false" />
 
     <com.android.settings.display.darkmode.DarkModePreference
         settings:iconSpaceReserved="false"

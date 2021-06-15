@@ -41,15 +41,20 @@ import java.util.Objects;
 import java.util.List;
 
 import com.android.settings.SettingsPreferenceFragment;
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
+import com.octavi.support.colorpicker.ColorPickerPreference;
 
 public class OctaviThemes extends DashboardFragment implements
         OnPreferenceChangeListener {
 
     private static final String TAG = "OctaviThemes";
 
-    private static final String SWITCH_STYLE = "switch_style";
+    private Context mContext;
+    private IOverlayManager mOverlayManager;
 
+    private static final String SWITCH_STYLE = "switch_style";
+    private static final String PREF_RGB_ACCENT_PICKER = "rgb_accent_picker";
+
+    private ColorPickerPreference rgbAccentPicker;
     private ListPreference mSwitchStyle;
 
     @Override
@@ -61,6 +66,7 @@ public class OctaviThemes extends DashboardFragment implements
     protected int getPreferenceScreenResId() {
         return R.xml.octavi_themes;
     }
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -74,6 +80,15 @@ public class OctaviThemes extends DashboardFragment implements
         mSwitchStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
         mSwitchStyle.setSummary(mSwitchStyle.getEntry());
         mSwitchStyle.setOnPreferenceChangeListener(this);
+
+        rgbAccentPicker = (ColorPickerPreference) findPreference(PREF_RGB_ACCENT_PICKER);
+        String colorVal = Settings.Secure.getStringForUser(mContext.getContentResolver(),
+                Settings.Secure.ACCENT_COLOR, UserHandle.USER_CURRENT);
+        int color = (colorVal == null)
+                ? Color.WHITE
+                : Color.parseColor("#" + colorVal);
+        rgbAccentPicker.setNewPreviewColor(color);
+        rgbAccentPicker.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -83,8 +98,20 @@ public class OctaviThemes extends DashboardFragment implements
                 Settings.System.putInt(getContext().getContentResolver(), Settings.System.SWITCH_STYLE, Integer.valueOf(value));
                 int valueIndex = mSwitchStyle.findIndexOfValue(value);
                 mSwitchStyle.setSummary(mSwitchStyle.getEntries()[valueIndex]);
-	}
-        return true;
+	} else if (preference == rgbAccentPicker) {
+            int color = (Integer) objValue;
+            String hexColor = String.format("%08X", (0xFFFFFFFF & color));
+            Settings.Secure.putStringForUser(mContext.getContentResolver(),
+                        Settings.Secure.ACCENT_COLOR,
+                        hexColor, UserHandle.USER_CURRENT);
+            try {
+                 mOverlayManager.reloadAssets("com.android.settings", UserHandle.USER_CURRENT);
+                 mOverlayManager.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
+             } catch (RemoteException ignored) {
+             }
+            return true;
+        }
+        return false;
     }
 
     @Override
