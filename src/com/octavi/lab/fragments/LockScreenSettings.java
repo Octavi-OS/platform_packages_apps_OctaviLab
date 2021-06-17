@@ -59,10 +59,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String AMBIENT_ICONS_COLOR = "ambient_icons_color";
     private static final String AMBIENT_ICONS_LOCKSCREEN = "ambient_icons_lockscreen";
     private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";
+    private static final String LOCK_DATE_FONTS = "lock_date_fonts";
 
     private CustomSeekBarPreference mMaxKeyguardNotifConfig;
     private ColorPickerPreference mAmbientIconsColor;
     private ListPreference mLockClockFonts;
+    private ListPreference mLockDateFonts;
     private CardPreference mLockscreenFod;
     private SystemSettingSwitchPreference mAmbientIconsLockscreen;
 
@@ -112,6 +114,13 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
                 getContentResolver(), Settings.System.LOCK_CLOCK_FONTS, 34)));
         mLockClockFonts.setSummary(mLockClockFonts.getEntry());
         mLockClockFonts.setOnPreferenceChangeListener(this);
+
+        // Lockscren Date Fonts
+        mLockDateFonts = (ListPreference) findPreference(LOCK_DATE_FONTS);
+        mLockDateFonts.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.LOCK_DATE_FONTS, 32)));
+        mLockDateFonts.setSummary(mLockDateFonts.getEntry());
+        mLockDateFonts.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -140,6 +149,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
                     Integer.valueOf((String) newValue));
             mLockClockFonts.setValue(String.valueOf(newValue));
             mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+            return true;
+        } else if (preference == mLockDateFonts) {
+            Settings.System.putInt(getContentResolver(), Settings.System.LOCK_DATE_FONTS,
+                    Integer.valueOf((String) newValue));
+            mLockDateFonts.setValue(String.valueOf(newValue));
+            mLockDateFonts.setSummary(mLockDateFonts.getEntry());
             return true;
         }
         return false;
