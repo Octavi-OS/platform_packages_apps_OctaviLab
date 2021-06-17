@@ -26,6 +26,7 @@ import android.content.pm.PackageManager;
 import android.app.WallpaperManager;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.hardware.fingerprint.FingerprintManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -45,13 +46,22 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.octavi.support.preferences.SystemSettingSwitchPreference;
+import com.octavi.support.preferences.SystemSettingSeekBarPreference;
+import com.octavi.support.colorpicker.ColorPickerPreference;
+import com.android.internal.util.octavi.OctaviUtils;
+
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String LOCKSCREEN_MAX_NOTIF_CONFIG = "lockscreen_max_notif_cofig";
     private static final String LOCKSCREEN_FOD_CATEGORY = "lockscreen_fod_category";
+    private static final String AMBIENT_ICONS_COLOR = "ambient_icons_color";
+    private static final String AMBIENT_ICONS_LOCKSCREEN = "ambient_icons_lockscreen";
 
     private CustomSeekBarPreference mMaxKeyguardNotifConfig;
+    private ColorPickerPreference mAmbientIconsColor;
+    private SystemSettingSwitchPreference mAmbientIconsLockscreen;
     private CardPreference mLockscreenFod;
 
     private ContentResolver mResolver;
@@ -64,6 +74,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         mResolver = getActivity().getContentResolver();
         Resources resources = getResources();
         Context mContext = getContext();
+        ContentResolver resolver = getActivity().getContentResolver();
         final PackageManager mPm = getActivity().getPackageManager();
 
         CardPreference mLockscreenFod = findPreference("lockscreen_fod_category");
@@ -78,15 +89,42 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
                 Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, 3);
         mMaxKeyguardNotifConfig.setValue(kgconf);
         mMaxKeyguardNotifConfig.setOnPreferenceChangeListener(this);
+
+        mAmbientIconsLockscreen = (SystemSettingSwitchPreference) findPreference(AMBIENT_ICONS_LOCKSCREEN);
+        mAmbientIconsLockscreen.setChecked((Settings.System.getInt(resolver,
+                Settings.System.AMBIENT_ICONS_LOCKSCREEN, 0) == 1));
+        mAmbientIconsLockscreen.setOnPreferenceChangeListener(this);
+
+        // Ambient Icons Color
+        mAmbientIconsColor = (ColorPickerPreference) findPreference(AMBIENT_ICONS_COLOR);
+        int intColor = Settings.System.getInt(getContentResolver(),
+                Settings.System.AMBIENT_ICONS_COLOR, Color.WHITE);
+        String hexColor = String.format("#%08x", (0xffffffff & intColor));
+        mAmbientIconsColor.setNewPreviewColor(intColor);
+        mAmbientIconsColor.setSummary(hexColor);
+        mAmbientIconsColor.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-
+        final String key = preference.getKey();
         if (preference == mMaxKeyguardNotifConfig) {
             int kgconf = (Integer) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, kgconf);
+            return true;
+        } else if (preference == mAmbientIconsLockscreen) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.AMBIENT_ICONS_LOCKSCREEN, value ? 1 : 0);
+            return true;
+        } else if (preference == mAmbientIconsColor) {
+            String hex = ColorPickerPreference.convertToARGB(Integer
+                .parseInt(String.valueOf(newValue)));
+            mAmbientIconsColor.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(resolver,
+                    Settings.System.AMBIENT_ICONS_COLOR, intHex);
             return true;
         }
         return false;
