@@ -86,13 +86,6 @@
         android:order="10"
         android:defaultValue="false" />
 
-    <Preference
-        settings:iconSpaceReserved="false"
-         android:key="ambient_stuff"
-         android:order="11"
-         android:title="Ambient Stuffs"
-         android:fragment="com.octavi.lab.fragments.AmbientStuffSettings" />
-
     <PreferenceScreen
          settings:iconSpaceReserved="false"
          android:key="ambient_display_custom"
