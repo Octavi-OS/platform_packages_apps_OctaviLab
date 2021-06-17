@@ -886,4 +886,7 @@
     <string name="lockscreen_ownerinfo_allignment_title">LS Owner info allignment</string>
     <string name="lockscreen_item_padding_title">Lockscreen items padding</string>
 
+    <!-- Volume dialog timeout -->
+    <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
+
 </resources>
