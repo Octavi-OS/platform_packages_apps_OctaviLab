@@ -22,7 +22,7 @@
     <string name="lockscreen_fod_category">Fingerprint On Display</string>
     <string name="themes_title">Octavi Themes</string>
     <string name="ambient_settings">Ambient Settings</string>
-    <string name="lockscreen_ui_category_title">Lockscreen UI</string>
+    <string name="lock_screen_elements_category_title">Lock screen elements</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -835,5 +835,9 @@
     <string name="lock_ownerinfo_font_title">LS Owner info font style</string>
     <string name="lock_ownerinfo_font_dialog_title">Select lockscreen ownerinfo font</string>
     <string name="lockowner_font_size_title">LS Owner info font size</string>
+
+    <!-- Lockscreen UI -->
+    <string name="lockscreen_ui_title">Lockscreen UI</string>
+    <string name="lockscreen_ui_summary">Change the looks of Lockscreen</string>
 
 </resources>
