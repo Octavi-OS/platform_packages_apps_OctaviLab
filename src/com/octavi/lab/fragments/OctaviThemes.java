@@ -27,6 +27,9 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.MenuInflater;
 
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.display.CustomOverlayPreferenceController;
@@ -53,6 +56,9 @@ public class OctaviThemes extends DashboardFragment implements
 
     private static final String SWITCH_STYLE = "switch_style";
     private static final String PREF_RGB_ACCENT_PICKER = "rgb_accent_picker";
+    private static final int MENU_RESET = Menu.FIRST;
+
+    static final int DEFAULT = 0xff1a73e8;
 
     private ColorPickerPreference rgbAccentPicker;
     private ListPreference mSwitchStyle;
@@ -87,10 +93,11 @@ public class OctaviThemes extends DashboardFragment implements
         String colorVal = Settings.Secure.getStringForUser(mContext.getContentResolver(),
                 Settings.Secure.ACCENT_COLOR, UserHandle.USER_CURRENT);
         int color = (colorVal == null)
-                ? Color.WHITE
+                ? DEFAULT
                 : Color.parseColor("#" + colorVal);
         rgbAccentPicker.setNewPreviewColor(color);
         rgbAccentPicker.setOnPreferenceChangeListener(this);
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -114,6 +121,48 @@ public class OctaviThemes extends DashboardFragment implements
             return true;
         }
         return false;
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.add(0, MENU_RESET, 0, R.string.reset)
+                .setIcon(R.drawable.ic_reset)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case MENU_RESET:
+                resetToDefault();
+                return true;
+            default:
+                return super.onContextItemSelected(item);
+        }
+    }
+
+    private void resetToDefault() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+        alertDialog.setTitle(R.string.theme_option_reset_title);
+        alertDialog.setMessage(R.string.theme_option_reset_message);
+        alertDialog.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                resetValues();
+            }
+        });
+        alertDialog.setNegativeButton(R.string.cancel, null);
+        alertDialog.create().show();
+    }
+
+    private void resetValues() {
+        final Context context = getContext();
+        rgbAccentPicker = (ColorPickerPreference) findPreference(PREF_RGB_ACCENT_PICKER);
+        rgbAccentPicker.setNewPreviewColor(DEFAULT);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
     }
 
     @Override
