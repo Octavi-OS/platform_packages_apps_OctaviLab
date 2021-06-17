@@ -831,4 +831,9 @@
     <string name="lockscreen_hide_shortcuts_title">Hide bottom shortcuts</string>
     <string name="lockscreen_hide_shortcuts_summary">Hide left-right shortcuts on secure lock screens</string>
 
+    <!-- LS Owner info Font & Size -->
+    <string name="lock_ownerinfo_font_title">LS Owner info font style</string>
+    <string name="lock_ownerinfo_font_dialog_title">Select lockscreen ownerinfo font</string>
+    <string name="lockowner_font_size_title">LS Owner info font size</string>
+
 </resources>
