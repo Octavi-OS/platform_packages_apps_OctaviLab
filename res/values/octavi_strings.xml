@@ -20,6 +20,8 @@
     <string name="system_title">System</string>
     <string name="notifications_title">Notifications</string>
     <string name="lockscreen_fod_category">Fingerprint On Display</string>
+    <string name="themes_title">Octavi Themes</string>
+    <string name="ambient_settings">Ambient Settings</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -768,4 +770,12 @@
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Playback control</string>
     <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+
+    <!-- AOD Icons in Lock screen -->
+    <string name="lock_aod_icons_title">AOD icons</string>
+    <string name="ambient_icons_lockscreen_title">AOD icons on lock screen</string>
+    <string name="ambient_icons_lockscreen_summary">Replace notifications with AOD icons</string>
+    <string name="ambient_icons_size_title">AOD icons size</string>
+    <string name="ambient_icons_color_title">AOD icons color</string>
+
 </resources>
