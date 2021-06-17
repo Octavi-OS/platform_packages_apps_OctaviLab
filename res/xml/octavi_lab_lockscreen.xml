@@ -26,21 +26,21 @@
                 android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
     </Preference>
 
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+    <com.octavi.support.preferences.SystemSettingSwitchPreference
         settings:iconSpaceReserved="false"
         android:key="fingerprint_success_vib"
         android:title="@string/fprint_sucess_vib_title"
         android:summary="@string/fprint_sucess_vib_summary"
         android:defaultValue="true" />
 
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+    <com.octavi.support.preferences.SystemSettingSwitchPreference
         settings:iconSpaceReserved="false"
         android:key="fingerprint_error_vib"
         android:title="@string/fprint_error_vib_title"
         android:summary="@string/fprint_error_vib_summary"
         android:defaultValue="true" />
 
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+    <com.octavi.support.preferences.SystemSettingSwitchPreference
         settings:iconSpaceReserved="false"
         android:key="lockscreen_battery_info"
         android:title="@string/lockscreen_battery_info_title"
@@ -60,15 +60,15 @@
         android:summary="@string/hide_lockicon_summary"
         android:defaultValue="false" />
 
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+    <com.octavi.support.preferences.SystemSettingSwitchPreference
         android:key="fp_icon_disabled"
         settings:iconSpaceReserved="false"
         android:title="@string/fp_icon_disable_title"
         android:summary="@string/fp_icon_disable_summary"
         android:defaultValue="false" />
 
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        settings:iconSpaceReserved="false"
+    <com.octavi.support.preferences.SystemSettingSwitchPreference
+         settings:iconSpaceReserved="false"
          android:key="lockscreen_status_bar"
          android:title="@string/lockscreen_status_bar_title"
          android:summary="@string/lockscreen_status_bar_summary"
@@ -91,14 +91,14 @@
         android:entryValues="@array/lockscreen_charging_animation_values"
         android:defaultValue="1" />
 
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+    <com.octavi.support.preferences.SystemSettingSwitchPreference
         settings:iconSpaceReserved="false"
         android:key="lock_screen_custom_notif"
         android:title="@string/lockscreen_maxnotif_title"
         android:summary="@string/lockscreen_maxnotif_sumary"
         android:defaultValue="false" />
 
-    <com.octavi.lab.preferences.CustomSeekBarPreference
+    <com.octavi.support.preferences.CustomSeekBarPreference
         settings:iconSpaceReserved="false"
         android:key="lockscreen_max_notif_cofig"
         android:title="@string/lockscreen_maxnotif_config"
@@ -114,7 +114,7 @@
         android:key="lockscreen_media_art_options"
         android:title="@string/lockscreen_media_art_options_title" >
 
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+    <com.octavi.support.preferences.SystemSettingSwitchPreference
         settings:iconSpaceReserved="false"
         android:key="lockscreen_media_art"
         android:title="@string/lockscreen_media_art_title"
