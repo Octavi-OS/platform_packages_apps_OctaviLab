@@ -30,6 +30,8 @@
     <string name="lock_screen_date_category_title">Lock screen date</string>
     <!-- Lockscreen owner info category -->
     <string name="lock_screen_owner_category_title">Lock screen owner info</string>
+    <!-- Text clock allignment -->
+    <string name="text_clock_allignment_title">Text Clock allignment</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -878,8 +880,9 @@
     <string name="lockscreen_date_selection_str_border_accent">Dark with accented borders</string>
     <string name="lockscreen_date_selection_str_border_gradient">Dark with gradient borders</string>
 
-    <!-- Q To X Clock -->
-    <string name="center_text_clock_title">Center Text Clock</string>
-    <string name="center_text_clock_summary">Tranform Q-Clock to X-Clock</string>
+    <!-- Lockscreen item allignments -->
+    <string name="lockscreen_date_allignment_title">LS Date allignment</string>
+    <string name="lockscreen_ownerinfo_allignment_title">LS Owner info allignment</string>
+    <string name="lockscreen_item_padding_title">Lockscreen items padding</string>
 
 </resources>
