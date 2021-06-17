@@ -32,6 +32,12 @@
         android:fragment="com.octavi.lab.fragments.BatteryLightSettings"
         android:title="@string/battery_light_settings" />
 
+        <com.octavi.support.preferences.SystemSettingSwitchPreference
+        android:key="hide_smart_replies"
+        android:title="@string/hide_smart_replies_title"
+        android:summary="@string/hide_smart_replies_summary"
+        android:defaultValue="false"/>
+
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
         settings:iconSpaceReserved="false"
         android:key="less_boring_heads_up"
