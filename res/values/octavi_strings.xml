@@ -22,6 +22,7 @@
     <string name="lockscreen_fod_category">Fingerprint On Display</string>
     <string name="themes_title">Octavi Themes</string>
     <string name="ambient_settings">Ambient Settings</string>
+    <string name="octavi_ambient_title">Ambient Octavi</string>
     <string name="lock_screen_elements_category_title">Lock screen elements</string>
 
     <!-- Lockscreen clock category -->

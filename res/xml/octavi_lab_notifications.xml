@@ -92,6 +92,11 @@
         android:order="10"
         android:defaultValue="false" />
 
+        <Preference
+        android:key="ambient_category"
+        android:title="@string/octavi_ambient_title"
+        android:fragment="com.octavi.lab.fragments.OctaviAmbientSettings" />
+
     <PreferenceScreen
          settings:iconSpaceReserved="false"
          android:key="ambient_display_custom"
