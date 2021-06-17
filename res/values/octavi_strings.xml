@@ -20,7 +20,6 @@
     <string name="system_title">System</string>
     <string name="notifications_title">Notifications</string>
     <string name="lockscreen_fod_category">Fingerprint On Display</string>
-    <string name="themes_title">Octavi Themes</string>
     <string name="octavi_ambient_title">Ambient</string>
     <string name="ambient_settings">Ambient Settings</string>
     <string name="lock_screen_elements_category_title">Lock screen elements</string>
@@ -363,6 +362,7 @@
    <string name="volume_panel_compact">Compact</string>
    <string name="volume_panel_oreo">Oreo</string>
    <string name="volume_panel_tiled">Tiled</string>
+   <string name="volume_panel_miui">MIUI Compact</string>
 
    <!--  Volume Panel Plugin Values   -->
    <string name="volume_panel_stock_val">com.android.systemui.volume</string>
@@ -370,6 +370,7 @@
    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
    <string name="volume_panel_oreo_val">co.potatoproject.plugin.volume.oreo</string>
    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
+   <string name="volume_panel_miui_val" translatable="false">co.potatoproject.plugin.volume.miui</string>
 
    <!-- Navbar Entries -->
    <string name="navbar_gestures_title">Navigation gesture options</string>
@@ -982,4 +983,7 @@
     <string name="doze_on_charge_title">Always on when charging</string>
     <string name="doze_on_charge_summary">Show doze screen all the time when charging</string>
 
+    <!-- Theme Reset Option -->
+    <string name="theme_option_reset_title">Reset Theme Options</string>
+    <string name="theme_option_reset_message">Are you sure you want to reset themes-accent to default?</string>
 </resources>
