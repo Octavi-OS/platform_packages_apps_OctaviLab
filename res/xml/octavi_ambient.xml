@@ -18,11 +18,13 @@
 
     <com.octavi.support.preferences.SecureSettingSwitchPreference
         android:key="doze_enabled"
+        android:defaultValue="true"
         android:title="@string/doze_title"
         android:summary="@string/doze_summary" />
 
     <com.octavi.support.preferences.SecureSettingSwitchPreference
         android:key="doze_always_on"
+        android:defaultValue="false"
         android:title="@string/doze_always_on_title"
         android:summary="@string/doze_always_on_summary" />
 
