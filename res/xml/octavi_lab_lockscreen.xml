@@ -149,7 +149,16 @@
             android:defaultValue="34"
             android:persistent="false" />
 
-         <ListPreference
+        <com.octavi.support.preferences.CustomSeekBarPreference
+            android:key="lockclock_font_size"
+            android:title="@string/lockclock_font_size_title"
+            android:max="101"
+            settings:min="65"
+            settings:units="dp"
+            android:persistent="false"
+            android:defaultValue="78" />
+
+        <ListPreference
             android:key="lock_date_fonts"
             android:title="@string/lock_date_font_title"
             android:dialogTitle="@string/lock_date_font_dialog_title"
