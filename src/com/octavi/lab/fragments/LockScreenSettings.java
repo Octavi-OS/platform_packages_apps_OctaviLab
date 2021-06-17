@@ -36,9 +36,7 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
-import com.octavi.lab.preferences.SystemSettingSwitchPreference;
 import com.octavi.lab.preferences.SystemSettingListPreference;
-import com.octavi.lab.preferences.CustomSeekBarPreference;
 import com.android.internal.util.custom.FodUtils;
 import com.android.settings.widget.CardPreference;
 
