@@ -58,11 +58,13 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String LOCKSCREEN_FOD_CATEGORY = "lockscreen_fod_category";
     private static final String AMBIENT_ICONS_COLOR = "ambient_icons_color";
     private static final String AMBIENT_ICONS_LOCKSCREEN = "ambient_icons_lockscreen";
+    private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";
 
     private CustomSeekBarPreference mMaxKeyguardNotifConfig;
     private ColorPickerPreference mAmbientIconsColor;
-    private SystemSettingSwitchPreference mAmbientIconsLockscreen;
+    private ListPreference mLockClockFonts;
     private CardPreference mLockscreenFod;
+    private SystemSettingSwitchPreference mAmbientIconsLockscreen;
 
     private ContentResolver mResolver;
 
@@ -103,6 +105,13 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         mAmbientIconsColor.setNewPreviewColor(intColor);
         mAmbientIconsColor.setSummary(hexColor);
         mAmbientIconsColor.setOnPreferenceChangeListener(this);
+
+        // Lockscren Clock Fonts
+        mLockClockFonts = (ListPreference) findPreference(LOCK_CLOCK_FONTS);
+        mLockClockFonts.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.LOCK_CLOCK_FONTS, 34)));
+        mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+        mLockClockFonts.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -125,6 +134,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(resolver,
                     Settings.System.AMBIENT_ICONS_COLOR, intHex);
+            return true;
+        } else if (preference == mLockClockFonts) {
+            Settings.System.putInt(getContentResolver(), Settings.System.LOCK_CLOCK_FONTS,
+                    Integer.valueOf((String) newValue));
+            mLockClockFonts.setValue(String.valueOf(newValue));
+            mLockClockFonts.setSummary(mLockClockFonts.getEntry());
             return true;
         }
         return false;
