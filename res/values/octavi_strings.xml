@@ -24,6 +24,13 @@
     <string name="ambient_settings">Ambient Settings</string>
     <string name="lock_screen_elements_category_title">Lock screen elements</string>
 
+    <!-- Lockscreen clock category -->
+    <string name="lock_screen_clock_category_title">Lock screen clock</string>
+    <!-- Lockscreen date category -->
+    <string name="lock_screen_date_category_title">Lock screen date</string>
+    <!-- Lockscreen owner info category -->
+    <string name="lock_screen_owner_category_title">Lock screen owner info</string>
+
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
