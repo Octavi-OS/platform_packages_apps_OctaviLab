@@ -69,7 +69,6 @@
 
     <!-- reTicker  -->
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        settings:iconSpaceReserved="false"
         android:key="reticker_status"
         android:title="@string/reticker_title"
         android:summary="@string/reticker_summary"
@@ -77,7 +76,6 @@
         android:defaultValue="false" />
 
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        settings:iconSpaceReserved="false"
         android:dependency="reticker_status"
         android:key="reticker_colored"
         android:title="@string/reticker_colored_title"
