@@ -90,17 +90,4 @@
         android:title="@string/octavi_ambient_title"
         android:fragment="com.octavi.lab.fragments.OctaviAmbientSettings" />
 
-    <PreferenceScreen
-         settings:iconSpaceReserved="false"
-         android:key="ambient_display_custom"
-         android:order="12"
-         android:persistent="false"
-         android:title="@string/ambient_display_custom_title">
-            <intent 
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.custom.ambient.display"
-                android:targetClass="com.custom.ambient.display.DozeSettings" />
-    </PreferenceScreen>
-
-
 </PreferenceScreen>
