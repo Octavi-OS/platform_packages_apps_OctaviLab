@@ -35,8 +35,16 @@
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
         settings:iconSpaceReserved="false"
         android:key="swap_volume_keys_on_rotation"
+        settings:iconSpaceReserved="false"
         android:title="@string/swap_volume_keys_on_rotation_title"
         android:summary="@string/swap_volume_keys_on_rotation_summary"
+        android:defaultValue="false" />
+
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+	settings:iconSpaceReserved="false"
+        android:key="show_app_volume"
+        android:title="@string/show_app_volume_title"
+        android:summary="@string/show_app_volume_summary"
         android:defaultValue="false" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference

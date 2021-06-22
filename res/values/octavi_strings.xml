@@ -986,4 +986,9 @@
     <!-- Theme Reset Option -->
     <string name="theme_option_reset_title">Reset Theme Options</string>
     <string name="theme_option_reset_message">Are you sure you want to reset themes-accent to default?</string>
+
+    <!-- Per App Volume -->
+    <string name="show_app_volume_title">Per-app volume control</string>
+    <string name="show_app_volume_summary">Control app volume from volume panel</string>
+
 </resources>
