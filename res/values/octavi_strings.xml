@@ -981,4 +981,8 @@
     <string name="doze_on_charge_title">Always on when charging</string>
     <string name="doze_on_charge_summary">Show doze screen all the time when charging</string>
 
+    <!-- Per App Volume -->
+    <string name="show_app_volume_title">Per-app volume control</string>
+    <string name="show_app_volume_summary">Control app volume from volume panel</string>
+
 </resources>
