@@ -370,7 +370,7 @@
    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
    <string name="volume_panel_oreo_val">co.potatoproject.plugin.volume.oreo</string>
    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
-   <string name="volume_panel_miui_val" translatable="false">co.potatoproject.plugin.volume.miui</string>
+   <string name="volume_panel_miui_val" translatable="false">com.kangos.plugin.volume.miui</string>
 
    <!-- Navbar Entries -->
    <string name="navbar_gestures_title">Navigation gesture options</string>
