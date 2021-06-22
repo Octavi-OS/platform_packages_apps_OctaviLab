@@ -24,15 +24,15 @@
         android:title="@string/volume_rocker_music_controls_title"
         android:defaultValue="false" />
 
-    <com.octavi.support.preferences.SystemSettingSwitchPreference
-        settings:iconSpaceReserved="false"
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="volume_panel_on_left"
+        settings:iconSpaceReserved="false"
         android:title="@string/volume_panel_on_left_title"
         android:summary="@string/volume_panel_on_left_summary"
         android:defaultValue="false"
         settings:controller="com.octavi.lab.fragments.VolumePanelOnLeftPreferenceController" />
 
-    <com.octavi.support.preferences.SystemSettingSwitchPreference
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
         settings:iconSpaceReserved="false"
         android:key="swap_volume_keys_on_rotation"
         android:title="@string/swap_volume_keys_on_rotation_title"

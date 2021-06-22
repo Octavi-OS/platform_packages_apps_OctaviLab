@@ -36,6 +36,8 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
+import com.octavi.lab.preferences.SystemSettingSwitchPreference;
+import com.octavi.lab.preferences.CustomSeekBarPreference;
 import com.octavi.lab.preferences.SystemSettingListPreference;
 import com.android.internal.util.custom.FodUtils;
 import com.android.settings.widget.CardPreference;
@@ -45,9 +47,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.octavi.support.preferences.SecureSettingSwitchPreference;
-import com.octavi.support.preferences.SystemSettingSwitchPreference;
 import com.octavi.support.preferences.SystemSettingSeekBarPreference;
-import com.octavi.support.preferences.CustomSeekBarPreference;
 import com.octavi.support.colorpicker.ColorPickerPreference;
 import com.android.internal.util.octavi.OctaviUtils;
 

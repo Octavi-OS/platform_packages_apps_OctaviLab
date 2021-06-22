@@ -19,18 +19,21 @@
     <com.octavi.support.preferences.SecureSettingSwitchPreference
         android:key="doze_enabled"
         android:defaultValue="true"
+        settings:iconSpaceReserved="false"
         android:title="@string/doze_title"
         android:summary="@string/doze_summary" />
 
     <com.octavi.support.preferences.SecureSettingSwitchPreference
         android:key="doze_always_on"
         android:defaultValue="false"
+        settings:iconSpaceReserved="false"
         android:title="@string/doze_always_on_title"
         android:summary="@string/doze_always_on_summary" />
 
     <com.octavi.support.preferences.SecureSettingSwitchPreference
         android:key="doze_on_charge"
         android:defaultValue="false"
+        settings:iconSpaceReserved="false"
         android:title="@string/doze_on_charge_title"
         android:summary="@string/doze_on_charge_summary" />
 
@@ -41,6 +44,7 @@
         <com.octavi.support.preferences.SecureSettingSwitchPreference
             android:key="doze_tilt_gesture"
             android:defaultValue="false"
+            settings:iconSpaceReserved="false"
             android:title="@string/tilt_title"
             android:summary="@string/tilt_summary" />
 
@@ -81,23 +85,27 @@
         <com.octavi.support.preferences.SystemSettingSwitchPreference
             android:key="pulse_ambient_light"
             android:title="@string/pulse_ambient_light_title"
+            settings:iconSpaceReserved="false"
             android:summary="@string/pulse_ambient_light_summary"
             android:defaultValue="false" />
 
         <com.octavi.support.preferences.SystemSettingSwitchPreference
             android:key="ambient_light_pulse_for_all"
+            settings:iconSpaceReserved="false"
             android:title="@string/pulse_ambient_light_show_always_title"
             android:summary="@string/pulse_ambient_light_show_always_summary"
             android:defaultValue="false" />
 
         <com.octavi.support.preferences.SystemSettingSwitchPreference
             android:key="ambient_notification_light_enabled"
+            settings:iconSpaceReserved="false"
             android:title="@string/ambient_notification_light_enabled_title"
             android:summary="@string/ambient_notification_light_enabled_summary"
             android:defaultValue="false" />
 
         <com.octavi.support.preferences.SystemSettingSwitchPreference
             android:key="ambient_notification_light_hide_aod"
+            settings:iconSpaceReserved="false"
             android:title="@string/ambient_notification_light_hide_aod_title"
             android:summary="@string/ambient_notification_light_hide_aod_summary"
             android:defaultValue="false"
@@ -105,6 +113,7 @@
 
         <com.octavi.support.preferences.SystemSettingListPreference
             android:key="ambient_notification_color_mode"
+            settings:iconSpaceReserved="false"
             android:title="@string/pulse_ambient_light_color_mode_title"
             android:entries="@array/pulse_ambient_light_color_mode_entries"
             android:entryValues="@array/pulse_ambient_light_color_mode_values"
@@ -113,11 +122,13 @@
 
         <com.octavi.support.colorpicker.ColorPickerPreference
             android:key="ambient_notification_light_color"
+            settings:iconSpaceReserved="false"
             android:title="@string/pulse_ambient_light_color_title"
             android:defaultValue="0xFFFFFFFF" />
 
         <com.octavi.support.preferences.SystemSettingListPreference
             android:key="ambient_light_layout"
+            settings:iconSpaceReserved="false"
             android:title="@string/pulse_ambient_light_layout_title"
             android:entries="@array/pulse_ambient_light_layout_entries"
             android:entryValues="@array/pulse_ambient_light_layout_values"

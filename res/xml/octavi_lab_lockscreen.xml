@@ -26,23 +26,23 @@
                 android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
     </Preference>
 
-    <com.octavi.support.preferences.SystemSettingSwitchPreference
-        settings:iconSpaceReserved="false"
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="fingerprint_success_vib"
+        settings:iconSpaceReserved="false"
         android:title="@string/fprint_sucess_vib_title"
         android:summary="@string/fprint_sucess_vib_summary"
         android:defaultValue="true" />
 
-    <com.octavi.support.preferences.SystemSettingSwitchPreference
-        settings:iconSpaceReserved="false"
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="fingerprint_error_vib"
+        settings:iconSpaceReserved="false"
         android:title="@string/fprint_error_vib_title"
         android:summary="@string/fprint_error_vib_summary"
         android:defaultValue="true" />
 
-    <com.octavi.support.preferences.SystemSettingSwitchPreference
-        settings:iconSpaceReserved="false"
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_battery_info"
+        settings:iconSpaceReserved="false"
         android:title="@string/lockscreen_battery_info_title"
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="true" />
@@ -60,14 +60,14 @@
         android:summary="@string/hide_lockicon_summary"
         android:defaultValue="false" />
 
-    <com.octavi.support.preferences.SystemSettingSwitchPreference
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="fp_icon_disabled"
         settings:iconSpaceReserved="false"
         android:title="@string/fp_icon_disable_title"
         android:summary="@string/fp_icon_disable_summary"
         android:defaultValue="false" />
 
-    <com.octavi.support.preferences.SystemSettingSwitchPreference
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
          settings:iconSpaceReserved="false"
          android:key="lockscreen_status_bar"
          android:title="@string/lockscreen_status_bar_title"
@@ -91,14 +91,14 @@
         android:entryValues="@array/lockscreen_charging_animation_values"
         android:defaultValue="1" />
 
-    <com.octavi.support.preferences.SystemSettingSwitchPreference
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
         settings:iconSpaceReserved="false"
         android:key="lock_screen_custom_notif"
         android:title="@string/lockscreen_maxnotif_title"
         android:summary="@string/lockscreen_maxnotif_sumary"
         android:defaultValue="false" />
 
-    <com.octavi.support.preferences.CustomSeekBarPreference
+    <com.octavi.lab.preferences.CustomSeekBarPreference
         settings:iconSpaceReserved="false"
         android:key="lockscreen_max_notif_cofig"
         android:title="@string/lockscreen_maxnotif_config"
@@ -114,7 +114,7 @@
         android:key="lockscreen_media_art_options"
         android:title="@string/lockscreen_media_art_options_title" >
 
-    <com.octavi.support.preferences.SystemSettingSwitchPreference
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
         settings:iconSpaceReserved="false"
         android:key="lockscreen_media_art"
         android:title="@string/lockscreen_media_art_title"
@@ -141,11 +141,13 @@
 
     <PreferenceScreen
         android:title="@string/lockscreen_ui_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/lockscreen_ui_summary"
         android:fragment="com.octavi.lab.fragments.LockscreenUi" />
 
-    <com.octavi.support.preferences.SecureSettingSwitchPreference
+    <com.octavi.lab.preferences.SecureSettingSwitchPreference
         android:key="hide_lock_shortcuts"
+        settings:iconSpaceReserved="false"
         android:title="@string/lockscreen_hide_shortcuts_title"
         android:summary="@string/lockscreen_hide_shortcuts_summary"
         android:defaultValue="false" />
@@ -155,13 +157,14 @@
     <PreferenceCategory
             android:title="@string/ambient_settings">
 
-    <com.octavi.support.preferences.SystemSettingSwitchPreference
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="ambient_icons_lockscreen"
+        settings:iconSpaceReserved="false"
         android:title="@string/ambient_icons_lockscreen_title"
         android:summary="@string/ambient_icons_lockscreen_summary"
         android:defaultValue="false" />
 
-    <com.octavi.support.preferences.SystemSettingSeekBarPreference
+    <com.octavi.lab.preferences.SystemSettingSeekBarPreference
          android:key="ambient_icons_size"
          android:title="@string/ambient_icons_size_title"
          android:dependency="ambient_icons_lockscreen"
@@ -174,6 +177,7 @@
 
     <com.octavi.support.colorpicker.ColorPickerPreference
          android:key="ambient_icons_color"
+         settings:iconSpaceReserved="false"
          android:title="@string/ambient_icons_color_title"
          android:dependency="ambient_icons_lockscreen"
          android:defaultValue="0xFFFFFFFF" />
@@ -181,8 +185,8 @@
     </PreferenceCategory>
 
     <com.android.settings.widget.CardPreference
-        settings:iconSpaceReserved="false"
         android:key="lockscreen_fod_category"
+        settings:iconSpaceReserved="false"
         android:fragment="com.octavi.lab.fragments.FodGeneral"
         android:title="@string/lockscreen_fod_category"
         android:summary="@string/lockscreen_fod_summary" />

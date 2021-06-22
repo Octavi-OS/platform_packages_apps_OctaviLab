@@ -17,10 +17,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
-
+        settings:iconSpaceReserved="false"
         android:title="@string/lock_screen_clock_category_title" />
 
-    <com.octavi.support.preferences.SecureSettingListPreference
+    <com.octavi.lab.preferences.SecureSettingListPreference
+        settings:iconSpaceReserved="false"
         android:key="lockscreen_clock_selection"
         android:title="@string/lockscreen_clock_title"
         android:dialogTitle="@string/lockscreen_clock_dialog_title"
@@ -30,6 +31,7 @@
         android:defaultValue="2" />
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="lock_clock_fonts"
         android:title="@string/lock_clock_font_title"
         android:dialogTitle="@string/lock_clock_font_dialog_title"
@@ -39,7 +41,8 @@
         android:defaultValue="34"
         android:persistent="false" />
 
-    <com.octavi.support.preferences.CustomSeekBarPreference
+    <com.octavi.lab.preferences.CustomSeekBarPreference
+        settings:iconSpaceReserved="false"
         android:key="lockclock_font_size"
         android:title="@string/lockclock_font_size_title"
         android:max="101"
@@ -49,6 +52,7 @@
         android:defaultValue="78" />
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="custom_text_clock_fonts"
         android:title="@string/custom_text_clock_font_title"
         android:dialogTitle="@string/lock_clock_font_dialog_title"
@@ -58,7 +62,8 @@
         android:defaultValue="32"
         android:persistent="false" />
 
-    <com.octavi.support.preferences.CustomSeekBarPreference
+    <com.octavi.lab.preferences.CustomSeekBarPreference
+        settings:iconSpaceReserved="false"
         android:key="custom_text_clock_font_size"
         android:title="@string/custom_text_clock_font_size_title"
         android:max="50"
@@ -68,10 +73,11 @@
         android:defaultValue="40" />
 
     <PreferenceCategory
-
+        settings:iconSpaceReserved="false"
         android:title="@string/lock_screen_date_category_title" />
 
-    <com.octavi.support.preferences.SecureSettingListPreference
+    <com.octavi.lab.preferences.SecureSettingListPreference
+        settings:iconSpaceReserved="false"
         android:key="lockscreen_date_selection"
         android:title="@string/lockscreen_date_selection_title"
         android:dialogTitle="@string/lockscreen_date_dialog_title"
@@ -81,6 +87,7 @@
         android:defaultValue="0" />
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="custom_text_clock_fonts"
         android:title="@string/custom_text_clock_font_title"
         android:dialogTitle="@string/lock_clock_font_dialog_title"
@@ -91,6 +98,7 @@
         android:persistent="false" />
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="lock_date_fonts"
         android:title="@string/lock_date_font_title"
         android:dialogTitle="@string/lock_date_font_dialog_title"
@@ -100,7 +108,8 @@
         android:defaultValue="32"
         android:persistent="false" />
 
-    <com.octavi.support.preferences.CustomSeekBarPreference
+    <com.octavi.lab.preferences.CustomSeekBarPreference
+        settings:iconSpaceReserved="false"
         android:key="lockdate_font_size"
         android:title="@string/lockdate_font_size_title"
         android:max="25"
@@ -110,10 +119,11 @@
         android:persistent="false" />
 
     <PreferenceCategory
-
+        settings:iconSpaceReserved="false"
         android:title="@string/lock_screen_owner_category_title" />
 
     <ListPreference
+        settings:iconSpaceReserved="false"
         android:key="lock_ownerinfo_fonts"
         android:title="@string/lock_ownerinfo_font_title"
         android:dialogTitle="@string/lock_ownerinfo_font_dialog_title"
@@ -123,7 +133,8 @@
         android:defaultValue="0"
         android:persistent="false" />
 
-    <com.octavi.support.preferences.CustomSeekBarPreference
+    <com.octavi.lab.preferences.CustomSeekBarPreference
+        settings:iconSpaceReserved="false"
         android:key="lockowner_font_size"
         android:title="@string/lockowner_font_size_title"
         android:max="25"
@@ -133,9 +144,11 @@
         android:persistent="false" />
 
     <PreferenceCategory
+        settings:iconSpaceReserved="false"
         android:title="@string/lock_screen_items_allignment_category_title"/>
 
-    <com.octavi.support.preferences.SecureSettingListPreference
+    <com.octavi.lab.preferences.SecureSettingListPreference
+        settings:iconSpaceReserved="false"
         android:key="center_text_clock"
         android:title="@string/lockscreen_clock_allignment_title"
         android:dialogTitle="@string/lockscreen_clock_allignment_title"
@@ -144,7 +157,8 @@
         android:summary="%s"
         android:defaultValue="1" />
 
-    <com.octavi.support.preferences.SecureSettingListPreference
+    <com.octavi.lab.preferences.SecureSettingListPreference
+        settings:iconSpaceReserved="false"
         android:key="lock_date_alignment"
         android:title="@string/lockscreen_date_allignment_title"
         android:dialogTitle="@string/lockscreen_date_allignment_title"
@@ -153,7 +167,8 @@
         android:summary="%s"
         android:defaultValue="1" />
 
-    <com.octavi.support.preferences.SecureSettingListPreference
+    <com.octavi.lab.preferences.SecureSettingListPreference
+        settings:iconSpaceReserved="false"
         android:key="lock_ownerinfo_alignment"
         android:title="@string/lockscreen_ownerinfo_allignment_title"
         android:dialogTitle="@string/lockscreen_ownerinfo_allignment_title"
@@ -163,6 +178,7 @@
         android:defaultValue="1" />
 
     <com.octavi.support.preferences.SecureSettingSeekBarPreference
+        settings:iconSpaceReserved="false"
         android:key="lockscreen_item_padding"
         android:title="@string/lockscreen_item_padding_title"
         android:defaultValue="35"

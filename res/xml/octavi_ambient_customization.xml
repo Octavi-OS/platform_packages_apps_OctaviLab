@@ -23,11 +23,13 @@
         <com.octavi.support.preferences.SystemSettingSwitchPreference
             android:key="ambient_text"
             android:title="@string/ambient_text_title"
+            settings:iconSpaceReserved="false"
             android:summary="@string/ambient_text_summary"
             android:defaultValue="false" />
 
         <com.octavi.support.preferences.SystemSettingSwitchPreference
             android:key="ambient_text_animation"
+            settings:iconSpaceReserved="false"
             android:title="@string/ambient_text_animation_title"
             android:summary="@string/ambient_text_animation_summary"
             android:dependency="ambient_text"
@@ -35,9 +37,10 @@
 
         <com.octavi.support.preferences.SystemSettingEditTextPreference
             android:key="ambient_text_string"
+            settings:iconSpaceReserved="false"
             android:title="@string/ambient_text_string_title"
             android:dependency="ambient_text"
-            android:defaultValue="#Welcome To Octavi-OS" />
+            android:defaultValue="Octavi-OS" />
 
         <ListPreference
             android:key="ambient_text_font"
@@ -63,6 +66,7 @@
 
         <com.octavi.support.colorpicker.ColorPickerPreference
             android:key="ambient_text_color"
+            settings:iconSpaceReserved="false"
             android:title="@string/ambient_text_color_title"
             android:persistent="false"
             settings:defaultColorValue="0xFF880000" />
@@ -92,6 +96,7 @@
 
         <com.octavi.support.preferences.SystemSettingSwitchPreference
             android:key="ambient_image"
+            settings:iconSpaceReserved="false"
             android:title="@string/ambient_image_title"
             android:defaultValue="false" />
 

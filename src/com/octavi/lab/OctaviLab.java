@@ -86,6 +86,7 @@ public class OctaviLab extends SettingsPreferenceFragment implements View.OnClic
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        getActivity().getActionBar().setTitle("Octavi Lab");
         mQuickSettingsCard = (ImageView) view.findViewById(R.id.quicksettings_card);
         mQuickSettingsCard.setOnClickListener(this);
 
