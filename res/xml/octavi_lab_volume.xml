@@ -33,7 +33,6 @@
         settings:controller="com.octavi.lab.fragments.VolumePanelOnLeftPreferenceController" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        settings:iconSpaceReserved="false"
         android:key="swap_volume_keys_on_rotation"
         settings:iconSpaceReserved="false"
         android:title="@string/swap_volume_keys_on_rotation_title"
