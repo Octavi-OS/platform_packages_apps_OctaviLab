@@ -46,11 +46,11 @@ import android.provider.SearchIndexableResource;
 
 import com.octavi.lab.preferences.DozeUtils;
 import com.android.settings.SettingsPreferenceFragment;
-import com.octavi.support.preferences.CustomSeekBarPreference;
-import com.octavi.support.preferences.SystemSettingListPreference;
-import com.octavi.support.preferences.SystemSettingSeekBarPreference;
-import com.octavi.support.preferences.SystemSettingSwitchPreference;
-import com.octavi.support.preferences.SecureSettingSwitchPreference;
+import com.octavi.lab.preferences.CustomSeekBarPreference;
+import com.octavi.lab.preferences.SystemSettingListPreference;
+import com.octavi.lab.preferences.SystemSettingSeekBarPreference;
+import com.octavi.lab.preferences.SystemSettingSwitchPreference;
+import com.octavi.lab.preferences.SecureSettingSwitchPreference;
 import com.octavi.support.colorpicker.ColorPickerPreference;
 
 import java.util.List;
