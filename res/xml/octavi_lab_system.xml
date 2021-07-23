@@ -20,7 +20,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
 
-
     <PreferenceScreen
          android:key="ambient_display_custom"
          android:persistent="false"
