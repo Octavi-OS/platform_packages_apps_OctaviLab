@@ -60,6 +60,11 @@
             settings:units="" />
         </PreferenceCategory>
 
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="qs_tile_title_visibility"
+        android:title="@string/qs_tile_title_visibility_title"
+        android:defaultValue="true" />
+
     <com.octavi.lab.preferences.SecureSettingSwitchPreference
         settings:iconSpaceReserved="false"
         android:key="quick_settings_vibrate"
