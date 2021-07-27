@@ -1010,4 +1010,8 @@
     <string name="hide_from_recents_add_app">Add app</string>
     <string name="title_activity_carbon_recents_settings">Recents</string>
 
+    <!-- Octavi logo -->
+    <string name="octavi_logo_title">Bliss logo</string>
+    <string name="octavi_logo_summary">Show Octavi Logo on Statusbar</string>
+
 </resources>
