@@ -39,15 +39,36 @@ import android.hardware.biometrics.BiometricSourceType;
 import android.hardware.fingerprint.FingerprintManager;
 
 import com.octavi.support.preferences.SystemSettingSwitchPreference;
+import android.database.ContentObserver;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.BitmapDrawable;
+import android.text.TextUtils;
+import android.util.Log;
+import android.os.Handler;
+import android.os.UserHandle;
+import android.os.ParcelFileDescriptor;
+
 import com.android.internal.util.custom.FodUtils;
 
+import java.io.FileDescriptor;
+import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 @SearchIndexable
 public class FodGeneral extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String FINGERPRINT_CUSTOM_ICON = "custom_fingerprint_icon";
+    private static final int GET_CUSTOM_FP_ICON = 69;
+    private Preference mFilePicker;
+    private SystemSettingSwitchPreference mIconAnima;
+
+    private Handler mHandler;
     private ContentResolver mResolver;
 
     @Override
@@ -57,7 +78,7 @@ public class FodGeneral extends SettingsPreferenceFragment implements
         PreferenceScreen prefScreen = getPreferenceScreen();
         mResolver = getActivity().getContentResolver();
         Context mContext = getContext();
-        final PackageManager mPm = getActivity().getPackageManager();                    
+        final PackageManager mPm = getActivity().getPackageManager();
 
         boolean enableScreenOffFOD = getContext().getResources().
                 getBoolean(R.bool.config_supportScreenOffFod);
@@ -68,17 +89,74 @@ public class FodGeneral extends SettingsPreferenceFragment implements
         }
 
         Preference AnimaTogglePref = (Preference) findPreference("fod_recognizing_animation");
-        Preference AnimaListPref = (Preference) findPreference("fod_recognizing_animation_list");            
+        Preference AnimaListPref = (Preference) findPreference("fod_recognizing_animation_list");
 
         if (!com.android.internal.util.octavi.OctaviUtils.isPackageInstalled(mContext,"com.octavi.fod.animations")) {
             prefScreen.removePreference(AnimaTogglePref);
-            prefScreen.removePreference(AnimaListPref);                
-        }                
+            prefScreen.removePreference(AnimaListPref);
+        }
 
-    }      
+        mFilePicker = (Preference) findPreference(FINGERPRINT_CUSTOM_ICON);
+            final String customIconURI = Settings.System.getString(getContext().getContentResolver(),
+                Settings.System.OMNI_CUSTOM_FP_ICON);
+
+            if (!TextUtils.isEmpty(customIconURI)) {
+                setPickerIcon(customIconURI);
+                mFilePicker.setSummary(customIconURI);
+            }
+
+            mFilePicker.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                @Override
+                public boolean onPreferenceClick(Preference preference) {
+                    Intent intent = new Intent(Intent.ACTION_PICK);
+                    intent.setType("image/png");
+
+                    startActivityForResult(intent, GET_CUSTOM_FP_ICON);
+
+                    return true;
+                }
+            });
+        }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode,
+        Intent resultData) {
+        if (requestCode == GET_CUSTOM_FP_ICON && resultCode == Activity.RESULT_OK) {
+            Uri uri = null;
+            if (resultData != null) {
+                uri = resultData.getData();
+                mFilePicker.setSummary(uri.toString());
+                setPickerIcon(uri.toString());
+                Settings.System.putString(getContentResolver(), Settings.System.OMNI_CUSTOM_FP_ICON,
+                    uri.toString());
+            }
+        } else if (requestCode == GET_CUSTOM_FP_ICON && resultCode == Activity.RESULT_CANCELED) {
+            mFilePicker.setSummary("");
+            mFilePicker.setIcon(new ColorDrawable(Color.TRANSPARENT));
+            Settings.System.putString(getContentResolver(), Settings.System.OMNI_CUSTOM_FP_ICON, "");
+        }
+    }
+
+
+    private void setPickerIcon(String uri) {
+        try {
+                ParcelFileDescriptor parcelFileDescriptor =
+                    getContext().getContentResolver().openFileDescriptor(Uri.parse(uri), "r");
+                FileDescriptor fileDescriptor = parcelFileDescriptor.getFileDescriptor();
+                Bitmap image = BitmapFactory.decodeFileDescriptor(fileDescriptor);
+                parcelFileDescriptor.close();
+                Drawable d = new BitmapDrawable(getResources(), image);
+                mFilePicker.setIcon(d);
+            }
+            catch (Exception e) {}
+
+    }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mIconAnima) {
+            return true;
+        }
         return false;
     }
 

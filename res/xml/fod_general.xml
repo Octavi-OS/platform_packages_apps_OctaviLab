@@ -37,6 +37,10 @@
             android:summary="@string/fod_icon_picker_summary"
             android:fragment="com.octavi.lab.fragments.lockscreen.FODIconPickerFragment" />
 
+        <Preference
+            android:title="@string/custom_fod_icon_picker_title"
+            android:key="custom_fingerprint_icon" />
+
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
             settings:iconSpaceReserved="false"
             android:key="fod_recognizing_animation"

@@ -1024,4 +1024,9 @@
     <string name="fod_icon_animation_oos">OOS 11</string>
 
     <string name="config_fodIconAnimationPackage" translatable="false">com.android.systemui</string>
+
+    <!-- Custom FOD icon picker -->
+    <string name="custom_fod_icon_picker_title">Custom Fingerprint icon</string>
+    <string name="custom_fod_icon_png_explainer">You can download your own custom FOD icon PNGs from Telegram channels such as FODicons and OP_fps. Use a local gallery and not online services such as Google Photos to pick FOD icons.</string>
+
 </resources>
