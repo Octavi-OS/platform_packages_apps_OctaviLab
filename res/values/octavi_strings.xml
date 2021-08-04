@@ -1023,4 +1023,5 @@
     <string name="fod_icon_animation_oneui2">OneUI 2</string>
     <string name="fod_icon_animation_oos">OOS 11</string>
 
+    <string name="config_fodIconAnimationPackage" translatable="false">com.android.systemui</string>
 </resources>
