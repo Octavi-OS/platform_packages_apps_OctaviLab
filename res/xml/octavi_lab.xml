@@ -19,52 +19,108 @@
     android:title="@string/octavi_lab_title" >
 
         <!-- Status Bar -->
-        <com.octavi.lab.preferences.CardViewPreference
+	<Preference
+	    android:layout="@layout/cardview"
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:fragment="com.octavi.lab.fragments.StatusBarSettings" 
-            android:icon="@drawable/ic_settings_statusbar"/>
+            android:icon="@drawable/statusbar"/>
+
+        <!-- QuickSettings -->
+        <Preference
+            android:layout="@layout/cardview"
+            android:key="quicksettings_category"
+            android:title="@string/quicksettings_title"
+            android:fragment="com.octavi.lab.fragments.LockScreenSettings"
+            android:icon="@drawable/qspanel"/>
+
+        <!-- Notification -->
+        <Preference
+            android:layout="@layout/cardview"
+            android:key="notifications_category"
+            android:title="@string/notifications_title"
+            android:fragment="com.octavi.lab.fragments.NotificationSettings"
+            android:icon="@drawable/notif"/>
+
+        <!-- Themes -->
+        <Preference
+            android:layout="@layout/cardview"
+            android:key="themes_category"
+            android:title="@string/themes_title"
+            android:fragment="com.octavi.lab.fragments.NotificationSettings"
+            android:icon="@drawable/themes"/>
+
+        <!-- Volume -->
+        <Preference
+            android:layout="@layout/cardview"
+            android:key="volume_category"
+            android:title="@string/volume_title"
+            android:fragment="com.octavi.lab.fragments.ButtonSettings"
+            android:icon="@drawable/volume"/>
+
+        <!-- Buttons -->
+        <Preference
+            android:layout="@layout/cardview"
+            android:key="buttonsettings_category"
+            android:title="@string/navbar_title"
+            android:fragment="com.octavi.lab.fragments.ButtonSettings"
+            android:icon="@drawable/nav"/>
+
+        <!-- Gesture -->
+        <Preference
+            android:layout="@layout/cardview"
+            android:key="gesture_category"
+            android:title="@string/gesture_title"
+            android:fragment="com.octavi.lab.fragments.ButtonSettings"
+            android:icon="@drawable/gesture"/>
+
+        <!-- Power Menu -->
+        <Preference
+            android:layout="@layout/cardview"
+            android:key="power_category"
+            android:title="@string/power_title"
+            android:fragment="com.octavi.lab.fragments.ButtonSettings"
+            android:icon="@drawable/power"/>
 
         <!-- Lock Screen -->
-        <com.octavi.lab.preferences.CardViewPreference2
+        <Preference
+            android:layout="@layout/cardview"
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
             android:fragment="com.octavi.lab.fragments.LockScreenSettings"
-            android:icon="@drawable/ic_settings_lockscreens"/>
+            android:icon="@drawable/uituner"/>
 
-        <!-- Buttons -->
-        <com.octavi.lab.preferences.CardViewPreference3
-            android:key="buttonsettings_category"
-            android:title="@string/button_title"
+        <!-- Visualizer -->
+        <Preference
+            android:layout="@layout/cardview"
+            android:key="visualiser_category"
+            android:title="@string/visualiser_title"
             android:fragment="com.octavi.lab.fragments.ButtonSettings"
-            android:icon="@drawable/ic_settings_buttons"/>
+            android:icon="@drawable/visual"/>
 
-        <!-- System -->
-        <com.octavi.lab.preferences.CardViewPreference4
-            android:key="system_category"
-            android:title="@string/system_title" 
+        <!-- Weather -->
+        <Preference
+            android:layout="@layout/cardview"
+            android:key="weather_category"
+            android:title="@string/weather_title" 
             android:fragment="com.octavi.lab.fragments.SystemSettings"
-            android:icon="@drawable/ic_settings_system"/>
+            android:icon="@drawable/weather"/>
 
-        <!-- Notification -->
-        <com.octavi.lab.preferences.CardViewPreference5
-            android:key="notifications_category"
-            android:title="@string/notifications_title" 
-            android:fragment="com.octavi.lab.fragments.NotificationSettings"
-            android:icon="@drawable/ic_settings_notification"/>
+        <!-- Gaming -->
+        <Preference
+            android:layout="@layout/cardview"
+            android:key="gaming_category"
+            android:title="@string/gaming_title"
+            android:fragment="com.octavi.lab.fragments.NavbarSettings"
+            android:icon="@drawable/gameing"/>
 
         <!-- Misc -->
-        <com.octavi.lab.preferences.CardViewPreference6
+        <Preference
+            android:layout="@layout/cardview"
             android:key="misc_category"
             android:title="@string/misc_title" 
             android:fragment="com.octavi.lab.fragments.MiscSettings"
-            android:icon="@drawable/ic_settings_miscs"/>
+            android:icon="@drawable/extra"/>
 
-
-        <!-- Navbar -->
-        <com.octavi.lab.preferences.CardViewPreference7
-            android:key="navbar_category"
-            android:title="@string/navbar_title" 
-            android:fragment="com.octavi.lab.fragments.NavbarSettings"
-            android:icon="@drawable/ic_settings_navbar"/>
 </PreferenceScreen>
+ 
