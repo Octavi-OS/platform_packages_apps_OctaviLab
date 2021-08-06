@@ -16,12 +16,15 @@
 
 package com.octavi.lab.fragments;
 
+import android.graphics.Color;
 import android.app.Activity;
 import android.content.Context;
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.SystemProperties;
+import android.net.Uri;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import androidx.preference.*;

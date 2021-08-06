@@ -22,7 +22,7 @@
             android:summary="@string/fod_icon_animation_summary"
             android:defaultValue="false" />
 
-        <Prefrence
+        <Preference
             android:key="fod_icon_anim_type_preview"
             android:title="@string/fod_icon_animation_effect_title"
             android:summary="@string/fod_icon_animation_summary"
