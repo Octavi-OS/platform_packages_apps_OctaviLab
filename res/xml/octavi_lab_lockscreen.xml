@@ -146,6 +146,12 @@
         android:summary="@string/lockscreen_ui_summary"
         android:fragment="com.octavi.lab.fragments.LockscreenUi" />
 
+    <Preference
+        android:key="lockscreen_clock"
+        android:title="LS Clock"
+        android:summary="Change LockScreen Clock"
+        android:fragment="com.octavi.lab.fragments.LockscreenClock" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
