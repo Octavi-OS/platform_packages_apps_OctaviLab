@@ -21,4 +21,7 @@
     <color name="fod_item_background_stroke_color">#d6d6d6</color>
 
     <color name="option_border_default">#5f6368</color>
+
+<color name="cardborder">#CECECE</color>
+<color name="barbg">#D8D8D8</color>
 </resources>

@@ -18,6 +18,7 @@
 
     <PreferenceCategory
         settings:iconSpaceReserved="false"
+        settings:allowDividerAbove="false"
         android:title="@string/lock_screen_clock_category_title" />
 
     <com.octavi.lab.preferences.SecureSettingListPreference
@@ -73,6 +74,7 @@
         android:defaultValue="40" />
 
     <PreferenceCategory
+        settings:allowDividerAbove="false"
         settings:iconSpaceReserved="false"
         android:title="@string/lock_screen_date_category_title" />
 
@@ -119,7 +121,8 @@
         android:persistent="false" />
 
     <PreferenceCategory
-        settings:iconSpaceReserved="false"
+        settings:allowDividerAbove="false"
+	settings:iconSpaceReserved="false"
         android:title="@string/lock_screen_owner_category_title" />
 
     <ListPreference
@@ -144,7 +147,8 @@
         android:persistent="false" />
 
     <PreferenceCategory
-        settings:iconSpaceReserved="false"
+        settings:allowDividerAbove="false"
+	settings:iconSpaceReserved="false"
         android:title="@string/lock_screen_items_allignment_category_title"/>
 
     <com.octavi.lab.preferences.SecureSettingListPreference

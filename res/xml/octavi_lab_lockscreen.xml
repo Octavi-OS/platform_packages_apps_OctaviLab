@@ -111,6 +111,7 @@
 
     <PreferenceCategory
         settings:iconSpaceReserved="false"
+        settings:allowDividerAbove="false"
         android:key="lockscreen_media_art_options"
         android:title="@string/lockscreen_media_art_options_title" >
 
@@ -136,7 +137,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-
+        settings:allowDividerAbove="false"
         android:title="@string/lock_screen_elements_category_title">
 
     <PreferenceScreen
@@ -148,7 +149,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-            android:title="@string/ambient_settings">
+        settings:allowDividerAbove="false"
+        android:title="@string/ambient_settings">
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="ambient_icons_lockscreen"

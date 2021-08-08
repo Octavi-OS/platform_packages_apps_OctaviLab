@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2016 Nitrogen Project
-     Copyright (C) 2020 OctaviOS
+     Copyright (C) 2020-21 OctaviOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -21,7 +21,8 @@
         <!-- Status Bar -->
 	<Preference
 	    android:layout="@layout/cardview"
-            android:key="statusbar_category"
+            android:summary="@string/statusbar_summary"
+	    android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:fragment="com.octavi.lab.fragments.StatusBarSettings" 
             android:icon="@drawable/statusbar"/>
@@ -29,14 +30,16 @@
         <!-- QuickSettings -->
         <Preference
             android:layout="@layout/cardview"
+            android:summary="@string/qs_summary"
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
-            android:fragment="com.octavi.lab.fragments.LockScreenSettings"
+            android:fragment="com.octavi.lab.fragments.QuickSettings"
             android:icon="@drawable/qspanel"/>
 
         <!-- Notification -->
         <Preference
             android:layout="@layout/cardview"
+            android:summary="@string/notif_summary"
             android:key="notifications_category"
             android:title="@string/notifications_title"
             android:fragment="com.octavi.lab.fragments.NotificationSettings"
@@ -45,22 +48,25 @@
         <!-- Themes -->
         <Preference
             android:layout="@layout/cardview"
+            android:summary="@string/theme_summary"
             android:key="themes_category"
             android:title="@string/themes_title"
-            android:fragment="com.octavi.lab.fragments.NotificationSettings"
+            android:fragment="com.octavi.lab.fragments.OctaviThemes"
             android:icon="@drawable/themes"/>
 
         <!-- Volume -->
         <Preference
             android:layout="@layout/cardview"
+            android:summary="@string/volume_summary"
             android:key="volume_category"
             android:title="@string/volume_title"
-            android:fragment="com.octavi.lab.fragments.ButtonSettings"
+            android:fragment="com.octavi.lab.fragments.VolumeRockerSettings"
             android:icon="@drawable/volume"/>
 
         <!-- Buttons -->
         <Preference
             android:layout="@layout/cardview"
+            android:summary="@string/nav_summary"
             android:key="buttonsettings_category"
             android:title="@string/navbar_title"
             android:fragment="com.octavi.lab.fragments.ButtonSettings"
@@ -69,22 +75,25 @@
         <!-- Gesture -->
         <Preference
             android:layout="@layout/cardview"
+            android:summary="@string/gesture_summary"
             android:key="gesture_category"
             android:title="@string/gesture_title"
-            android:fragment="com.octavi.lab.fragments.ButtonSettings"
+            android:fragment="com.octavi.lab.fragments.GestureSettings"
             android:icon="@drawable/gesture"/>
 
         <!-- Power Menu -->
         <Preference
             android:layout="@layout/cardview"
+            android:summary="@string/power_summary"
             android:key="power_category"
             android:title="@string/power_title"
-            android:fragment="com.octavi.lab.fragments.ButtonSettings"
+            android:fragment="com.octavi.lab.fragments.PowermenuSettings"
             android:icon="@drawable/power"/>
 
         <!-- Lock Screen -->
         <Preference
             android:layout="@layout/cardview"
+            android:summary="@string/ui_summary"
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
             android:fragment="com.octavi.lab.fragments.LockScreenSettings"
@@ -93,30 +102,34 @@
         <!-- Visualizer -->
         <Preference
             android:layout="@layout/cardview"
+            android:summary="@string/visual_summary"
             android:key="visualiser_category"
             android:title="@string/visualiser_title"
-            android:fragment="com.octavi.lab.fragments.ButtonSettings"
+            android:fragment="com.octavi.lab.fragments.Visualizer"
             android:icon="@drawable/visual"/>
 
         <!-- Weather -->
         <Preference
             android:layout="@layout/cardview"
+            android:summary="@string/weather_summary"
             android:key="weather_category"
             android:title="@string/weather_title" 
-            android:fragment="com.octavi.lab.fragments.SystemSettings"
+            android:fragment="com.octavi.lab.fragments.LockscreenWeather"
             android:icon="@drawable/weather"/>
 
         <!-- Gaming -->
         <Preference
             android:layout="@layout/cardview"
+            android:summary="@string/gaming_summary"
             android:key="gaming_category"
             android:title="@string/gaming_title"
-            android:fragment="com.octavi.lab.fragments.NavbarSettings"
+            android:fragment="com.octavi.lab.fragments.GamingMode"
             android:icon="@drawable/gameing"/>
 
         <!-- Misc -->
         <Preference
             android:layout="@layout/cardview"
+            android:summary="@string/misc_summary"
             android:key="misc_category"
             android:title="@string/misc_title" 
             android:fragment="com.octavi.lab.fragments.MiscSettings"
