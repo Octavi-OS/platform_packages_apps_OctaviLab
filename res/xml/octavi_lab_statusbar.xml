@@ -129,4 +129,19 @@
          android:summary="%s"
          android:defaultValue="0"/>
 
+    <com.octavi.lab.preferences.SystemSettingSeekBarPreference
+         android:key="statusbar_left_padding"
+         settings:iconSpaceReserved="false"
+         android:title="@string/statusbar_left_padding"
+         android:max="50"
+         android:min="-5"
+         android:defaultValue="8"/>
+
+    <com.octavi.lab.preferences.SystemSettingSeekBarPreference
+         android:key="statusbar_right_padding"
+         settings:iconSpaceReserved="false"
+         android:title="@string/statusbar_right_padding"
+         android:max="50"
+         android:min="-5"
+         android:defaultValue="8"/>
 </PreferenceScreen>
