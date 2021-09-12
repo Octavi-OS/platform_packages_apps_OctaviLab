@@ -10,9 +10,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <PreferenceCategory
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
            android:title="@string/heads_up_notifications" >
 
     <com.octavi.lab.preferences.GlobalSettingSwitchPreference
@@ -32,7 +30,6 @@
             android:title="@string/add_heads_up_package"
             android:summary="@string/add_heads_up_stoplist_summary" />
     </PreferenceCategory>
-  </PreferenceCategory>
 
     <PreferenceCategory
             android:title="@string/heads_up_blacklist_title"

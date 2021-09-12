@@ -13,10 +13,12 @@
  -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="omnijaws_settings"
     android:title="@string/weather_title">
 
         <PreferenceScreen
+            settings:iconSpaceReserved="false" 
             android:title="@string/weather_config_title"
             android:summary="@string/weather_config_summary" >
             <intent android:action="android.intent.action.MAIN"

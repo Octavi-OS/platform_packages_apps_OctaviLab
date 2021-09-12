@@ -109,6 +109,7 @@
     </PreferenceCategory>
 
     <PreferenceScreen
+        settings:iconSpaceReserved="false"
         android:title="@string/hide_apps_from_recents_title"
         android:summary="@string/hide_apps_from_recents_summary" >
         <intent android:action="android.intent.action.MAIN"
