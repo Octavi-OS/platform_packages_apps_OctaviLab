@@ -32,12 +32,6 @@
         android:fragment="com.octavi.lab.fragments.BatteryLightSettings"
         android:title="@string/battery_light_settings" />
 
-        <com.octavi.lab.preference.SystemSettingSwitchPreference
-        android:key="artwork_media_background"
-        android:title="@string/artwork_media_background_title"
-        android:summary="@string/artwork_media_background_summary"
-        android:defaultValue="true" />
-
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="hide_smart_replies"
 	settings:iconSpaceReserved="false"
