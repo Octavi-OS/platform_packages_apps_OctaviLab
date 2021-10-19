@@ -99,33 +99,6 @@
             android:fragment="com.octavi.lab.fragments.LockScreenSettings"
             android:icon="@drawable/uituner"/>
 
-        <!-- Visualizer -->
-        <Preference
-            android:layout="@layout/cardview"
-            android:summary="@string/visual_summary"
-            android:key="visualiser_category"
-            android:title="@string/visualiser_title"
-            android:fragment="com.octavi.lab.fragments.Visualizer"
-            android:icon="@drawable/visual"/>
-
-        <!-- Weather -->
-        <Preference
-            android:layout="@layout/cardview"
-            android:summary="@string/weather_summary"
-            android:key="weather_category"
-            android:title="@string/weather_title" 
-            android:fragment="com.octavi.lab.fragments.LockscreenWeather"
-            android:icon="@drawable/weather"/>
-
-        <!-- Gaming -->
-        <Preference
-            android:layout="@layout/cardview"
-            android:summary="@string/gaming_summary"
-            android:key="gaming_category"
-            android:title="@string/gaming_title"
-            android:fragment="com.octavi.lab.fragments.GamingMode"
-            android:icon="@drawable/gameing"/>
-
         <!-- Misc -->
         <Preference
             android:layout="@layout/cardview"

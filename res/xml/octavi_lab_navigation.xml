@@ -18,33 +18,5 @@
 	android:title="@string/navbar_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <SwitchPreference
-        settings:iconSpaceReserved="false"
-        android:key="navigation_bar_show_new"
-        android:title="@string/navbar_visibility"
-        android:summary="@string/navbar_vis_summary" />
-
-        <Preference
-        settings:iconSpaceReserved="false"
-        android:key="system_navigation_settings_preferences"
-        android:title="@string/navbar_gestures_title"
-        android:summary="@string/navbar_gestures_summary"
-        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
-        settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
-
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        settings:iconSpaceReserved="false"
-        android:key="pixel_nav_animation"
-        android:title="@string/pixel_navbar_anim_title"
-        android:summary="@string/pixel_navbar_anim_summary"
-        android:defaultValue="true" />
-
-        <com.octavi.lab.preferences.SecureSettingSwitchPreference
-        android:key="sysui_nav_bar_inverse"
-        settings:iconSpaceReserved="false"
-        android:title="@string/navigation_bar_invert_layout_title"
-        android:summary="@string/navigation_bar_invert_layout_summary"
-        android:defaultValue="false" />
-
 </PreferenceScreen>
 
