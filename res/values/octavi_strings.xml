@@ -53,4 +53,13 @@
     <string name="gaming_title">Gaming Mode</string>
     <string name="misc_title">Miscellaneous</string>
 
+    <!-- Lockscreen shortcuts -->
+    <string name="lockscreen_shortcuts">Lockscreen Shortcuts</string>
+
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_tuner_title">Lockscreen Tuner</string>
+
+    <!-- Statusbar Iten -->
+    <string name="statusbar_items_category">Statusbar Items</string>
+
 </resources>
