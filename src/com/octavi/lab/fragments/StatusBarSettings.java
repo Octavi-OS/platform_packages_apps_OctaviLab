@@ -37,33 +37,16 @@ import java.util.Collections;
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
-
-    private SwitchPreference mShowOctaviLogo;
-
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.octavi_lab_statusbar);
-
-        PreferenceScreen prefSet = getPreferenceScreen();
-
-        mShowOctaviLogo = (SwitchPreference) findPreference(KEY_STATUS_BAR_LOGO);
-        mShowOctaviLogo.setChecked((Settings.System.getInt(getContentResolver(),
-             Settings.System.STATUS_BAR_LOGO, 0) == 1));
-        mShowOctaviLogo.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if  (preference == mShowOctaviLogo) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.STATUS_BAR_LOGO, value ? 1 : 0);
-            return true;
-        }
-        return false;
+    return false;
     }
 
     @Override

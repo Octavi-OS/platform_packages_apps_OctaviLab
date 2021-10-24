@@ -24,6 +24,20 @@
     <string name="ambient_settings">Ambient Settings</string>
     <string name="lock_screen_elements_category_title">Lock screen elements</string>
 
+    <string name="statusbar_summary">Clock &amp; date, <b>Traffic Indicator</b>, Battery Styles/n Volte Icons, Notification counts</string>
+    <string name="qs_summary">QS Rows &amp; Columns, Data Usage, QS media player, <b>QS Clock styles</b>, Tile titles</string>
+    <string name="notif_summary">Heads UP, Battery charging light, <b>Ambient</b>, Notification Headers, Re-ticker</string>
+    <string name="theme_summary">RGB picker, Icon packs, Icon shapes, Brightness slider style, <b>Gvisual mod</b>, Navbar styles</string>
+    <string name="volume_summary">Swap position, <b>Volume panel styles</b>, Playback control, Per app volume, Volume wake, Volume cursor</string>
+    <string name="nav_summary">Hardware buttons key binding and Navigation tuning like <b>Gesture / Two button / Three button</b></string>
+    <string name="gesture_summary"><b>Three finger Screenshot</b>, Double tap to sleep on Lockscreen / Status bar, Long press power button</string>
+    <string name="power_summary">Power menu customisation like <b>Advance reboot</b> and power menu opacity can be tuned in this section</string>
+    <string name="ui_summary">Lockscreen shortcuts, FP icon, lock icon, Charging animation, <b>Media art</b>, AOD icons on Lockscreen</string>
+    <string name="visual_summary">Lockscreen Visualiser with <b>lava lamp</b> as option to make Lockscreen look cool</string>
+    <string name="weather_summary">Omni jaws <b>weather customisation</b> for both on Lockscreen and Quick Settings</string>
+    <string name="gaming_summary">Gaming mode related options which is basically <b>advanced DND</b>, but you gonna cry so added</string>
+    <string name="misc_summary">Smart Pixels, <b>Signature spoofing</b>, Animations, Scrolling Cache, Hide apps from recents</string>
+
     <!-- Header titles -->
     <string name="quicksettings_title">Quick Setings</string>
     <string name="statusbar_title">StatusBar</string>
