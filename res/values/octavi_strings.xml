@@ -23,6 +23,7 @@
     <string name="octavi_ambient_title">Ambient</string>
     <string name="ambient_settings">Ambient Settings</string>
     <string name="lock_screen_elements_category_title">Lock screen elements</string>
+    <string name="fingerprint_category">Fingerprint</string>    
 
     <string name="statusbar_summary">Clock &amp; date, <b>Traffic Indicator</b>, Battery Styles/n Volte Icons, Notification counts</string>
     <string name="qs_summary">QS Rows &amp; Columns, Data Usage, QS media player, <b>QS Clock styles</b>, Tile titles</string>
@@ -288,5 +289,11 @@
     <string name="lockscreen_media_blur_title">Media art blur level</string>
     <string name="show_lockscreen_media_art_title">Show media art</string>
     <string name="lockscreen_media_art_options_title">Lockscreen media art</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint success vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on failed fingerprint authentication</string>
 
 </resources>

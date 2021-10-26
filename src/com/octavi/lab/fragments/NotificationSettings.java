@@ -54,6 +54,16 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.OCTAVI;
+        return MetricsEvent.OCTAVI;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        return false;
     }
 }
