@@ -17,6 +17,22 @@ public class OctaviLab extends SettingsPreferenceFragment  {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.octavi_lab);
+        final PreferenceScreen screen = getPreferenceScreen();
+        if (screen == null) {
+                    return;
+                }
+        final int count = screen.getPreferenceCount();
+
+
+        for (int i = 0; i < count; i++) {
+                final Preference preference = screen.getPreference(i);
+                if (preference == null) {
+                    break;
+                }
+
+                preference.setLayoutResource(R.layout.cardview);
+
+            }
     }
 
     @Override
