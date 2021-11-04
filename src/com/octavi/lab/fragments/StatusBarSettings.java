@@ -37,11 +37,23 @@ import java.util.Collections;
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String PREF_BATTERY = "battery";
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.octavi_lab_statusbar);
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        Preference mBattery = (Preference) findPreference(PREF_BATTERY);
+        if (!hasBatteryLights(getContext()))
+            getPreferenceScreen().removePreference(mBattery);
+    }
+
+    private static boolean hasBatteryLights(Context context) {
+        return context.getResources().getBoolean(
+                com.android.internal.R.bool.config_intrusiveBatteryLed);
     }
 
     @Override
