@@ -37,6 +37,11 @@
         android:title="@string/traffic_title" />
 
     <Preference
+        android:key="carrier_label"
+        android:fragment="com.octavi.lab.fragments.CarrierLabel"
+        android:title="@string/carrier_label_settings_title" />
+
+    <Preference
         android:key="battery_bar_category"
         android:fragment="com.octavi.lab.fragments.BatteryBar"
         android:title="@string/battery_bar_title" />
