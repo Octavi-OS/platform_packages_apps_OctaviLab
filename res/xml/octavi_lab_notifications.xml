@@ -28,6 +28,12 @@
         android:title="@string/heads_up_notifications"
         android:fragment="com.octavi.lab.fragments.HeadsUpSettings"/>
 
+     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="less_boring_heads_up"
+        android:title="@string/less_boring_heads_up_title"
+        android:summary="@string/less_boring_heads_up_summary"
+        android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
