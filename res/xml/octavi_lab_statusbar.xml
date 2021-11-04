@@ -36,6 +36,11 @@
         android:fragment="com.octavi.lab.fragments.Traffic"
         android:title="@string/traffic_title" />
 
+    <Preference
+        android:key="battery_bar_category"
+        android:fragment="com.octavi.lab.fragments.BatteryBar"
+        android:title="@string/battery_bar_title" />
+
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
         android:key="show_fourg_icon"
         android:title="@string/show_fourg_icon_title"
