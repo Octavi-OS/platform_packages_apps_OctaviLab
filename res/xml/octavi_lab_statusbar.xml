@@ -32,6 +32,11 @@
         android:title="@string/status_bar_clock_title" />
 
     <Preference
+        android:key="battery"
+        android:fragment="com.octavi.lab.fragments.Battery"
+        android:title="@string/battery_title" />
+
+    <Preference
         android:key="traffic"
         android:fragment="com.octavi.lab.fragments.Traffic"
         android:title="@string/traffic_title" />

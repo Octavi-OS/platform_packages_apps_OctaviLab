@@ -423,4 +423,18 @@
     <string name="double_tap_on_doze_to_wake_title">Double-tap to wake on doze</string>
     <string name="double_tap_on_doze_to_wake_summary">Double tap to wake when device is dreaming</string>
 
+    <!-- Battery light -->
+    <string name="light_category">Lights</string>
+    <string name="battery_title">Battery</string>
+    <string name="battery_category">Battery tweaks</string>
+    <string name="battery_light_settings">Battery charging light</string>
+    <string name="battery_light_enable">Battery light</string>
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
+    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
+    <string name="battery_light_cat">Battery light color when charging</string>
+    <string name="battery_light_low_color">Low battery</string>
+    <string name="battery_light_medium_color">Medium battery</string>
+    <string name="battery_light_full_color">Almost full battery</string>
+    <string name="battery_light_reallyfull_color">Full (100) battery</string>
+
 </resources>
