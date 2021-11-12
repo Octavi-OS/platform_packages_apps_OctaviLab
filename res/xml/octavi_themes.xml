@@ -15,4 +15,9 @@
 	android:title="@string/themes_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <Preference
+        android:key="customisation"
+        android:fragment="com.octavi.lab.fragments.Customisation"
+        android:title="@string/customisation_title" />
+
 </PreferenceScreen>
