@@ -99,6 +99,15 @@
             android:fragment="com.octavi.lab.fragments.LockScreenSettings"
             android:icon="@drawable/uituner"/>
 
+        <!-- Visualizer -->
+        <Preference
+            android:layout="@layout/cardview"
+            android:summary="@string/visual_summary"
+            android:key="visualiser_category"
+            android:title="@string/visualiser_title"
+            android:fragment="com.octavi.lab.fragments.Visualizer"
+            android:icon="@drawable/visual"/>
+
         <!-- Misc -->
         <Preference
             android:layout="@layout/cardview"
