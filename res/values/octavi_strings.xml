@@ -619,4 +619,9 @@
     <string name="udfps_icon_picker_title">Udfps icon picker</string>
     <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
 
+    <!-- Network Traffic -->
+    <string name="traffic_title">Traffic indicators</string>
+    <string name="traffic_summary">Customize the traffic indicators</string>
+    <string name="network_traffic_state_title">Show network traffic</string>
+    <string name="network_traffic_autohide_threshold_title">Auto-hide threshold</string>
 </resources>
