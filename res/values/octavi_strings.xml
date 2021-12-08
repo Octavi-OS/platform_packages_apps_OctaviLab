@@ -39,6 +39,14 @@
     <string name="gaming_summary">Gaming mode related options which is basically <b>advanced DND</b>, but you gonna cry so added</string>
     <string name="misc_summary">Smart Pixels, <b>Signature spoofing</b>, Animations, Scrolling Cache, Hide apps from recents</string>
 
+    <string name="status_bar_item_summary">AOSP status bar tuner</string>
+    <string name="clock_summary">Customise the clock and date on status bar</string>
+    <string name="battery_summary">Options related to battery style Battery bar</string>
+    <string name="traffic_summary">Enable/Disable and style the network indicator</string>
+    <string name="carrier_summary">Set a custom carrier label</string>
+    <string name="navigation_summary">Options related to onscreen navbar</string>
+    <string name="lockscreen_shortcut_summary">AOSP Lockscreen tuner</string>
+
     <!-- Header titles -->
     <string name="quicksettings_title">Quick Setings</string>
     <string name="statusbar_title">StatusBar</string>

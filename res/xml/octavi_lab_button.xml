@@ -20,6 +20,7 @@
 
      <Preference
             android:key="navbar_settings"
+            android:summary="@string/navigation_summary"
             android:fragment="com.octavi.lab.fragments.NavbarSettings"
             android:title="@string/navigationbar_settings_title" />
 

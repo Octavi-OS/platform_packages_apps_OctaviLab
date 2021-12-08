@@ -21,6 +21,7 @@
     <Preference
          android:key="lockscreen_shortcuts"
          android:fragment="com.octavi.lab.fragments.LockscreenShortcuts"
+         android:summary="@string/lockscreen_shortcut_summary"
          android:title="@string/lockscreen_shortcuts" />
 
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
