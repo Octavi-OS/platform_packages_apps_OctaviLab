@@ -14,6 +14,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
     <string name="octavi_lab_title">Octavi Lab</string>
+    <string name="default_string">Default</string>
+    <string name="disabled">Disabled</string>
 
     <!-- Categories -->
     <string name="button_title">Buttons</string>
@@ -535,5 +537,10 @@
     <!-- Sb Icon Style -->
     <string name="statusbar_icons_style">Colored Statusbar Icons</string>
     <string name="statusbar_icons_style_summary">Choose the style of your statusbar icons (requires SystemUI restart)</string>
+
+    <!-- AOD Schedule -->
+    <string name="always_on_display_schedule_title">Always on display schedule</string>
+    <string name="always_on_display_schedule_sunset">Sunset</string>
+    <string name="always_on_display_schedule_sunrise">Sunrise</string>
 
 </resources>
