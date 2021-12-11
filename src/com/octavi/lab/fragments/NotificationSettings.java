@@ -33,9 +33,14 @@ import com.octavi.lab.Utils;
 
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.octavi.support.preference.SystemSettingMasterSwitchPreference;
+
 public class NotificationSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
+    private static final String KEY_EDGE_LIGHTNING = "pulse_ambient_light";
+
+    private SystemSettingMasterSwitchPreference mEdgeLightning;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -50,6 +55,13 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         if (!Utils.isVoiceCapable(getActivity())) {
                 prefSet.removePreference(incallVibCategory);
         }
+
+        mEdgeLightning = (SystemSettingMasterSwitchPreference)
+                findPreference(KEY_EDGE_LIGHTNING);
+        boolean enabled = Settings.System.getIntForUser(resolver,
+                KEY_EDGE_LIGHTNING, 0, UserHandle.USER_CURRENT) == 1;
+        mEdgeLightning.setChecked(enabled);
+        mEdgeLightning.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -64,6 +76,13 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mEdgeLightning) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putIntForUser(resolver, KEY_EDGE_LIGHTNING,
+                    value ? 1 : 0, UserHandle.USER_CURRENT);
+            return true;
+        }
         return false;
     }
 }

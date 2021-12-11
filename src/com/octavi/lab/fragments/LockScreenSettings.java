@@ -53,6 +53,13 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.octavi.support.colorpicker.ColorPickerPreference;
 import com.android.internal.util.octavi.OctaviUtils;
 
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Collections;
+import android.util.Log;
+
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
