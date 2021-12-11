@@ -28,6 +28,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.hardware.fingerprint.FingerprintManager;
+import android.hardware.fingerprint.FingerprintSensorPropertiesInternal;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.SystemProperties;
@@ -58,6 +59,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
     private static final String FINGERPRINT_ERROR_VIB = "fingerprint_error_vib";
     private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
+    private static final String SCREEN_OFF_FOD_KEY = "screen_off_fod";
 
     private FingerprintManager mFingerprintManager;
     private SystemSettingSwitchPreference mFingerprintSuccessVib;
@@ -69,6 +71,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     static final int MODE_MIXED_SUNSET = 3;
     static final int MODE_MIXED_SUNRISE = 4;
     Preference mAODPref;
+    Preference mFODPref;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -98,6 +101,10 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         } else {
             prefSet.removePreference(mFingerprintSuccessVib);
             prefSet.removePreference(mFingerprintErrorVib);
+        }
+        mFODPref = findPreference(SCREEN_OFF_FOD_KEY);
+        if (!hasUDFPS(getActivity())) {
+            removePreference(SCREEN_OFF_FOD_KEY);
         }
         mAODPref = findPreference(AOD_SCHEDULE_KEY);
         updateAlwaysOnSummary();
@@ -147,6 +154,19 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             return true;
         }
         return false;
+    }
+
+    /**
+     * Checks if the device has udfps
+     * @param context context for getting FingerprintManager
+     * @return true is udfps is present
+     */
+    public static boolean hasUDFPS(Context context) {
+        final FingerprintManager fingerprintManager =
+                context.getSystemService(FingerprintManager.class);
+        final List<FingerprintSensorPropertiesInternal> props =
+                fingerprintManager.getSensorPropertiesInternal();
+        return props != null && props.size() == 1 && props.get(0).isAnyUdfpsType();
     }
 
     @Override
