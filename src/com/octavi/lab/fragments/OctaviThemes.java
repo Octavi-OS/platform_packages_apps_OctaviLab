@@ -22,7 +22,14 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.content.om.IOverlayManager;
+import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.ServiceManager;
+import android.provider.Settings;
 import android.os.UserHandle;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import com.android.settings.development.OverlayCategoryPreferenceController;
 import android.content.ContentResolver;
 import android.database.ContentObserver;
@@ -63,6 +70,9 @@ public class OctaviThemes extends DashboardFragment
 
     private static final String TAG = "OctaviThemes";
 
+    private IOverlayManager mOverlayManager;
+    private IOverlayManager mOverlayService;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,6 +99,10 @@ public class OctaviThemes extends DashboardFragment
                 "android.theme.customization.font"));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.icon_pack"));
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.signal_icon"));
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.wifi_icon"));
         return controllers;
     }
 
