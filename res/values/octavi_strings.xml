@@ -29,6 +29,7 @@
     <string name="ambient_settings">Ambient Settings</string>
     <string name="lock_screen_elements_category_title">Lock screen elements</string>
     <string name="fingerprint_category">Fingerprint</string>    
+    <string name="statusbar_padding">Statusbar Padding</string>
 
     <string name="statusbar_summary">Clock &amp; date, <b>Traffic Indicator</b>, Battery Styles/n Volte Icons, Notification counts</string>
     <string name="qs_summary">QS Rows &amp; Columns, Data Usage, QS media player, <b>QS Clock styles</b>, Tile titles</string>
@@ -612,5 +613,9 @@
 
     <!-- Custom Wi-Fi bar icons -->
     <string name="custom_wifi_bar_title">Wi-Fi</string>
+
+    <!-- Statusbar left_right padding -->
+    <string name="statusbar_left_padding">Statusbar left padding</string>
+    <string name="statusbar_right_padding">Statusbar right padding</string>
 
 </resources>
