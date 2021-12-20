@@ -102,7 +102,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     CONFIG_RESOURCE_NAME, "bool", SYSTEMUI_PACKAGE);
             if (resId != 0) def = sysUIRes.getBoolean(resId);
         }
-        enabled = Settings.Secure.getInt(resolver,
+        boolean enabled = Settings.Secure.getInt(resolver,
                 COBINED_STATUSBAR_ICONS, def ? 1 : 0) == 1;
         mCombinedIcons.setChecked(enabled);
         mCombinedIcons.setOnPreferenceChangeListener(this);

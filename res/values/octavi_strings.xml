@@ -30,6 +30,7 @@
     <string name="lock_screen_elements_category_title">Lock screen elements</string>
     <string name="fingerprint_category">Fingerprint</string>    
     <string name="statusbar_padding">Statusbar Padding</string>
+    <string name="statusbar_icon_cat">Statusbar Icons</string>
 
     <string name="statusbar_summary">Clock &amp; date, <b>Traffic Indicator</b>, Battery Styles/n Volte Icons, Notification counts</string>
     <string name="qs_summary">QS Rows &amp; Columns, Data Usage, QS media player, <b>QS Clock styles</b>, Tile titles</string>
@@ -47,14 +48,14 @@
 
     <string name="status_bar_item_summary">AOSP status bar tuner</string>
     <string name="clock_summary">Customise the clock and date on status bar</string>
-    <string name="battery_summary">Options related to battery style Battery bar</string>
+    <string name="battery_settings_summary">Options related to battery style Battery bar</string>
     <string name="traffic_summary">Enable/Disable and style the network indicator</string>
     <string name="carrier_summary">Set a custom carrier label</string>
     <string name="navigation_summary">Options related to onscreen navbar</string>
     <string name="lockscreen_shortcut_summary">AOSP Lockscreen tuner</string>
 
     <!-- Header titles -->
-    <string name="quicksettings_title">Quick Setings</string>
+    <string name="quicksettings_title">Quick Settings</string>
     <string name="statusbar_title">StatusBar</string>
     <string name="notif_title">Notifications</string>
     <string name="power_title">Power Menu</string>
