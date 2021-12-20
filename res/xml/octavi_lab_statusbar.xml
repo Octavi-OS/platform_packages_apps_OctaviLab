@@ -108,6 +108,12 @@
         android:summary="@string/volte_icon_summary"
         android:defaultValue="true"/>
 
+    <com.octavi.support.preference.SecureSettingSwitchPreference
+        android:key="show_combined_status_bar_signal_icons"
+        android:title="@string/combined_status_bar_signal_icons"
+        android:summary="@string/combined_status_bar_signal_icons_summary"
+        android:defaultValue="false" />
+
     <com.octavi.support.preference.SystemSettingListPreference
         android:key="volte_icon_style"
         android:title="@string/volte_icon_style_title"
