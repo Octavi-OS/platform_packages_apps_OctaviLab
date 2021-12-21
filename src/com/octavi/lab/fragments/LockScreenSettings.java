@@ -46,6 +46,7 @@ import com.android.settings.widget.CardPreference;
 
 import android.provider.Settings;
 import com.android.settings.R;
+import com.android.internal.util.octavi.OctaviUtils;
 import com.android.settings.SettingsPreferenceFragment;
 
 //import com.octavi.support.preferences.SecureSettingSwitchPreference;
@@ -115,6 +116,13 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         }
         mAODPref = findPreference(AOD_SCHEDULE_KEY);
         updateAlwaysOnSummary();
+
+        boolean udfpsResPkgInstalled = OctaviUtils.isPackageInstalled(getContext(),
+                "com.octavi.udfps.resources");
+        PreferenceCategory udfps = (PreferenceCategory) prefSet.findPreference("udfps_category");
+        if (!udfpsResPkgInstalled) {
+            prefSet.removePreference(udfps);
+        }
     }
 
     @Override
