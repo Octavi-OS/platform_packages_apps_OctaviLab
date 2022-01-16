@@ -33,10 +33,10 @@
         android:summary="@string/clock_summary"
         android:title="@string/status_bar_clock_title" />
 
-    <Preference
+    <!--<Preference
         android:key="battery"
         android:fragment="com.octavi.lab.fragments.Battery"
-        android:title="@string/battery_title" />
+        android:title="@string/battery_title" />-->
 
     <Preference
         android:key="battery_bar_category"
