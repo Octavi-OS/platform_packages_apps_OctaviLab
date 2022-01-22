@@ -2,4 +2,6 @@ files:
   - source: /res/values/octavi_strings.xml
     translation: /res/values-%language%/octavi_strings.xml
   - source: /res/values/*.*
+    ignore:
+      - /res/values/octavi_attrs.xml
     translation: /res/values%language%/%original_file_name%
