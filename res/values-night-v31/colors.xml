@@ -17,4 +17,5 @@
 
 <resources>
     <color name="option_border_default">#ffffff</color>
+ <color name="border">@android:color/system_neutral2_700</color>
 </resources>
