@@ -631,4 +631,8 @@
     <string name="network_traffic_dynamic">Dynamic</string>
     <string name="network_traffic_download">Download</string>
     <string name="network_traffic_upload">Upload</string>
+
+    <!-- Applications fragment -->
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
 </resources>
