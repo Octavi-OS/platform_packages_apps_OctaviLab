@@ -20,4 +20,6 @@
    <!-- Shortcut picker -->
    <dimen name="shortcut_picker_left_padding">70dip</dimen>
 
+    <!-- Applications fragment -->
+    <dimen name="default_margin">16dp</dimen>
 </resources>

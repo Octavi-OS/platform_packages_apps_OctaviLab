@@ -49,7 +49,6 @@
     <string name="status_bar_item_summary">AOSP status bar tuner</string>
     <string name="clock_summary">Customise the clock and date on status bar</string>
     <string name="battery_settings_summary">Options related to battery style Battery bar</string>
-    <string name="traffic_summary">Enable/Disable and style the network indicator</string>
     <string name="carrier_summary">Set a custom carrier label</string>
     <string name="navigation_summary">Options related to onscreen navbar</string>
     <string name="lockscreen_shortcut_summary">AOSP Lockscreen tuner</string>
@@ -270,25 +269,6 @@
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
-
-    <!-- Statusbar net monitor -->
-    <string name="traffic_title">Traffic Indicators</string>
-    <string name="network_traffic">Network traffic</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
-    <string name="network_traffic_location">Traffic indicator placement</string>
-    <string name="traffic_disabled">Disabled</string>
-    <string name="traffic_statusbar">Statusbar</string>
-    <string name="traffic_expanded_statusbar">Expanded header</string>
-    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
-    <string name="network_traffic_arrow">Show arrows</string>
-    <string name="network_traffic_arrow_summary">Show the network traffic indicator arrows</string>
-    <string name="network_traffic_type">Select net activity type</string>
-    <string name="show_network_traffic_combined">Combined (Upload + Download)</string>
-    <string name="show_network_traffic_dynamic">Dynamic</string>
-    <string name="show_network_traffic_up">Upload</string>
-    <string name="show_network_traffic_down">Download</string>
-    <string name="show_network_traffic_all">Both</string>
-    <string name="nettraf_font_size">Single net font size</string>
 
     <!-- Hardware button navigation -->
     <string name="action_value_default_action" translatable="false">default</string>
@@ -637,5 +617,26 @@
     <!-- Udfps icon picker -->
     <string name="udfps_icon_picker_title">Udfps icon picker</string>
     <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+    
+    <!-- Black theme -->
+    <string name="system_black_theme_title">Use black theme</string>
+    <string name="system_black_theme_summary">Force black background colors</string>
 
+    <!-- Network Traffic -->
+    <string name="traffic_title">Traffic indicators</string>
+    <string name="traffic_summary">Customize the traffic indicators</string>
+    <string name="network_traffic_autohide_threshold_title">Auto-hide threshold</string>
+    <string name="network_traffic_location_title">Location</string>
+    <string name="network_traffic_disabled">Disabled</string>
+    <string name="network_traffic_statusbar">Status bar</string>
+    <string name="network_traffic_qs_header">QS header</string>
+    <string name="network_traffic_refresh_interval_title">Refresh interval</string>
+    <string name="network_traffic_mode_title">Display mode</string>
+    <string name="network_traffic_dynamic">Dynamic</string>
+    <string name="network_traffic_download">Download</string>
+    <string name="network_traffic_upload">Upload</string>
+
+    <!-- Applications fragment -->
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
 </resources>
